@@ -1,0 +1,78 @@
+<mockup version="1.0" skin="sketch" measuredW="1122" measuredH="769" mockupW="960" mockupH="759">
+  <controls>
+    <control controlID="203" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="152" y="0" w="960" h="759" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Guide.Me%0Ahttp%3A//guide.me</text>
+      </controlProperties>
+    </control>
+    <control controlID="208" controlTypeID="com.balsamiq.mockups::LinkBar" x="863" y="89" w="-1" h="-1" measuredW="218" measuredH="25" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Home%2C%20Browse%20Guides%2C%20Log%20In</text>
+      </controlProperties>
+    </control>
+    <control controlID="209" controlTypeID="com.balsamiq.mockups::Label" x="539" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <italic>true</italic>
+        <state>disabled</state>
+        <text>Some%20Random%20Copyright%20Text</text>
+      </controlProperties>
+    </control>
+    <control controlID="210" controlTypeID="com.balsamiq.mockups::Image" x="491" y="280" w="276" h="198" measuredW="500" measuredH="375" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>http%3A//farm4.static.flickr.com/3230/2684243840_38ce253cf3.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="211" controlTypeID="com.balsamiq.mockups::Button" x="544" y="526" w="145" h="36" measuredW="108" measuredH="28" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Sign%20Up%20Now%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="212" controlTypeID="com.balsamiq.mockups::Label" x="491" y="172" w="-1" h="-1" measuredW="263" measuredH="90" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <size>60</size>
+        <text>Guide.Me</text>
+      </controlProperties>
+    </control>
+    <control controlID="232" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="152" y="0" w="960" h="759" measuredW="450" measuredH="400" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Guide.Me%0Ahttp%3A//guide.me</text>
+      </controlProperties>
+    </control>
+    <control controlID="237" controlTypeID="com.balsamiq.mockups::LinkBar" x="863" y="89" w="-1" h="-1" measuredW="218" measuredH="25" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Home%2C%20Browse%20Guides%2C%20Log%20In</text>
+      </controlProperties>
+    </control>
+    <control controlID="238" controlTypeID="com.balsamiq.mockups::Label" x="539" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <italic>true</italic>
+        <state>disabled</state>
+        <text>Some%20Random%20Copyright%20Text</text>
+      </controlProperties>
+    </control>
+    <control controlID="239" controlTypeID="com.balsamiq.mockups::Image" x="491" y="280" w="276" h="198" measuredW="500" measuredH="375" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <filter>true</filter>
+        <src>http%3A//farm4.static.flickr.com/3230/2684243840_38ce253cf3.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="240" controlTypeID="com.balsamiq.mockups::Button" x="544" y="526" w="145" h="36" measuredW="108" measuredH="28" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Sign%20Up%20Now%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="241" controlTypeID="com.balsamiq.mockups::Label" x="491" y="172" w="-1" h="-1" measuredW="263" measuredH="90" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <size>60</size>
+        <text>Guide.Me</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
+

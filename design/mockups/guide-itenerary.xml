@@ -1,0 +1,118 @@
+<mockup version="1.0" skin="sketch" measuredW="1698" measuredH="1565" mockupW="960" mockupH="759">
+  <controls>
+    <control controlID="261" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="728" y="796" w="960" h="759" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Guide.Me%0Ahttp%3A//guide.me</text>
+      </controlProperties>
+    </control>
+    <control controlID="262" controlTypeID="com.balsamiq.mockups::LinkBar" x="1451" y="885" w="-1" h="-1" measuredW="229" measuredH="25" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Home%2C%20Browse%20Guides%2C%20Log%20Out</text>
+      </controlProperties>
+    </control>
+    <control controlID="263" controlTypeID="com.balsamiq.mockups::HRule" x="836" y="920" w="512" h="-1" measuredW="100" measuredH="5" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="264" controlTypeID="com.balsamiq.mockups::Title" x="836" y="874" w="107" h="-1" measuredW="96" measuredH="46" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>London</text>
+      </controlProperties>
+    </control>
+    <control controlID="265" controlTypeID="com.balsamiq.mockups::Label" x="1115" y="1488" w="173" h="22" measuredW="187" measuredH="25" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <italic>true</italic>
+        <state>disabled</state>
+        <text>Some%20Random%20Copyright%20Text</text>
+      </controlProperties>
+    </control>
+    <control controlID="266" controlTypeID="com.balsamiq.mockups::Label" x="943" y="887" w="-1" h="-1" measuredW="89" measuredH="22" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>11</size>
+        <text>By%20Jeff%20Wright</text>
+      </controlProperties>
+    </control>
+    <control controlID="267" controlTypeID="com.balsamiq.mockups::Image" x="816" y="1062" w="209" h="174" measuredW="500" measuredH="341" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>http%3A//farm5.static.flickr.com/4054/4699684994_801b65862a.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="268" controlTypeID="com.balsamiq.mockups::Label" x="890" y="1251" w="-1" h="-1" measuredW="55" measuredH="29" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>London</text>
+      </controlProperties>
+    </control>
+    <control controlID="269" controlTypeID="com.balsamiq.mockups::Label" x="816" y="1278" w="-1" h="-1" measuredW="225" measuredH="25" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>March%205%2C%202010%20-%20March%2010%2C%202010</text>
+      </controlProperties>
+    </control>
+    <control controlID="270" controlTypeID="com.balsamiq.mockups::FieldSet" x="1161" y="941" w="366" h="525" measuredW="200" measuredH="170" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Itinerary%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="271" controlTypeID="com.balsamiq.mockups::Label" x="1176" y="968" w="150" h="29" measuredW="156" measuredH="25" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20Day%201%20-%20See%20the%20Sites</text>
+      </controlProperties>
+    </control>
+    <control controlID="272" controlTypeID="com.balsamiq.mockups::Label" x="1176" y="1056" w="132" h="21" measuredW="131" measuredH="25" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Day%202%20-%20More%20Sites</text>
+      </controlProperties>
+    </control>
+    <control controlID="273" controlTypeID="com.balsamiq.mockups::Label" x="1176" y="1146" w="-1" h="-1" measuredW="204" measuredH="25" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Day%203%20-%20A%20Day%20at%20the%20Theater</text>
+      </controlProperties>
+    </control>
+    <control controlID="274" controlTypeID="com.balsamiq.mockups::Label" x="1176" y="1219" w="-1" h="-1" measuredW="200" measuredH="25" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20Day%204%20-%20Girls%20Day%20in%20the%20City</text>
+      </controlProperties>
+    </control>
+    <control controlID="275" controlTypeID="com.balsamiq.mockups::Label" x="1176" y="1302" w="-1" h="-1" measuredW="156" measuredH="25" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Day%205%20-%20In%20the%20Country</text>
+      </controlProperties>
+    </control>
+    <control controlID="276" controlTypeID="com.balsamiq.mockups::Label" x="1176" y="1370" w="-1" h="-1" measuredW="122" measuredH="25" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Day%206%20-%20Last%20Day%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="277" controlTypeID="com.balsamiq.mockups::Paragraph" x="1195" y="997" w="-1" h="-1" measuredW="200" measuredH="140" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%20London%20Bridge%20%0A-%20Tower%20of%20London%0A-%20Shakespear%27s%20Globe%20Theater</text>
+      </controlProperties>
+    </control>
+    <control controlID="278" controlTypeID="com.balsamiq.mockups::Paragraph" x="1195" y="1079" w="-1" h="-1" measuredW="200" measuredH="140" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%20Big%20Ben%0A-%20Parliament%20Square%0A-%20Buckingham%20Palace</text>
+      </controlProperties>
+    </control>
+    <control controlID="279" controlTypeID="com.balsamiq.mockups::Paragraph" x="1195" y="1170" w="-1" h="-1" measuredW="200" measuredH="140" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%20Les%20Miserables%0A-%20Lion%20King</text>
+      </controlProperties>
+    </control>
+    <control controlID="280" controlTypeID="com.balsamiq.mockups::Paragraph" x="1198" y="1245" w="-1" h="-1" measuredW="200" measuredH="140" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%20Tea%20at%20the%20Ritz%0A-%20Shopping%20at%20Oxford%20Circus</text>
+      </controlProperties>
+    </control>
+    <control controlID="281" controlTypeID="com.balsamiq.mockups::Paragraph" x="1202" y="1326" w="-1" h="-1" measuredW="200" measuredH="140" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%20Oxford%20%0A-%20Blenheim%20Palace</text>
+      </controlProperties>
+    </control>
+    <control controlID="282" controlTypeID="com.balsamiq.mockups::Paragraph" x="1202" y="1394" w="-1" h="-1" measuredW="200" measuredH="140" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%20Brick%20Lane%20Market%0A-%20Fly%20Home%21</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
+
