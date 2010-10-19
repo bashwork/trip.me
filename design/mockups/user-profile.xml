@@ -58,7 +58,7 @@
       <groupChildrenDescriptors>
         <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="210" h="213" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="305">
           <controlProperties>
-            <text>London</text>
+            <text>My%20England%20Trip</text>
           </controlProperties>
         </control>
         <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="15" y="20" w="180" h="162" measuredW="500" measuredH="357" zOrder="1" locked="false" isInGroup="305">
@@ -121,7 +121,7 @@
       <groupChildrenDescriptors>
         <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="210" h="213" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="308">
           <controlProperties>
-            <text>London</text>
+            <text>London%20Calling</text>
           </controlProperties>
         </control>
         <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="15" y="20" w="180" h="162" measuredW="500" measuredH="357" zOrder="1" locked="false" isInGroup="308">

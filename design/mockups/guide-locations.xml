@@ -1,12 +1,12 @@
 <mockup version="1.0" skin="sketch" measuredW="1332" measuredH="770" mockupW="960" mockupH="759">
   <controls>
-    <control controlID="398" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="170" measuredH="25" zOrder="0" locked="false" isInGroup="-1">
+    <control controlID="618" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="170" measuredH="25" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Home%2C%20Guides%2C%20Logoff</text>
       </controlProperties>
     </control>
-    <control controlID="399" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="1" locked="false" isInGroup="-1"/>
-    <control controlID="400" controlTypeID="com.balsamiq.mockups::Label" x="683" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="619" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="620" controlTypeID="com.balsamiq.mockups::Label" x="683" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>false</bold>
         <italic>true</italic>
@@ -14,7 +14,7 @@
         <text>Some%20Random%20Copyright%20Text</text>
       </controlProperties>
     </control>
-    <control controlID="401" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="362" y="1" w="960" h="759" measuredW="450" measuredH="400" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="621" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="362" y="1" w="960" h="759" measuredW="450" measuredH="400" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <filter>true</filter>
         <src>http%3A//farm4.static.flickr.com/3362/4623797219_b821c3f0c4.jpg</src>
@@ -22,19 +22,19 @@
         <verticalScrollbar>true</verticalScrollbar>
       </controlProperties>
     </control>
-    <control controlID="402" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="218" measuredH="25" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="622" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="209" measuredH="25" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Home%2C%20Browse%20Guides%2C%20Log%20In</text>
+        <text>Home%2C%20Browse%20Trips%2C%20Log%20In</text>
       </controlProperties>
     </control>
-    <control controlID="403" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="5" locked="false" isInGroup="-1"/>
-    <control controlID="404" controlTypeID="com.balsamiq.mockups::Title" x="404" y="78" w="-1" h="-1" measuredW="227" measuredH="46" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="623" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="624" controlTypeID="com.balsamiq.mockups::Title" x="404" y="78" w="-1" h="-1" measuredW="227" measuredH="46" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <size>28</size>
         <text>My%20England%20Trip</text>
       </controlProperties>
     </control>
-    <control controlID="405" controlTypeID="com.balsamiq.mockups::Label" x="683" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="625" controlTypeID="com.balsamiq.mockups::Label" x="683" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>false</bold>
         <italic>true</italic>
@@ -42,10 +42,10 @@
         <text>Some%20Random%20Copyright%20Text</text>
       </controlProperties>
     </control>
-    <control controlID="406" controlTypeID="__group__" x="404" y="226" w="-1" h="-1" measuredW="833" measuredH="377" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="626" controlTypeID="__group__" x="404" y="226" w="-1" h="-1" measuredW="833" measuredH="377" zOrder="8" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
-        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="229" y="0" w="604" h="377" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="406"/>
-        <control controlID="1" controlTypeID="__group__" x="0" y="0" w="-1" h="-1" measuredW="824" measuredH="377" zOrder="1" locked="false" isInGroup="406">
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="229" y="0" w="604" h="377" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="626"/>
+        <control controlID="1" controlTypeID="__group__" x="0" y="0" w="-1" h="-1" measuredW="824" measuredH="377" zOrder="1" locked="false" isInGroup="626">
           <groupChildrenDescriptors>
             <control controlID="0" controlTypeID="com.balsamiq.mockups::List" x="0" y="0" w="229" h="377" measuredW="100" measuredH="126" zOrder="0" locked="false" isInGroup="1">
               <controlProperties>
@@ -54,7 +54,7 @@
                 <hasHeader>false</hasHeader>
                 <rowHeight>27</rowHeight>
                 <selectedIndex>-1</selectedIndex>
-                <text>%5B+%5D%20Manchester%2C%20England%0A%5B+%5D%20Leeds%2C%20England%0A%5B+%5D%20London%2C%20England</text>
+                <text/>
                 <verticalScrollbar>true</verticalScrollbar>
               </controlProperties>
             </control>
@@ -63,42 +63,24 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="407" controlTypeID="com.balsamiq.mockups::Paragraph" x="404" y="143" w="512" h="83" measuredW="200" measuredH="140" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="627" controlTypeID="com.balsamiq.mockups::Paragraph" x="404" y="143" w="512" h="83" measuredW="200" measuredH="140" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>false</bold>
         <italic>true</italic>
         <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Pellentesque%20lacinia%2C%20risus%20eget%20viverra%20pellentesque%2C%20lacus%20tellus%20gravida%20nisl%2C%20cursus%20gravida%20tellus%20sem%20sit%20amet%20enim.%20Sed%20massa%20massa%2C%20gravida%20sit%20amet%20vulputate%20non%2C%20rhoncus%20a%20sem.</text>
       </controlProperties>
     </control>
-    <control controlID="408" controlTypeID="com.balsamiq.mockups::Icon" x="1079" y="544" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="10" locked="false" isInGroup="-1">
-      <controlProperties>
-        <color>13369344</color>
-        <icon>DownTriangleIcon%7Csmall</icon>
-      </controlProperties>
-    </control>
-    <control controlID="409" controlTypeID="com.balsamiq.mockups::Icon" x="713" y="271" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="11" locked="false" isInGroup="-1">
-      <controlProperties>
-        <color>13369344</color>
-        <icon>DownTriangleIcon%7Csmall</icon>
-      </controlProperties>
-    </control>
-    <control controlID="410" controlTypeID="com.balsamiq.mockups::Icon" x="1152" y="309" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="12" locked="false" isInGroup="-1">
-      <controlProperties>
-        <color>13369344</color>
-        <icon>DownTriangleIcon%7Csmall</icon>
-      </controlProperties>
-    </control>
-    <control controlID="411" controlTypeID="com.balsamiq.mockups::Icon" x="636" y="261" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="13" locked="false" isInGroup="-1">
+    <control controlID="631" controlTypeID="com.balsamiq.mockups::Icon" x="636" y="261" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>SquaredMinusIcon%7Csmall</icon>
       </controlProperties>
     </control>
-    <control controlID="412" controlTypeID="com.balsamiq.mockups::Icon" x="636" y="237" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="14" locked="false" isInGroup="-1">
+    <control controlID="632" controlTypeID="com.balsamiq.mockups::Icon" x="636" y="237" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>SquaredPlusIcon%7Csmall</icon>
       </controlProperties>
     </control>
-    <control controlID="419" controlTypeID="com.balsamiq.mockups::IconLabel" x="1100" y="184" w="-1" h="-1" measuredW="130" measuredH="32" zOrder="15" locked="false" isInGroup="-1">
+    <control controlID="633" controlTypeID="com.balsamiq.mockups::IconLabel" x="1100" y="184" w="-1" h="-1" measuredW="130" measuredH="32" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>SquaredPlusIcon%7Cmedium</icon>
         <labelPosition>right</labelPosition>
