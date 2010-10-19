@@ -2,12 +2,12 @@
   <controls>
     <control controlID="203" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="152" y="0" w="960" h="759" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Guide.Me%0Ahttp%3A//guide.me</text>
+        <text>Trip.Me%0Ahttp%3A//trip.me</text>
       </controlProperties>
     </control>
     <control controlID="208" controlTypeID="com.balsamiq.mockups::LinkBar" x="863" y="89" w="-1" h="-1" measuredW="218" measuredH="25" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Home%2C%20Browse%20Guides%2C%20Log%20In</text>
+        <text>Home%2C%20Browse%20Trips%2C%20Log%20In</text>
       </controlProperties>
     </control>
     <control controlID="209" controlTypeID="com.balsamiq.mockups::Label" x="539" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="2" locked="false" isInGroup="-1">
@@ -33,17 +33,17 @@
       <controlProperties>
         <bold>false</bold>
         <size>60</size>
-        <text>Guide.Me</text>
+        <text>Trip.Me</text>
       </controlProperties>
     </control>
     <control controlID="232" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="152" y="0" w="960" h="759" measuredW="450" measuredH="400" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Guide.Me%0Ahttp%3A//guide.me</text>
+        <text>Trip.Me%0Ahttp%3A//guide.me</text>
       </controlProperties>
     </control>
     <control controlID="237" controlTypeID="com.balsamiq.mockups::LinkBar" x="863" y="89" w="-1" h="-1" measuredW="218" measuredH="25" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Home%2C%20Browse%20Guides%2C%20Log%20In</text>
+        <text>Home%2C%20Browse%20Trips%2C%20Log%20In</text>
       </controlProperties>
     </control>
     <control controlID="238" controlTypeID="com.balsamiq.mockups::Label" x="539" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="8" locked="false" isInGroup="-1">
@@ -70,7 +70,7 @@
       <controlProperties>
         <bold>false</bold>
         <size>60</size>
-        <text>Guide.Me</text>
+        <text>Trip.Me</text>
       </controlProperties>
     </control>
   </controls>

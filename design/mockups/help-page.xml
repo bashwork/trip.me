@@ -14,7 +14,7 @@
     </control>
     <control controlID="15" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="170" measuredH="25" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Home%2C%20Guides%2C%20Logoff</text>
+        <text>Home%2C%20Trips%2C%20Logoff</text>
       </controlProperties>
     </control>
     <control controlID="16" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="2" locked="false" isInGroup="-1"/>
@@ -28,12 +28,12 @@
     </control>
     <control controlID="18" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="325" y="0" w="960" h="759" measuredW="450" measuredH="400" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Guide.Me%0Ahttp%3A//guide.me</text>
+        <text>Trip.Me%0Ahttp%3A//trip.me</text>
       </controlProperties>
     </control>
     <control controlID="19" controlTypeID="com.balsamiq.mockups::LinkBar" x="998" y="88" w="-1" h="-1" measuredW="272" measuredH="25" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Home%2C%20Browse%20Guides%2C%20Log%20In%2C%20Help</text>
+        <text>Home%2C%20Browse%20Trips%2C%20Log%20In%2C%20Help</text>
       </controlProperties>
     </control>
     <control controlID="20" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="6" locked="false" isInGroup="-1"/>

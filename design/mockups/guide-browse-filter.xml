@@ -14,7 +14,7 @@
     </control>
     <control controlID="106" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="170" measuredH="25" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Home%2C%20Guides%2C%20Logoff</text>
+        <text>Home%2C%20Trips%2C%20Logoff</text>
       </controlProperties>
     </control>
     <control controlID="107" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="2" locked="false" isInGroup="-1"/>
@@ -28,20 +28,20 @@
     </control>
     <control controlID="109" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="322" y="0" w="960" h="759" measuredW="450" measuredH="400" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Guide.Me%0Ahttp%3A//guide.me</text>
+        <text>Trip.Me%0Ahttp%3A//trip.me</text>
         <verticalScrollbar>true</verticalScrollbar>
       </controlProperties>
     </control>
     <control controlID="110" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="218" measuredH="25" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Home%2C%20Browse%20Guides%2C%20Log%20In</text>
+        <text>Home%2C%20Browse%20Trips%2C%20Log%20In</text>
       </controlProperties>
     </control>
     <control controlID="111" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="6" locked="false" isInGroup="-1"/>
     <control controlID="112" controlTypeID="com.balsamiq.mockups::Title" x="404" y="78" w="-1" h="-1" measuredW="199" measuredH="46" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <size>28</size>
-        <text>Browse%20Guides</text>
+        <text>Browse%20Trips</text>
       </controlProperties>
     </control>
     <control controlID="113" controlTypeID="com.balsamiq.mockups::Label" x="683" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="8" locked="false" isInGroup="-1">

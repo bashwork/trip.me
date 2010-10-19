@@ -2,7 +2,7 @@
   <controls>
     <control controlID="13" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="296" y="0" w="960" h="759" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Guide.Me%0Ahttp%3A//guide.me</text>
+        <text>Trip.Me%0Ahttp%3A//trip.me</text>
         <verticalScrollbar>false</verticalScrollbar>
       </controlProperties>
     </control>
@@ -44,14 +44,14 @@
     </control>
     <control controlID="36" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="170" measuredH="25" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Home%2C%20Guides%2C%20Logoff</text>
+        <text>Home%2C%20Trips%2C%20Logoff</text>
       </controlProperties>
     </control>
     <control controlID="37" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="11" locked="false" isInGroup="-1"/>
     <control controlID="38" controlTypeID="com.balsamiq.mockups::Title" x="404" y="78" w="-1" h="-1" measuredW="519" measuredH="46" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <size>28</size>
-        <text>Currently%20Editing%20Summer%202010%20Guide</text>
+        <text>Currently%20Editing%20Summer%202010%20Trip</text>
       </controlProperties>
     </control>
     <control controlID="39" controlTypeID="com.balsamiq.mockups::Link" x="813" y="226" w="-1" h="-1" measuredW="117" measuredH="25" zOrder="13" locked="false" isInGroup="-1">

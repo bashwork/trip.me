@@ -14,7 +14,7 @@
     </control>
     <control controlID="297" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="170" measuredH="25" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Home%2C%20Guides%2C%20Logoff</text>
+        <text>Home%2C%20Trips%2C%20Logoff</text>
       </controlProperties>
     </control>
     <control controlID="298" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="2" locked="false" isInGroup="-1"/>
@@ -30,13 +30,13 @@
       <controlProperties>
         <filter>true</filter>
         <src>http%3A//farm4.static.flickr.com/3362/4623797219_b821c3f0c4.jpg</src>
-        <text>Guide.Me%0Ahttp%3A//guide.me</text>
+        <text>Trip.Me%0Ahttp%3A//trip.me</text>
         <verticalScrollbar>true</verticalScrollbar>
       </controlProperties>
     </control>
     <control controlID="301" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="218" measuredH="25" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Home%2C%20Browse%20Guides%2C%20Log%20In</text>
+        <text>Home%2C%20Browse%20Trips%2C%20Log%20In</text>
       </controlProperties>
     </control>
     <control controlID="302" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="6" locked="false" isInGroup="-1"/>
@@ -140,7 +140,7 @@
     </control>
     <control controlID="309" controlTypeID="com.balsamiq.mockups::SubTitle" x="697" y="138" w="477" h="-1" measuredW="81" measuredH="40" zOrder="13" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Guides</text>
+        <text>Trips</text>
       </controlProperties>
     </control>
     <control controlID="310" controlTypeID="com.balsamiq.mockups::Image" x="396" y="142" w="251" h="233" measuredW="471" measuredH="500" zOrder="14" locked="false" isInGroup="-1">
@@ -208,7 +208,7 @@
         <color>472931</color>
         <icon>SquaredPlusIcon%7Csmall</icon>
         <labelPosition>right</labelPosition>
-        <text>Add%20New%20Guide</text>
+        <text>Add%20New%20Trip</text>
         <underline>false</underline>
       </controlProperties>
     </control>

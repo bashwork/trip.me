@@ -18,7 +18,7 @@
       <controlProperties>
         <filter>true</filter>
         <src>http%3A//farm4.static.flickr.com/3362/4623797219_b821c3f0c4.jpg</src>
-        <text>Trip.Me%0Ahttp%3A//trip.me</text>
+        <text>Guide.Me%0Ahttp%3A//guide.me</text>
         <verticalScrollbar>true</verticalScrollbar>
       </controlProperties>
     </control>
@@ -98,12 +98,34 @@
         <icon>SquaredPlusIcon%7Csmall</icon>
       </controlProperties>
     </control>
-    <control controlID="419" controlTypeID="com.balsamiq.mockups::IconLabel" x="1100" y="184" w="-1" h="-1" measuredW="130" measuredH="32" zOrder="15" locked="false" isInGroup="-1">
-      <controlProperties>
-        <icon>SquaredPlusIcon%7Cmedium</icon>
-        <labelPosition>right</labelPosition>
-        <text>Add%20New%20City</text>
-      </controlProperties>
+    <control controlID="414" controlTypeID="com.balsamiq.mockups::ModalScreen" x="369" y="74" w="938" h="658" measuredW="320" measuredH="240" zOrder="15" locked="false" isInGroup="-1"/>
+    <control controlID="418" controlTypeID="__group__" x="680" y="226" w="285" h="199" measuredW="285" measuredH="199" zOrder="16" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="0" y="0" w="285" h="199" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="418">
+          <controlProperties>
+            <text>Add%20A%20New%20City</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="162" y="121" w="99" h="30" measuredW="76" measuredH="32" zOrder="1" locked="false" isInGroup="418">
+          <controlProperties>
+            <icon>SquaredPlusIcon%7Csmall</icon>
+            <text>Add</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Button" x="50" y="121" w="92" h="30" measuredW="92" measuredH="32" zOrder="2" locked="false" isInGroup="418">
+          <controlProperties>
+            <icon>SquaredMinusIcon%7Csmall</icon>
+            <text>Cancel</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::TextInput" x="15" y="40" w="246" h="-1" measuredW="187" measuredH="29" zOrder="3" locked="false" isInGroup="418">
+          <controlProperties>
+            <bold>false</bold>
+            <italic>true</italic>
+            <text>Where%20Do%20You%20Want%20To%20Go%3F</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
     </control>
   </controls>
 </mockup>
