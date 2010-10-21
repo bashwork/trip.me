@@ -1,6 +1,6 @@
 <mockup version="1.0" skin="sketch" measuredW="1292" measuredH="769" mockupW="960" mockupH="759">
   <controls>
-    <control controlID="22" controlTypeID="com.balsamiq.mockups::TextInput" x="404" y="142" w="364" h="-1" measuredW="40" measuredH="33" zOrder="0" locked="false" isInGroup="-1">
+    <control controlID="314" controlTypeID="com.balsamiq.mockups::TextInput" x="404" y="142" w="364" h="-1" measuredW="40" measuredH="33" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
         <align>left</align>
         <backgroundAlpha>1</backgroundAlpha>
@@ -12,13 +12,13 @@
         <text>Lon</text>
       </controlProperties>
     </control>
-    <control controlID="36" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="170" measuredH="25" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="315" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="161" measuredH="25" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Home%2C%20Trips%2C%20Logoff</text>
       </controlProperties>
     </control>
-    <control controlID="37" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="2" locked="false" isInGroup="-1"/>
-    <control controlID="60" controlTypeID="com.balsamiq.mockups::Label" x="683" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="316" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="317" controlTypeID="com.balsamiq.mockups::Label" x="683" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>false</bold>
         <italic>true</italic>
@@ -26,24 +26,24 @@
         <text>Some%20Random%20Copyright%20Text</text>
       </controlProperties>
     </control>
-    <control controlID="75" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="322" y="0" w="960" h="759" measuredW="450" measuredH="400" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="318" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="322" y="0" w="960" h="759" measuredW="450" measuredH="400" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Trip.Me%0Ahttp%3A//trip.me</text>
       </controlProperties>
     </control>
-    <control controlID="85" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="218" measuredH="25" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="319" controlTypeID="com.balsamiq.mockups::LinkBar" x="1010" y="88" w="-1" h="-1" measuredW="263" measuredH="25" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Home%2C%20Browse%20Trips%2C%20Log%20In</text>
+        <text>Home%2C%20Browse%20Trips%2C%20Log%20In%2C%20Help</text>
       </controlProperties>
     </control>
-    <control controlID="86" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="6" locked="false" isInGroup="-1"/>
-    <control controlID="87" controlTypeID="com.balsamiq.mockups::Title" x="404" y="78" w="-1" h="-1" measuredW="264" measuredH="46" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="320" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="321" controlTypeID="com.balsamiq.mockups::Title" x="404" y="78" w="-1" h="-1" measuredW="246" measuredH="46" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <size>28</size>
         <text>Logon%20To%20Trip.Me</text>
       </controlProperties>
     </control>
-    <control controlID="105" controlTypeID="com.balsamiq.mockups::Label" x="683" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="322" controlTypeID="com.balsamiq.mockups::Label" x="683" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>false</bold>
         <italic>true</italic>
@@ -51,35 +51,35 @@
         <text>Some%20Random%20Copyright%20Text</text>
       </controlProperties>
     </control>
-    <control controlID="139" controlTypeID="__group__" x="544" y="288" w="-1" h="-1" measuredW="372" measuredH="40" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="323" controlTypeID="__group__" x="544" y="288" w="-1" h="-1" measuredW="372" measuredH="40" zOrder="9" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
-        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextInput" x="154" y="1" w="218" h="-1" measuredW="103" measuredH="38" zOrder="0" locked="false" isInGroup="139">
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextInput" x="154" y="1" w="218" h="-1" measuredW="103" measuredH="38" zOrder="0" locked="false" isInGroup="323">
           <controlProperties>
             <size>20</size>
             <text>username</text>
           </controlProperties>
         </control>
-        <control controlID="1" controlTypeID="com.balsamiq.mockups::SubTitle" x="0" y="0" w="-1" h="-1" measuredW="118" measuredH="40" zOrder="1" locked="false" isInGroup="139">
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::SubTitle" x="0" y="0" w="-1" h="-1" measuredW="118" measuredH="40" zOrder="1" locked="false" isInGroup="323">
           <controlProperties>
             <text>Username</text>
           </controlProperties>
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="140" controlTypeID="__group__" x="544" y="289" w="601" h="79" measuredW="601" measuredH="79" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="324" controlTypeID="__group__" x="544" y="289" w="601" h="79" measuredW="601" measuredH="79" zOrder="10" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
-        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextInput" x="154" y="40" w="218" h="-1" measuredW="102" measuredH="38" zOrder="0" locked="false" isInGroup="140">
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextInput" x="154" y="40" w="218" h="-1" measuredW="100" measuredH="38" zOrder="0" locked="false" isInGroup="324">
           <controlProperties>
             <size>20</size>
             <text>*******e</text>
           </controlProperties>
         </control>
-        <control controlID="1" controlTypeID="com.balsamiq.mockups::SubTitle" x="0" y="39" w="-1" h="-1" measuredW="108" measuredH="40" zOrder="1" locked="false" isInGroup="140">
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::SubTitle" x="0" y="39" w="-1" h="-1" measuredW="110" measuredH="40" zOrder="1" locked="false" isInGroup="324">
           <controlProperties>
             <text>Password</text>
           </controlProperties>
         </control>
-        <control controlID="2" controlTypeID="com.balsamiq.mockups::Tooltip" x="387" y="0" w="-1" h="-1" measuredW="214" measuredH="33.9" zOrder="2" locked="false" isInGroup="140">
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Tooltip" x="387" y="0" w="-1" h="-1" measuredW="214" measuredH="33.9" zOrder="2" locked="false" isInGroup="324">
           <controlProperties>
             <text>Please%20Enter%20Your%20Username</text>
             <tooltipDirection>SW</tooltipDirection>
@@ -87,7 +87,7 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="141" controlTypeID="com.balsamiq.mockups::Button" x="828" y="383" w="-1" h="-1" measuredW="88" measuredH="36" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="325" controlTypeID="com.balsamiq.mockups::Button" x="828" y="383" w="-1" h="-1" measuredW="88" measuredH="36" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <size>20</size>
         <text>Log%20In</text>

@@ -1,13 +1,13 @@
 <mockup version="1.0" skin="sketch" measuredW="1266" measuredH="769" mockupW="960" mockupH="759">
   <controls>
-    <control controlID="13" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="296" y="0" w="960" h="759" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+    <control controlID="425" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="296" y="0" w="960" h="759" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Trip.Me%0Ahttp%3A//trip.me</text>
         <verticalScrollbar>false</verticalScrollbar>
       </controlProperties>
     </control>
-    <control controlID="21" controlTypeID="com.balsamiq.mockups::Map" x="389" y="198" w="379" h="222" measuredW="252" measuredH="222" zOrder="1" locked="false" isInGroup="-1"/>
-    <control controlID="22" controlTypeID="com.balsamiq.mockups::TextInput" x="404" y="142" w="364" h="-1" measuredW="40" measuredH="33" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="426" controlTypeID="com.balsamiq.mockups::Map" x="389" y="198" w="379" h="222" measuredW="252" measuredH="222" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="427" controlTypeID="com.balsamiq.mockups::TextInput" x="404" y="142" w="364" h="-1" measuredW="40" measuredH="33" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <align>left</align>
         <backgroundAlpha>1</backgroundAlpha>
@@ -19,136 +19,136 @@
         <text>Lon</text>
       </controlProperties>
     </control>
-    <control controlID="23" controlTypeID="com.balsamiq.mockups::FieldSet" x="798" y="198" w="391" h="232" measuredW="200" measuredH="170" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="428" controlTypeID="com.balsamiq.mockups::FieldSet" x="798" y="198" w="391" h="232" measuredW="200" measuredH="170" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Current%20Travel%20Plan</text>
       </controlProperties>
     </control>
-    <control controlID="24" controlTypeID="com.balsamiq.mockups::FieldSet" x="798" y="436" w="388" h="211" measuredW="200" measuredH="170" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="429" controlTypeID="com.balsamiq.mockups::FieldSet" x="798" y="436" w="388" h="211" measuredW="200" measuredH="170" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Top%20Locations</text>
       </controlProperties>
     </control>
-    <control controlID="25" controlTypeID="com.balsamiq.mockups::FieldSet" x="389" y="436" w="379" h="210" measuredW="200" measuredH="170" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="430" controlTypeID="com.balsamiq.mockups::FieldSet" x="389" y="436" w="379" h="210" measuredW="200" measuredH="170" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Top%20Nearby%20Locations</text>
       </controlProperties>
     </control>
-    <control controlID="30" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="1169" y="209" w="-1" h="221" measuredW="16" measuredH="100" zOrder="6" locked="false" isInGroup="-1"/>
-    <control controlID="31" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="1169" y="445" w="-1" h="202" measuredW="16" measuredH="100" zOrder="7" locked="false" isInGroup="-1"/>
-    <control controlID="32" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="748" y="445" w="-1" h="202" measuredW="16" measuredH="100" zOrder="8" locked="false" isInGroup="-1"/>
-    <control controlID="33" controlTypeID="com.balsamiq.mockups::Icon" x="1130" y="227" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="431" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="1169" y="209" w="-1" h="221" measuredW="16" measuredH="100" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="432" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="1169" y="445" w="-1" h="202" measuredW="16" measuredH="100" zOrder="7" locked="false" isInGroup="-1"/>
+    <control controlID="433" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="748" y="445" w="-1" h="202" measuredW="16" measuredH="100" zOrder="8" locked="false" isInGroup="-1"/>
+    <control controlID="434" controlTypeID="com.balsamiq.mockups::Icon" x="1130" y="227" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>DashIcon%7Csmall</icon>
       </controlProperties>
     </control>
-    <control controlID="36" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="170" measuredH="25" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="435" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="215" measuredH="25" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Home%2C%20Trips%2C%20Logoff</text>
+        <text>Home%2C%20Trips%2C%20Help%2C%20Logoff</text>
       </controlProperties>
     </control>
-    <control controlID="37" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="11" locked="false" isInGroup="-1"/>
-    <control controlID="38" controlTypeID="com.balsamiq.mockups::Title" x="404" y="78" w="-1" h="-1" measuredW="519" measuredH="46" zOrder="12" locked="false" isInGroup="-1">
+    <control controlID="436" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="11" locked="false" isInGroup="-1"/>
+    <control controlID="437" controlTypeID="com.balsamiq.mockups::Title" x="404" y="78" w="-1" h="-1" measuredW="501" measuredH="46" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <size>28</size>
         <text>Currently%20Editing%20Summer%202010%20Trip</text>
       </controlProperties>
     </control>
-    <control controlID="39" controlTypeID="com.balsamiq.mockups::Link" x="813" y="226" w="-1" h="-1" measuredW="117" measuredH="25" zOrder="13" locked="false" isInGroup="-1">
+    <control controlID="438" controlTypeID="com.balsamiq.mockups::Link" x="813" y="226" w="-1" h="-1" measuredW="120" measuredH="25" zOrder="13" locked="false" isInGroup="-1">
       <controlProperties>
         <text>*%20London%2C%20England</text>
         <underline>false</underline>
       </controlProperties>
     </control>
-    <control controlID="40" controlTypeID="com.balsamiq.mockups::Link" x="813" y="251" w="-1" h="-1" measuredW="103" measuredH="25" zOrder="14" locked="false" isInGroup="-1">
+    <control controlID="439" controlTypeID="com.balsamiq.mockups::Link" x="813" y="251" w="-1" h="-1" measuredW="102" measuredH="25" zOrder="14" locked="false" isInGroup="-1">
       <controlProperties>
         <text>*%20Paris%2C%20France</text>
         <underline>false</underline>
       </controlProperties>
     </control>
-    <control controlID="41" controlTypeID="com.balsamiq.mockups::Link" x="813" y="276" w="-1" h="-1" measuredW="88" measuredH="25" zOrder="15" locked="false" isInGroup="-1">
+    <control controlID="440" controlTypeID="com.balsamiq.mockups::Link" x="813" y="276" w="-1" h="-1" measuredW="93" measuredH="25" zOrder="15" locked="false" isInGroup="-1">
       <controlProperties>
         <text>*%20Rome%2C%20Italy</text>
         <underline>false</underline>
       </controlProperties>
     </control>
-    <control controlID="43" controlTypeID="com.balsamiq.mockups::Icon" x="1130" y="252" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="16" locked="false" isInGroup="-1">
+    <control controlID="441" controlTypeID="com.balsamiq.mockups::Icon" x="1130" y="252" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="16" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>DashIcon%7Csmall</icon>
       </controlProperties>
     </control>
-    <control controlID="44" controlTypeID="com.balsamiq.mockups::Icon" x="1130" y="276" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="17" locked="false" isInGroup="-1">
+    <control controlID="442" controlTypeID="com.balsamiq.mockups::Icon" x="1130" y="276" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="17" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>DashIcon%7Csmall</icon>
       </controlProperties>
     </control>
-    <control controlID="46" controlTypeID="com.balsamiq.mockups::Link" x="813" y="467" w="-1" h="-1" measuredW="117" measuredH="25" zOrder="18" locked="false" isInGroup="-1">
+    <control controlID="443" controlTypeID="com.balsamiq.mockups::Link" x="813" y="467" w="-1" h="-1" measuredW="120" measuredH="25" zOrder="18" locked="false" isInGroup="-1">
       <controlProperties>
         <text>*%20London%2C%20England</text>
         <underline>false</underline>
       </controlProperties>
     </control>
-    <control controlID="47" controlTypeID="com.balsamiq.mockups::Link" x="813" y="492" w="-1" h="-1" measuredW="103" measuredH="25" zOrder="19" locked="false" isInGroup="-1">
+    <control controlID="444" controlTypeID="com.balsamiq.mockups::Link" x="813" y="492" w="-1" h="-1" measuredW="102" measuredH="25" zOrder="19" locked="false" isInGroup="-1">
       <controlProperties>
         <text>*%20Paris%2C%20France</text>
         <underline>false</underline>
       </controlProperties>
     </control>
-    <control controlID="48" controlTypeID="com.balsamiq.mockups::Link" x="813" y="517" w="-1" h="-1" measuredW="88" measuredH="25" zOrder="20" locked="false" isInGroup="-1">
+    <control controlID="445" controlTypeID="com.balsamiq.mockups::Link" x="813" y="517" w="-1" h="-1" measuredW="93" measuredH="25" zOrder="20" locked="false" isInGroup="-1">
       <controlProperties>
         <text>*%20Rome%2C%20Italy</text>
         <underline>false</underline>
       </controlProperties>
     </control>
-    <control controlID="51" controlTypeID="com.balsamiq.mockups::Icon" x="1130" y="467" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="21" locked="false" isInGroup="-1">
+    <control controlID="446" controlTypeID="com.balsamiq.mockups::Icon" x="1130" y="467" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="21" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>PlusBigIcon%7Csmall</icon>
       </controlProperties>
     </control>
-    <control controlID="52" controlTypeID="com.balsamiq.mockups::Icon" x="1130" y="492" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="22" locked="false" isInGroup="-1">
+    <control controlID="447" controlTypeID="com.balsamiq.mockups::Icon" x="1130" y="492" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="22" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>PlusBigIcon%7Csmall</icon>
       </controlProperties>
     </control>
-    <control controlID="53" controlTypeID="com.balsamiq.mockups::Icon" x="1130" y="518" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="23" locked="false" isInGroup="-1">
+    <control controlID="448" controlTypeID="com.balsamiq.mockups::Icon" x="1130" y="518" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="23" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>PlusBigIcon%7Csmall</icon>
       </controlProperties>
     </control>
-    <control controlID="54" controlTypeID="com.balsamiq.mockups::Link" x="404" y="466" w="-1" h="-1" measuredW="117" measuredH="25" zOrder="24" locked="false" isInGroup="-1">
+    <control controlID="449" controlTypeID="com.balsamiq.mockups::Link" x="404" y="466" w="-1" h="-1" measuredW="120" measuredH="25" zOrder="24" locked="false" isInGroup="-1">
       <controlProperties>
         <text>*%20London%2C%20England</text>
         <underline>false</underline>
       </controlProperties>
     </control>
-    <control controlID="55" controlTypeID="com.balsamiq.mockups::Link" x="404" y="491" w="-1" h="-1" measuredW="141" measuredH="25" zOrder="25" locked="false" isInGroup="-1">
+    <control controlID="450" controlTypeID="com.balsamiq.mockups::Link" x="404" y="491" w="-1" h="-1" measuredW="150" measuredH="25" zOrder="25" locked="false" isInGroup="-1">
       <controlProperties>
         <text>*%20Birmingham%2C%20England</text>
         <underline>false</underline>
       </controlProperties>
     </control>
-    <control controlID="56" controlTypeID="com.balsamiq.mockups::Link" x="404" y="516" w="-1" h="-1" measuredW="150" measuredH="25" zOrder="26" locked="false" isInGroup="-1">
+    <control controlID="451" controlTypeID="com.balsamiq.mockups::Link" x="404" y="516" w="-1" h="-1" measuredW="149" measuredH="25" zOrder="26" locked="false" isInGroup="-1">
       <controlProperties>
         <text>*%20Manchester%2C%20England</text>
         <underline>false</underline>
       </controlProperties>
     </control>
-    <control controlID="57" controlTypeID="com.balsamiq.mockups::Icon" x="713" y="466" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="27" locked="false" isInGroup="-1">
+    <control controlID="452" controlTypeID="com.balsamiq.mockups::Icon" x="713" y="466" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="27" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>PlusBigIcon%7Csmall</icon>
       </controlProperties>
     </control>
-    <control controlID="58" controlTypeID="com.balsamiq.mockups::Icon" x="713" y="491" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="28" locked="false" isInGroup="-1">
+    <control controlID="453" controlTypeID="com.balsamiq.mockups::Icon" x="713" y="491" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="28" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>PlusBigIcon%7Csmall</icon>
       </controlProperties>
     </control>
-    <control controlID="59" controlTypeID="com.balsamiq.mockups::Icon" x="713" y="517" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="29" locked="false" isInGroup="-1">
+    <control controlID="454" controlTypeID="com.balsamiq.mockups::Icon" x="713" y="517" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="29" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>PlusBigIcon%7Csmall</icon>
       </controlProperties>
     </control>
-    <control controlID="60" controlTypeID="com.balsamiq.mockups::Label" x="683" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="30" locked="false" isInGroup="-1">
+    <control controlID="455" controlTypeID="com.balsamiq.mockups::Label" x="683" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="30" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>false</bold>
         <italic>true</italic>
@@ -156,37 +156,38 @@
         <text>Some%20Random%20Copyright%20Text</text>
       </controlProperties>
     </control>
-    <control controlID="61" controlTypeID="com.balsamiq.mockups::Tree" x="404" y="170" w="362" h="104" measuredW="300" measuredH="225" zOrder="31" locked="false" isInGroup="-1">
+    <control controlID="456" controlTypeID="com.balsamiq.mockups::Tree" x="404" y="170" w="362" h="104" measuredW="300" measuredH="225" zOrder="31" locked="false" isInGroup="-1">
       <controlProperties>
         <backgroundAlpha>0.5</backgroundAlpha>
         <text>%5B+%5D%20London%2C%20England%0A%5B+%5D%20Long%20Beach%2C%20California</text>
       </controlProperties>
     </control>
-    <control controlID="62" controlTypeID="com.balsamiq.mockups::TitleWindow" x="420" y="100" w="701" h="577" measuredW="450" measuredH="400" zOrder="33" locked="false" isInGroup="-1">
+    <control controlID="457" controlTypeID="com.balsamiq.mockups::ModalScreen" x="302" y="72" w="943" h="660" measuredW="320" measuredH="240" zOrder="32" locked="false" isInGroup="-1"/>
+    <control controlID="458" controlTypeID="com.balsamiq.mockups::TitleWindow" x="420" y="100" w="701" h="577" measuredW="450" measuredH="400" zOrder="33" locked="false" isInGroup="-1">
       <controlProperties>
         <text>London%2C%20England</text>
       </controlProperties>
     </control>
-    <control controlID="64" controlTypeID="com.balsamiq.mockups::Image" x="443" y="154" w="232" h="217" measuredW="500" measuredH="337" zOrder="34" locked="false" isInGroup="-1">
+    <control controlID="459" controlTypeID="com.balsamiq.mockups::Image" x="443" y="154" w="232" h="217" measuredW="500" measuredH="337" zOrder="34" locked="false" isInGroup="-1">
       <controlProperties>
         <filter>true</filter>
         <src>http%3A//farm4.static.flickr.com/3438/3731579053_01d29258a4.jpg</src>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="65" controlTypeID="com.balsamiq.mockups::TabBar" x="687" y="132" w="434" h="522" measuredW="423" measuredH="100" zOrder="35" locked="false" isInGroup="-1">
+    <control controlID="460" controlTypeID="com.balsamiq.mockups::TabBar" x="687" y="132" w="434" h="522" measuredW="425" measuredH="100" zOrder="35" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Overview%2C%20History%2C%20Important%20Information%2C%20Other</text>
       </controlProperties>
     </control>
-    <control controlID="66" controlTypeID="com.balsamiq.mockups::TextArea" x="689" y="159" w="416" h="495" measuredW="200" measuredH="140" zOrder="36" locked="false" isInGroup="-1">
+    <control controlID="461" controlTypeID="com.balsamiq.mockups::TextArea" x="689" y="159" w="416" h="495" measuredW="200" measuredH="140" zOrder="36" locked="false" isInGroup="-1">
       <controlProperties>
         <text>London%20%28%20/lndn/%29%20is%20the%20capital%20of%20England%20and%20the%20United%20Kingdom%2C%20the%20largest%20metropolitan%20area%20in%20the%20United%20Kingdom%20and%20the%20largest%20urban%20zone%20in%20the%20European%20Union%20by%20most%20measures.%5Bnote%201%5D%20London%20has%20been%20a%20major%20settlement%20for%20two%20millennia%2C%20its%20history%20going%20back%20to%20its%20founding%20by%20the%20Romans%2C%20who%20called%20it%20Londinium.%5B6%5D%20London%27s%20core%2C%20the%20ancient%20City%20of%20London%2C%20largely%20retains%20its%20square-mile%20mediaeval%20boundaries.%20Since%20at%20least%20the%2019th%20century%2C%20the%20name%20London%20has%20also%20referred%20to%20the%20metropolis%20developed%20around%20this%20core.%5B7%5D%20The%20bulk%20of%20this%20conurbation%20forms%20the%20London%20region%5B8%5D%20and%20the%20Greater%20London%20administrative%20area%2C%5B9%5D%5Bnote%202%5D%20governed%20by%20the%20elected%20Mayor%20of%20London%20and%20the%20London%20Assembly.%5B10%5D%0ALondon%20is%20a%20leading%20global%20city%2C%20with%20its%20strengths%20in%20the%20arts%2C%20commerce%2C%20education%2C%20entertainment%2C%20fashion%2C%20finance%2C%20healthcare%2C%20media%2C%20professional%20services%2C%20research%20and%20development%2C%20tourism%20and%20transport%20all%20contributing%20to%20its%20prominence.%20It%20is%20the%20world%27s%20largest%20financial%20centre%20alongside%20New%20York%2C%5B11%5D%5B12%5D%5B13%5D%20has%20the%20largest%20city%20GDP%20in%20Europe%5B14%5D%20and%20is%20home%20to%20the%20headquarters%20of%20more%20than%20100%20of%20Europe%27s%20500%20largest%20companies.%20It%20is%20the%20most%20visited%20city%20in%20the%20world.%5B15%5D%20London%27s%20five%20international%20airports%20make%20its%20airspace%20the%20busiest%20of%20any%20urban%20centre%20worldwide%5B16%5D%20and%20London%20Heathrow%20is%20the%20world%27s%20busiest%20airport%20by%20number%20of%20international%20passengers.%5B17%5D%20London%27s%2043%20universities%20form%20the%20largest%20concentration%20of%20higher%20education%20in%20Europe.%5B18%5D%20In%202012%20London%20will%20become%20the%20first%20city%20to%20host%20the%20Summer%20Olympics%20three%20times.%5B19%5D%0ALondon%20has%20a%20diverse%20range%20of%20peoples%2C%20cultures%20and%20religions%2C%20and%20more%20than%20300%20languages%20are%20spoken%20within%20its%20boundaries.%5B20%5D%20In%20July%202007%20it%20had%20an%20official%20population%20of%207%2C556%2C900%20within%20the%20boundaries%20of%20Greater%20London%2C%5B21%5D%20making%20it%20the%20most%20populous%20municipality%20in%20the%20European%20Union.%5B22%5D%20The%20Greater%20London%20Urban%20Area%20%28the%20second%20largest%20in%20the%20EU%29%20has%20a%20population%20of%208%2C278%2C251.%5B2%5D%20while%20the%20metropolitan%20area%20%28the%20largest%20in%20the%20EU%29%20has%20an%20estimated%20total%20population%20of%20between%2012%20million%5B3%5D%20and%2014%20million.%5B4%5D%0ALondon%20contains%20four%20World%20Heritage%20Sites%3A%20the%20Tower%20of%20London%3B%20the%20Royal%20Botanic%20Gardens%2C%20Kew%3B%20the%20site%20comprising%20the%20Palace%20of%20Westminster%2C%20Westminster%20Abbey%20and%20St.%20Margaret%27s%20Church%3B%20and%20the%20historic%20settlement%20of%20Greenwich%20%28in%20which%20the%20Royal%20Observatory%20marks%20the%20Greenwich%20Meridian%20%280%B0%20longitude%29%20and%20GMT%29.%5B23%5D%20Other%20famous%20landmarks%20include%20Buckingham%20Palace%2C%20the%20Lloyd%27s%20building%2C%20the%20London%20Eye%2C%20Nelson%27s%20Column%2C%20Piccadilly%20Circus%2C%2030%20St%20Mary%20Axe%20%28The%20Gherkin%29%2C%20St%20Paul%27s%20Cathedral%20and%20Tower%20Bridge.%20London%27s%20Chinatown%20is%20the%20largest%20in%20Europe.%5B24%5D%20The%20London%20Underground%20network%20is%20the%20oldest%20underground%20railway%20network%20in%20the%20world%5B25%5D%20and%20the%20most%20extensive%20after%20the%20Shanghai%20Metro.%5B26%5Dtext</text>
         <verticalScrollbar>true</verticalScrollbar>
       </controlProperties>
     </control>
-    <control controlID="67" controlTypeID="com.balsamiq.mockups::MediaControls" x="504" y="492" w="-1" h="-1" measuredW="110" measuredH="36" zOrder="37" locked="false" isInGroup="-1"/>
-    <control controlID="68" controlTypeID="com.balsamiq.mockups::Image" x="443" y="375" w="77" h="78" measuredW="500" measuredH="357" zOrder="38" locked="false" isInGroup="-1">
+    <control controlID="462" controlTypeID="com.balsamiq.mockups::MediaControls" x="504" y="492" w="-1" h="-1" measuredW="110" measuredH="36" zOrder="37" locked="false" isInGroup="-1"/>
+    <control controlID="463" controlTypeID="com.balsamiq.mockups::Image" x="443" y="375" w="77" h="78" measuredW="500" measuredH="357" zOrder="38" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
         <borderStyle>square</borderStyle>
@@ -195,7 +196,7 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="69" controlTypeID="com.balsamiq.mockups::Image" x="520" y="374" w="78" h="79" measuredW="500" measuredH="335" zOrder="39" locked="false" isInGroup="-1">
+    <control controlID="464" controlTypeID="com.balsamiq.mockups::Image" x="520" y="374" w="78" h="79" measuredW="500" measuredH="335" zOrder="39" locked="false" isInGroup="-1">
       <controlProperties>
         <borderStyle>none</borderStyle>
         <filter>true</filter>
@@ -203,20 +204,19 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="72" controlTypeID="com.balsamiq.mockups::Image" x="598" y="374" w="77" h="79" measuredW="348" measuredH="500" zOrder="40" locked="false" isInGroup="-1">
+    <control controlID="465" controlTypeID="com.balsamiq.mockups::Image" x="598" y="374" w="77" h="79" measuredW="348" measuredH="500" zOrder="40" locked="false" isInGroup="-1">
       <controlProperties>
         <filter>true</filter>
         <src>http%3A//farm4.static.flickr.com/3631/3379799400_113c29b92f.jpg</src>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="73" controlTypeID="com.balsamiq.mockups::Icon" x="1100" y="106" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="41" locked="false" isInGroup="-1">
+    <control controlID="466" controlTypeID="com.balsamiq.mockups::Icon" x="1098" y="104" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="41" locked="false" isInGroup="-1">
       <controlProperties>
-        <borderStyle>square</borderStyle>
-        <icon>XIcon%7Cxsmall</icon>
+        <borderStyle>none</borderStyle>
+        <icon>XIcon%7Csmall</icon>
       </controlProperties>
     </control>
-    <control controlID="74" controlTypeID="com.balsamiq.mockups::ModalScreen" x="302" y="72" w="943" h="660" measuredW="320" measuredH="240" zOrder="32" locked="false" isInGroup="-1"/>
   </controls>
 </mockup>
 

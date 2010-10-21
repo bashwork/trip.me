@@ -1,0 +1,224 @@
+<mockup version="1.0" skin="sketch" measuredW="1292" measuredH="769" mockupW="960" mockupH="759">
+  <controls>
+    <control controlID="467" controlTypeID="com.balsamiq.mockups::TextInput" x="404" y="142" w="364" h="-1" measuredW="40" measuredH="33" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <backgroundAlpha>1</backgroundAlpha>
+        <bold>true</bold>
+        <color>15790322</color>
+        <italic>true</italic>
+        <size>16</size>
+        <state>focused</state>
+        <text>Lon</text>
+      </controlProperties>
+    </control>
+    <control controlID="468" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="215" measuredH="25" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Home%2C%20Trips%2C%20Help%2C%20Logoff</text>
+      </controlProperties>
+    </control>
+    <control controlID="469" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="470" controlTypeID="com.balsamiq.mockups::Label" x="683" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <italic>true</italic>
+        <state>disabled</state>
+        <text>Some%20Random%20Copyright%20Text</text>
+      </controlProperties>
+    </control>
+    <control controlID="471" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="322" y="0" w="960" h="759" measuredW="450" measuredH="400" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <filter>true</filter>
+        <src>http%3A//farm4.static.flickr.com/3362/4623797219_b821c3f0c4.jpg</src>
+        <text>Trip.Me%0Ahttp%3A//trip.me</text>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="472" controlTypeID="com.balsamiq.mockups::LinkBar" x="1019" y="89" w="-1" h="-1" measuredW="209" measuredH="25" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Home%2C%20Browse%20Trips%2C%20Log%20In</text>
+      </controlProperties>
+    </control>
+    <control controlID="473" controlTypeID="com.balsamiq.mockups::HRule" x="404" y="124" w="512" h="-1" measuredW="100" measuredH="5" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="474" controlTypeID="com.balsamiq.mockups::Title" x="404" y="78" w="-1" h="-1" measuredW="301" measuredH="46" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>Jeff%20Wright%27s%20Profile</text>
+      </controlProperties>
+    </control>
+    <control controlID="475" controlTypeID="com.balsamiq.mockups::Label" x="683" y="692" w="-1" h="-1" measuredW="187" measuredH="25" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <italic>true</italic>
+        <state>disabled</state>
+        <text>Some%20Random%20Copyright%20Text</text>
+      </controlProperties>
+    </control>
+    <control controlID="476" controlTypeID="__group__" x="938" y="428" w="-1" h="-1" measuredW="210" measuredH="213" zOrder="9" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="210" h="213" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="476">
+          <controlProperties>
+            <text>My%20England%20Trip</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="15" y="20" w="180" h="162" measuredW="500" measuredH="357" zOrder="1" locked="false" isInGroup="476">
+          <controlProperties>
+            <filter>true</filter>
+            <src>http%3A//farm3.static.flickr.com/2457/3861885398_7a38dbe329.jpg</src>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Link" x="15" y="182" w="-1" h="-1" measuredW="105" measuredH="25" zOrder="2" locked="false" isInGroup="476">
+          <controlProperties>
+            <text>by%20Jeff%20Wright</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="477" controlTypeID="__group__" x="697" y="195" w="-1" h="-1" measuredW="210" measuredH="213" zOrder="10" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="210" h="213" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="477">
+          <controlProperties>
+            <text>Europe%20Trip</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="15" y="20" w="180" h="162" measuredW="500" measuredH="331" zOrder="1" locked="false" isInGroup="477">
+          <controlProperties>
+            <filter>true</filter>
+            <src>http%3A//farm3.static.flickr.com/2063/2276852159_54654e66bc.jpg</src>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Link" x="15" y="182" w="-1" h="-1" measuredW="105" measuredH="25" zOrder="2" locked="false" isInGroup="477">
+          <controlProperties>
+            <text>by%20Jeff%20Wright</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="478" controlTypeID="__group__" x="938" y="196" w="-1" h="-1" measuredW="210" measuredH="213" zOrder="11" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="210" h="213" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="478">
+          <controlProperties>
+            <text>Fish%20and%20Chips%21</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="15" y="20" w="180" h="162" measuredW="500" measuredH="390" zOrder="1" locked="false" isInGroup="478">
+          <controlProperties>
+            <filter>true</filter>
+            <src>http%3A//farm4.static.flickr.com/3653/3499471010_a80f94ae33.jpg</src>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Link" x="15" y="182" w="-1" h="-1" measuredW="105" measuredH="25" zOrder="2" locked="false" isInGroup="478">
+          <controlProperties>
+            <text>by%20Jeff%20Wright</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="479" controlTypeID="__group__" x="697" y="428" w="-1" h="-1" measuredW="210" measuredH="213" zOrder="12" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="210" h="213" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="479">
+          <controlProperties>
+            <text>London%20Calling</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="15" y="20" w="180" h="162" measuredW="500" measuredH="357" zOrder="1" locked="false" isInGroup="479">
+          <controlProperties>
+            <filter>true</filter>
+            <src>http%3A//farm3.static.flickr.com/2457/3861885398_7a38dbe329.jpg</src>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Link" x="15" y="182" w="-1" h="-1" measuredW="105" measuredH="25" zOrder="2" locked="false" isInGroup="479">
+          <controlProperties>
+            <text>by%20Jeff%20Wright</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="480" controlTypeID="com.balsamiq.mockups::SubTitle" x="697" y="138" w="477" h="-1" measuredW="65" measuredH="40" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Trips</text>
+      </controlProperties>
+    </control>
+    <control controlID="481" controlTypeID="com.balsamiq.mockups::Image" x="396" y="142" w="251" h="233" measuredW="471" measuredH="500" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <filter>true</filter>
+        <src>http%3A//farm4.static.flickr.com/3350/3293221983_b3d0b90a32.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="482" controlTypeID="com.balsamiq.mockups::Paragraph" x="396" y="390" w="251" h="202" measuredW="200" measuredH="140" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>false</bold>
+        <italic>true</italic>
+        <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Aenean%20eu%20metus%20sem%2C%20sit%20amet%20sollicitudin%20arcu.%20Proin%20id%20tellus%20augue%2C%20at%20pharetra%20odio.%20Cras%20lacinia%20mi%20a%20nisi%20mollis%20venenatis.%20Nulla%20ac%20lorem%20et%20nunc%20faucibus%20vehicula.</text>
+      </controlProperties>
+    </control>
+    <control controlID="483" controlTypeID="com.balsamiq.mockups::IconLabel" x="423" y="541" w="-1" h="-1" measuredW="79" measuredH="25" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <icon>FacebookIcon%7Cxsmall</icon>
+        <italic>true</italic>
+        <labelPosition>right</labelPosition>
+        <text>Facebook</text>
+      </controlProperties>
+    </control>
+    <control controlID="484" controlTypeID="com.balsamiq.mockups::IconLabel" x="530" y="542" w="-1" h="-1" measuredW="73" measuredH="25" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <icon>TwitterIcon%7Cxsmall</icon>
+        <italic>true</italic>
+        <labelPosition>right</labelPosition>
+        <text>Twitter</text>
+      </controlProperties>
+    </control>
+    <control controlID="485" controlTypeID="com.balsamiq.mockups::IconLabel" x="424" y="574" w="-1" h="-1" measuredW="75" measuredH="25" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <icon>LinkedInIcon%7Cxsmall</icon>
+        <italic>true</italic>
+        <labelPosition>right</labelPosition>
+        <text>LinkedIn</text>
+      </controlProperties>
+    </control>
+    <control controlID="486" controlTypeID="com.balsamiq.mockups::IconLabel" x="530" y="575" w="-1" h="-1" measuredW="73" measuredH="25" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <icon>YouTubeIcon%7Cxsmall</icon>
+        <italic>true</italic>
+        <labelPosition>right</labelPosition>
+        <text>Youtube</text>
+      </controlProperties>
+    </control>
+    <control controlID="487" controlTypeID="com.balsamiq.mockups::IconLabel" x="423" y="607" w="-1" h="-1" measuredW="63" measuredH="25" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <icon>GMailIcon%7Cxsmall</icon>
+        <italic>true</italic>
+        <labelPosition>right</labelPosition>
+        <text>Google</text>
+      </controlProperties>
+    </control>
+    <control controlID="488" controlTypeID="com.balsamiq.mockups::IconLabel" x="938" y="145" w="-1" h="-1" measuredW="122" measuredH="25" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>472931</color>
+        <icon>SquaredPlusIcon%7Csmall</icon>
+        <labelPosition>right</labelPosition>
+        <text>Add%20New%20Trip</text>
+        <underline>false</underline>
+      </controlProperties>
+    </control>
+    <control controlID="489" controlTypeID="com.balsamiq.mockups::MultilineButton" x="463" y="78" w="718" h="112" measuredW="571" measuredH="93" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.5</backgroundAlpha>
+        <color>0</color>
+        <text>Welcome%20to%20Trip.Me%0AYou%20should%20recieve%20an%20email%20with%20your%20account%20information.%0A%20If%20you%20have%20any%20questions%2C%20please%20consult%20the%20help%20section.%20Otherwise%2C%20have%20fun%20planning%20your%20adventures%21</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
+
