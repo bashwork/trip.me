@@ -1,0 +1,212 @@
+/* Fonts
+----------------------------------------------------------------------*/
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cardo'), url('http://themes.googleusercontent.com/font?kit=jbkF2_R0FKUEZTq5dwSknQ') format('truetype');
+}
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Neuton Regular'), local('Neuton'), url('http://themes.googleusercontent.com/font?kit=9R-MGIOQUdjAVeB6nE6PcQ') format('truetype');
+}
+
+/* Debugging
+----------------------------------------------------------------------*/
+/*body { 
+	background: url(../img/grid.png) #efefef -10em 0 repeat-y;
+}*/
+
+/* Base Style
+----------------------------------------------------------------------*/
+body { background: #fff; font-family: Arial, Helvetica, Helvetica Neue, Verdana, sans-serif; font-size: 13px; line-height: 18px; color: #555; }
+a { color:#08a; text-decoration:none; }
+
+/* elements
+----------------------------------------------------------------------*/
+.button {
+	display: inline-block;
+	padding: 5px 10px 6px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 1;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	text-decoration: none;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	position-relative;
+	cursor: pointer;
+	background-color: #2daebf; }
+}
+.button:hover { background-color: #007d9a; }
+
+/* Header
+----------------------------------------------------------------------*/
+header {
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+header h1 a { 
+	background: url(../img/header.png) #fff 0 -3em no-repeat;
+	font-size: 120%;
+	height: 5em;
+	width: 300px;
+	display: block;
+}
+
+header h1 a span { display:none; }
+header h2 { 
+	margin-top: 2em;
+	font-size: 110%;
+	text-shadow: 0px 1px 2px #ddd;
+}
+
+/* Header Navigation
+----------------------------------------------------------------------*/
+header nav { 
+	padding: .7em;
+	font-weight: bold;
+	border-bottom: 1px solid #666;
+	border-top: 1px solid #666;
+	text-align: right;
+}
+header nav li { 
+	font-weight: bold;
+	display: inline;
+	padding-left: 1em;
+}
+header nav li a { 
+	text-shadow: 1px 1px 1px #ddd;
+}
+header nav li a:hover { 
+	border-top: 2px solid #444;
+	color: #444;
+}
+
+/* Footer
+----------------------------------------------------------------------*/
+footer { 
+	margin-top: 5em;
+	padding-top: 1em;
+	border-top: 1px dotted #666;
+	font-size: 90%;
+	color:#aaa;
+	text-shadow: 0px 1px 1px #ddd;
+}
+footer ul#social-network li {
+	display: inline-block;
+	float: right;
+	padding-left: .5em;
+}
+footer ul#social-network li a {
+	display:block;
+	width:45px; height:40px;
+	opacity: 0.3;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+}
+footer ul#social-network li a span { display:none; }
+footer ul#social-network li a:hover {
+	opacity: 1.0;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+}
+footer ul#social-network li.t a { background:url(../img/twitter-logo.png) no-repeat; }
+footer ul#social-network li.rss a { background:url(../img/rss-logo.png) no-repeat; }
+footer ul#social-network li.tech a { background:url(../img/technorati-logo.png) no-repeat; }
+footer ul#social-network li.email a { background:url(../img/email-logo.png) no-repeat; }
+
+/* Splash Page
+----------------------------------------------------------------------*/
+figure#splash-slideshow {
+	margin-bottom:2em;
+}
+.slideshow img {
+	border: 1px solid #ccc;
+	background-color: #fff;
+	padding: 9px;
+	margin: 7px;
+}
+div#splash-market {
+	text-align:left;
+	margin-bottom: 2em;
+}
+div#splash-market input[type="search"] {
+	margin-top: 1em;
+	width: 70%;
+	font-size: 20px;
+	background: #000 url(../img/search.png) no-repeat;
+}
+div#splash-market input[type="submit"] {
+	margin-top: 1em;
+	width: 20%;
+	font-size: 20px;
+	text-shadow: 0px 1px 1px #ddd;
+	border-radius: 8px;
+}
+div#splash-market h1 {
+	line-height:1em;
+	text-shadow: 0px 1px 2px #ddd;
+	font-weight:500;
+	font-size:58px;
+}
+div#splash-market h2 {
+	line-height:1em;
+	text-shadow: 0px 1px 2px #ddd;
+	font-weight:500;
+	font-size:30px;
+	font-style:italic;
+}
+div#splash-market a {
+	margin: 5em;
+	font-size: 140%;
+}
+div#splash-details {
+	border: 2px solid #666;
+	border-radius: 15px;
+	height: 10em;
+	background: #efefef;
+}
+div#splash-signup {
+	border: 2px solid #666;
+	border-radius: 15px;
+	height: 10em;
+	background: #efefef;
+}
+
+/* Guide Blocks
+----------------------------------------------------------------------*/
+figure.guide-slide {
+	text-align: left;
+	position:relative;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+figure.guide-slide img {
+	width:95%;
+	padding: 5px;
+	display:block;
+	margin: auto;
+}
+figure.guide-slide div {
+	height: 40px;
+	position:absolute;
+	background: rgba(0,0,0,0.35);
+	color: #fff;
+	bottom: 0;
+	width:100%;
+}
+
+figure.guide-slide h1 {
+	padding: 0 7px;
+	font-size: 140%;
+	line-height:20px;
+}
+figure.guide-slide p {
+	padding: 0 7px;
+}
