@@ -23,10 +23,13 @@
 </head>
 
 <body>
-  <div class="container_12">
+  <div id="container" class="container_12">
 
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Site Header -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <header>
-      <h1><a href="/"><span>{{ site.title }}</span></a></h1>
+      <h1><a href="/"><span>{{ site.name }}</span></a></h1>
       <nav>
         <ul>
           <li><a href="">Home</a></li>
@@ -37,6 +40,9 @@
       </nav>
     </header>
     
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Site Content -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <section id="content" class="clearfix">
 	  <figure id="splash-slideshow" class="grid_6">
 	    <div class="slideshow">
@@ -89,6 +95,9 @@
 	</div>
 	<div class="clearfix"></div>
     
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Site Footer -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <footer>
       <ul id="social-network">
 	    <li class="email"><a href="http://technocrat.com/tripme/"><span>Email</span></a></li>
@@ -105,12 +114,18 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
+    <script>
+    $(document).ready(function() {
+    	$(".slideshow").carouFredSel(
+			{ direction : "up", items: 1, auto: { pauseOnHover: true }
+		});
 
-	<script src="js/jquery.caroufredsel.js"></script>
-	<script src="js/core.js"></script>
+    });
+    </script>
 
-    <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet
-         change the UA-XXXXX-X to be your site's ID -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Javascript Analytics -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <script>
      var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
      (function(d, t) {
@@ -120,14 +135,6 @@
       g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g, s);
      })(document, 'script');
-    </script>
-    <script>
-    $(document).ready(function() {
-    	$(".slideshow").carouFredSel(
-			{ direction : "up", items: 1, auto: { pauseOnHover: true }
-		});
-
-    });
     </script>
 
 </body>

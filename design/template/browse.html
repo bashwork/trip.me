@@ -13,7 +13,6 @@
 	<link rel="shortcut icon" href="/img/favicon.ico"/>
 	<link rel="apple-touch-icon" href="/img/custom_icon.png"/>
 	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/print/main.css" media="print" />
 	
 	<!--[if lt IE 8]>
 	<script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js"></script>
@@ -23,32 +22,38 @@
 </head>
 
 <body>
-  <div class="container_12">
+  <div id="container" class="container_12">
 
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Site Header -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <header>
-      <h1><a href="/"><span>{{ site.title }}</span></a></h1>
+      <h1><a href="/"><span>{{ site.name }}</span></a></h1>
       <nav>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Browse Guides</a></li>
-          <li><a href="">Help</a></li>
-          <li><a href="">Login</a></li>
+          <li><a href="/home/">Home</a></li>
+          <li><a href="/browse/">Browse Guides</a></li>
+          <li><a href="/help/">Help</a></li>
+          <li><a href="/login/">Login</a></li>
         </ul>
       </nav>
     </header>
     
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Site Content -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <section id="content" class="clearfix">
 
-      <div id="browse-search" class="grid_4">
-        <input id="guide-search" placeholder="Where do you want to go?" />
-      </div>
+      <form id="guide-search" class="grid_4">
+        <input type="text" placeholder="Where do you want to go?" />
+      </form>
 	  <div class="clearfix"></div>
 
       <div class="grid_4">
 	    <figure class="guide-slide">
           <img src="img/image1.jpg" height="200px"/>
 	  	<div>
-	      <h1>Title of Trip</h1>
+	      <h1>London Trip</h1>
 	  	  <p>Some kind of description for the guide</p>
 	  	</div>
 	    </figure>
@@ -57,7 +62,7 @@
 	    <figure class="guide-slide">
           <img src="img/image2.jpg" height="200px"/>
 	  	<div>
-	      <h1>Title of Trip</h1>
+	      <h1>Paris Trip</h1>
 	  	  <p>Some kind of description for the guide</p>
 	  	</div>
 	    </figure>
@@ -66,18 +71,17 @@
 	    <figure class="guide-slide">
           <img src="img/image3.jpg" height="200px"/>
 	  	<div>
-	      <h1>Title of Trip</h1>
+	      <h1>Melborne Trip</h1>
 	  	  <p>Some kind of description for the guide</p>
 	  	</div>
 	    </figure>
 	  </div>
-	  <div class="clearfix"></div>
 
       <div class="grid_4">
 	    <figure class="guide-slide">
           <img src="img/image1.jpg" height="200px"/>
 	  	<div>
-	        <h1>Title of Trip</h1>
+	        <h1>Egypt Trip</h1>
 	  	  <p>Some kind of description for the guide</p>
 	  	</div>
 	    </figure>
@@ -86,7 +90,7 @@
 	    <figure class="guide-slide">
           <img src="img/image2.jpg" height="200px"/>
 	  	<div>
-	        <h1>Title of Trip</h1>
+	        <h1>London Trip</h1>
 	  	  <p>Some kind of description for the guide</p>
 	  	</div>
 	    </figure>
@@ -95,18 +99,17 @@
 	    <figure class="guide-slide">
           <img src="img/image3.jpg" height="200px"/>
 	  	<div>
-	        <h1>Title of Trip</h1>
+	        <h1>American Trip</h1>
 	  	  <p>Some kind of description for the guide</p>
 	  	</div>
 	    </figure>
 	  </div>
-	  <div class="clearfix"></div>
 
       <div class="grid_4">
 	    <figure class="guide-slide">
           <img src="img/image1.jpg" height="200px"/>
 	  	<div>
-	        <h1>Title of Trip</h1>
+	        <h1>Tunesia Trip</h1>
 	  	  <p>Some kind of description for the guide</p>
 	  	</div>
 	    </figure>
@@ -115,7 +118,7 @@
 	    <figure class="guide-slide">
           <img src="img/image2.jpg" height="200px"/>
 	  	<div>
-	        <h1>Title of Trip</h1>
+	        <h1>London Trip</h1>
 	  	  <p>Some kind of description for the guide</p>
 	  	</div>
 	    </figure>
@@ -124,15 +127,17 @@
 	    <figure class="guide-slide">
           <img src="img/image3.jpg" height="200px"/>
 	  	<div>
-	        <h1>Title of Trip</h1>
+	        <h1>Mexico Trip</h1>
 	  	  <p>Some kind of description for the guide</p>
 	  	</div>
 	    </figure>
 	  </div>
-	  <div class="clearfix"></div>
 
     </section>
     
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Site Footer -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <footer>
       <ul id="social-network">
 	    <li class="email"><a href="http://technocrat.com/tripme/"><span>Email</span></a></li>
@@ -147,15 +152,31 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <!-- Javascript Includes -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        var data = $(".guide-slide h1").map(function() {
+			return $(this).text().split(' ')[0];
+		}).get();
+        $("form#guide-search input").autocomplete({source:jQuery.unique(data)});
+        $("form#guide-search").submit(function() {
+			var term = $("input:first").val().toLowerCase();
+			$(".guide-slide").each(function() {
+				if ($(this).text().toLowerCase().indexOf(term) <= 0) {
+					$(this).fadeOut();
+				}
+				else { $(this).fadeIn(); }
+			});
+			return false;
+		});
+    });
+    </script>
 
-	<script src="js/jquery.caroufredsel.js"></script>
-	<script src="js/core.js"></script>
-
-    <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet
-         change the UA-XXXXX-X to be your site's ID
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Javascript Analytics -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <script>
      var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
      (function(d, t) {
@@ -165,13 +186,6 @@
       g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g, s);
      })(document, 'script');
-    </script> -->
-    <script>
-    $(document).ready(function() {
-        var data = "london paris st.louis melborne".split(' ');
-        $("#guide-search").autocomplete({source:data});
-
-    });
     </script>
 
 </body>

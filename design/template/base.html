@@ -13,7 +13,7 @@
 	<link rel="shortcut icon" href="/img/favicon.ico"/>
 	<link rel="apple-touch-icon" href="/img/custom_icon.png"/>
 	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/print/main.css" media="print" />
+    {% block extra_meta %}{% endblock %}
 	
 	<!--[if lt IE 8]>
 	<script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js"></script>
@@ -23,33 +23,48 @@
 </head>
 
 <body>
-  <div id="container">
+  <div id="container" class="container_12">
+    {% block full_container %}
 
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Site Header -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <header>
-      <h1><a href="/"><span>{{ site.title }}</span></a></h1>
+      <h1><a href="/"><span>{{ site.name }}</span></a></h1>
       <nav>
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="">Browse Guides</a></li>
           <li><a href="">Help</a></li>
           <li><a href="">Login</a></li>
+          {% block extra_navigation %}{% endblock %}
         </ul>
       </nav>
       <h2>{% block content_title %}{% endblock %}</h2>
     </header>
     
-    <section id="content">
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Site Content -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section id="content" class="clearfix">
       {% block content %}{% endblock %}
     </section>
     
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Site Footer -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <footer>
       <ul id="social-network">
+	    <li class="email"><a href="http://technocrat.com/tripme/"><span>Email</span></a></li>
 	    <li class="tech"><a href="http://technocrat.com/tripme/"><span>Technocrat</span></a></li>
 	    <li class="t"><a href="http://twitter.com/tripme/"><span>Twitter</span></a></li>
 	    <li class="rss"><a href="http://tripme.com/feed/rss/"><span>RSS</span></a></li>
       </ul>
-      <p>copyright &copy; 2010 bashwork - powered by spunk</p>
+      <p>copyright &copy; 2010 bashwork - powered by spunk and vigor</p>
+      {% block extra_footer %}{% endblock %}
     </footer>
+      {% block extra_dom %}{% endblock %}
+    {% endblock %}
   </div>
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -57,12 +72,11 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
+    {% block extra_javascript %}{% endblock %}
 
-	<script src="/js/plugins.js"></script>
-	<script src="/js/script.js"></script>
-
-    <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet
-         change the UA-XXXXX-X to be your site's ID -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Javascript Analytics -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <script>
      var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
      (function(d, t) {
@@ -73,6 +87,7 @@
       s.parentNode.insertBefore(g, s);
      })(document, 'script');
     </script>
+    {% block extra_analytics %}{% endblock %}
 
 </body>
 </html>
