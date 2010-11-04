@@ -3,3 +3,52 @@
 #--------------------------------------------------------------------------------#
 http://sneakytomato.deviantart.com/art/Globe-Resource-v-2-99028359#
 http://code.google.com/webfonts
+http://code.google.com/apis/maps/documentation/javascript/services.html
+http://jqueryui.com/docs/Theming/API
+
+#--------------------------------------------------------------------------------#
+# CSS
+#--------------------------------------------------------------------------------#
+- use jquery ui themes (buttons, etc)
+- split stylesheets into framing and styling (compress later)
+- single image locations
+- use jquery for html5?
+- standarize layout and css names
+
+#--------------------------------------------------------------------------------#
+# Javascript
+#--------------------------------------------------------------------------------#
+- start creating guides api (link to pages)
+- google maps wrapper
+- move page specific js to page.js?
+
+#--------------------------------------------------------------------------------#
+# html
+#--------------------------------------------------------------------------------#
+- create pages in terms of global template
+- finish page wireframes
+- create default text
+
+#--------------------------------------------------------------------------------#
+# Django
+#--------------------------------------------------------------------------------#
+- set up user authentication
+  - add user profile data
+  - profile page (image, name, description, social links)
+- finish models and admin page (many-to-many?)
+- create static pages urls/views/templates
+- create piston rest api
+- vote app (model agnostic)
+- model comments (city, spot, image, guide, etc)
+- city/spot/comment description in ReST
+
+#--------------------------------------------------------------------------------#
+# Future
+#--------------------------------------------------------------------------------#
+- tie in comments, votes
+- allow users to add spots and edit descriptions
+  - standardize descriptions (rest -> html tabs)
+  - steal from wikipedia?
+- offline behavior (local storage, offline, gears)
+- scrape a list of cities into model (using django api)
+- scrape a list of spots into model (using django api)

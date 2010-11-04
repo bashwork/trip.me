@@ -226,3 +226,32 @@ form#guide-search input {
 	font-size: 20px;
 	background: #fff url(../img/search.png) 100% 0 no-repeat;
 }
+
+/* Map Styles
+----------------------------------------------------------------------*/
+#map-canvas {
+	height: 400px;
+	border: 1px solid #222;
+}
+
+/* City Add Styles
+----------------------------------------------------------------------*/
+.instructions {
+	font-style:italic;
+	font-size: 120%;
+	text-shadow: 0px 1px 1px #ddd;
+	margin-bottom: 2em;
+}
+
+#city-list {
+	font-size: 120%;
+	text-shadow: 0px 1px 1px #ddd;
+	list-style:none;
+	border: 1px solid #222;
+	height: 400px;
+	overflow-y: scroll;
+}
+#city-list li {
+	padding: 4px 10px;
+	border-bottom:1px dotted #666;
+}
