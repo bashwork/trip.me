@@ -38,56 +38,100 @@
     </header>
     
     <section id="content" class="clearfix">
-	  <figure id="splash-slideshow" class="grid_6">
-	    <div class="slideshow">
-          <img src="img/image1.jpg" height="285px"/>
-          <img src="img/image2.jpg" height="285px"/>
-          <img src="img/image3.jpg" height="285px"/>
-          <img src="img/image4.jpg" height="285px"/>
-          <img src="img/image5.jpg" height="285px"/>
-          <img src="img/image3.jpg" height="285px"/>
-	    </div>
-	  </figure>
 
-	  <div id="splash-market" class="grid_6">
-	    <h1>It's a big world</h1>
-		<form>
-		  <input type="search" placeholder="Where do you want to go?" />
-		  <input type="submit" value="Search">
-		</form>
-	    <a href="#" class="button">Start Planning Now</a>
+      <div id="browse-search" class="grid_4">
+        <input id="guide-search" placeholder="Where do you want to go?" />
+      </div>
+	  <div class="clearfix"></div>
+
+      <div class="grid_4">
+	    <figure class="guide-slide">
+          <img src="img/image1.jpg" height="200px"/>
+	  	<div>
+	      <h1>Title of Trip</h1>
+	  	  <p>Some kind of description for the guide</p>
+	  	</div>
+	    </figure>
+	  </div>
+      <div class="grid_4">
+	    <figure class="guide-slide">
+          <img src="img/image2.jpg" height="200px"/>
+	  	<div>
+	      <h1>Title of Trip</h1>
+	  	  <p>Some kind of description for the guide</p>
+	  	</div>
+	    </figure>
+	  </div>
+      <div class="grid_4">
+	    <figure class="guide-slide">
+          <img src="img/image3.jpg" height="200px"/>
+	  	<div>
+	      <h1>Title of Trip</h1>
+	  	  <p>Some kind of description for the guide</p>
+	  	</div>
+	    </figure>
 	  </div>
 	  <div class="clearfix"></div>
-    </section>
 
-    <div class="grid_4">
-	  <figure class="guide-slide">
-        <img src="img/image1.jpg" height="200px"/>
-		<div>
-	      <h1>Title of Trip</h1>
-		  <p>Some kind of description for the guide</p>
-		</div>
-	  </figure>
-	</div>
-    <div class="grid_4">
-	  <figure class="guide-slide">
-        <img src="img/image2.jpg" height="200px"/>
-		<div>
-	      <h1>Title of Trip</h1>
-		  <p>Some kind of description for the guide</p>
-		</div>
-	  </figure>
-	</div>
-    <div class="grid_4">
-	  <figure class="guide-slide">
-        <img src="img/image3.jpg" height="200px"/>
-		<div>
-	      <h1>Title of Trip</h1>
-		  <p>Some kind of description for the guide</p>
-		</div>
-	  </figure>
-	</div>
-	<div class="clearfix"></div>
+      <div class="grid_4">
+	    <figure class="guide-slide">
+          <img src="img/image1.jpg" height="200px"/>
+	  	<div>
+	        <h1>Title of Trip</h1>
+	  	  <p>Some kind of description for the guide</p>
+	  	</div>
+	    </figure>
+	  </div>
+      <div class="grid_4">
+	    <figure class="guide-slide">
+          <img src="img/image2.jpg" height="200px"/>
+	  	<div>
+	        <h1>Title of Trip</h1>
+	  	  <p>Some kind of description for the guide</p>
+	  	</div>
+	    </figure>
+	  </div>
+      <div class="grid_4">
+	    <figure class="guide-slide">
+          <img src="img/image3.jpg" height="200px"/>
+	  	<div>
+	        <h1>Title of Trip</h1>
+	  	  <p>Some kind of description for the guide</p>
+	  	</div>
+	    </figure>
+	  </div>
+	  <div class="clearfix"></div>
+
+      <div class="grid_4">
+	    <figure class="guide-slide">
+          <img src="img/image1.jpg" height="200px"/>
+	  	<div>
+	        <h1>Title of Trip</h1>
+	  	  <p>Some kind of description for the guide</p>
+	  	</div>
+	    </figure>
+	  </div>
+      <div class="grid_4">
+	    <figure class="guide-slide">
+          <img src="img/image2.jpg" height="200px"/>
+	  	<div>
+	        <h1>Title of Trip</h1>
+	  	  <p>Some kind of description for the guide</p>
+	  	</div>
+	    </figure>
+	  </div>
+      <div class="grid_4">
+	    <figure class="guide-slide">
+          <img src="img/image3.jpg" height="200px"/>
+	  	<div>
+	        <h1>Title of Trip</h1>
+	  	  <p>Some kind of description for the guide</p>
+	  	</div>
+	    </figure>
+	  </div>
+	  <div class="clearfix"></div>
+
+    </section>
     
     <footer>
       <ul id="social-network">
@@ -103,6 +147,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <!-- Javascript Includes -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
 
@@ -110,7 +155,7 @@
 	<script src="js/core.js"></script>
 
     <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet
-         change the UA-XXXXX-X to be your site's ID -->
+         change the UA-XXXXX-X to be your site's ID
     <script>
      var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
      (function(d, t) {
@@ -120,12 +165,11 @@
       g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g, s);
      })(document, 'script');
-    </script>
+    </script> -->
     <script>
     $(document).ready(function() {
-    	$(".slideshow").carouFredSel(
-			{ direction : "up", items: 1, auto: { pauseOnHover: true }
-		});
+        var data = "london paris st.louis melborne".split(' ');
+        $("#guide-search").autocomplete({source:data});
 
     });
     </script>

@@ -140,7 +140,7 @@ div#splash-market input[type="search"] {
 	margin-top: 1em;
 	width: 70%;
 	font-size: 20px;
-	background: #000 url(../img/search.png) no-repeat;
+	background: #fff url(../img/search.png) 100% 0 no-repeat;
 }
 div#splash-market input[type="submit"] {
 	margin-top: 1em;
@@ -186,6 +186,10 @@ figure.guide-slide {
 	position:relative;
 	border: 1px solid #ccc;
 	background-color: #fff;
+    margin: 1em 0; 
+}
+figure.guide-slide:hover {
+    background-color: #bacbd8;
 }
 figure.guide-slide img {
 	width:95%;
@@ -209,4 +213,15 @@ figure.guide-slide h1 {
 }
 figure.guide-slide p {
 	padding: 0 7px;
+}
+
+/* Browse Styles
+----------------------------------------------------------------------*/
+div#browse-search {
+    margin-bottom: 1em;
+}
+div#browse-search input {
+	width: 99%;
+	font-size: 20px;
+	background: #fff url(../img/search.png) 100% 0 no-repeat;
 }
