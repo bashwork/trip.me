@@ -11,7 +11,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Galen Collins', 'example@domain.com'),
+    ('Galen Collins', 'x@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -63,17 +63,19 @@ USE_L10N = True
 #------------------------------------------------------------------------------ 
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'static/')
 
+#------------------------------------------------------------------------------ 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
+#------------------------------------------------------------------------------ 
 MEDIA_URL = '/static/'
 
+#------------------------------------------------------------------------------ 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
+#------------------------------------------------------------------------------ 
 ADMIN_MEDIA_PREFIX = '/media/'
-
-# Make this unique, and don't share it with anybody.
 SECRET_KEY = 'j2=%(9*x)q$kktnm^qx3mgq7r8vmq931z!lru+ivr3$*lkyy$!'
 
 #------------------------------------------------------------------------------ 
@@ -82,7 +84,6 @@ SECRET_KEY = 'j2=%(9*x)q$kktnm^qx3mgq7r8vmq931z!lru+ivr3$*lkyy$!'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
-#     'django.template.loaders.eggs.Loader',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -91,6 +92,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
     #'django_toolbar.middleware.DebugToolbarMiddleware',
 )
 
@@ -108,6 +110,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.admin',
     'django.contrib.comments',
+    'django.contrib.markup',
+    'django.contrib.flatpages',
     #'debug_toolbar',
     'guides',
 )
