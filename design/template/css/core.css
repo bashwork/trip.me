@@ -181,7 +181,7 @@ div#splash-signup {
 
 /* Guide Blocks
 ----------------------------------------------------------------------*/
-figure.guide-slide {
+.guide-slide {
 	text-align: left;
 	position:relative;
 	border: 1px solid #ccc;
@@ -189,16 +189,16 @@ figure.guide-slide {
     margin: 1em 0; 
 	cursor: pointer;
 }
-figure.guide-slide:hover {
+.guide-slide:hover {
     background-color: #bacbd8;
 }
-figure.guide-slide img {
+.guide-slide img {
 	width:95%;
 	padding: 5px;
 	display:block;
 	margin: auto;
 }
-figure.guide-slide div {
+.guide-slide div {
 	height: 40px;
 	position:absolute;
 	background: rgba(0,0,0,0.35);
@@ -207,12 +207,12 @@ figure.guide-slide div {
 	width:100%;
 }
 
-figure.guide-slide h1 {
+.guide-slide h1 {
 	padding: 0 7px;
 	font-size: 140%;
 	line-height:20px;
 }
-figure.guide-slide p {
+.guide-slide p {
 	padding: 0 7px;
 }
 
@@ -254,4 +254,49 @@ form#guide-search input {
 #city-list li {
 	padding: 4px 10px;
 	border-bottom:1px dotted #666;
+}
+
+/* Spot Add Styles
+----------------------------------------------------------------------*/
+.guide-slide-wide {
+	text-align: left;
+	position:relative;
+	border: 1px solid #ccc;
+	background-color: #fff;
+    margin: 1em 0; 
+	cursor: pointer;
+}
+.guide-slide-wide:hover {
+    background-color: #bacbd8;
+}
+.guide-slide-wide img {
+	padding: 7px;
+	display:block;
+    float:left;
+    width: 30%;
+}
+
+.guide-slide-wide h1 {
+	font-size: 140%;
+	line-height:20px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    color:#fff;
+    width:100%;
+	background: rgba(0,0,0,0.35);
+}
+.guide-slide-wide h1 span {
+    padding: 5px 5px;
+    display:block;
+    position:relative;
+}
+.guide-slide-wide p {
+	padding: 20px 7px;
+    float:right;
+    width: 65%;
+}
+#top-ten-list {
+	overflow-y: scroll;
+    height: 800px;
 }
