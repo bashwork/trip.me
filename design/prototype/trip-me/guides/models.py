@@ -1,4 +1,9 @@
 from django.db import models
+from django.contrib.auth.models import User
+
+# -------------------------------------------------------- #
+# Locations
+# -------------------------------------------------------- #
 
 class City(models.Model):
     name = models.CharField(max_length=200)
@@ -14,7 +19,7 @@ class City(models.Model):
         verbose_name_plural = "cities"
 
     def __unicode__(self):
-        return self.name
+        return "%s, %s %s" % (self.name, self.state, self.country)
 
 class Spot(models.Model):
     name = models.CharField(max_length=200)
@@ -30,11 +35,41 @@ class Spot(models.Model):
         ordering = ('name',)
 
     def __unicode__(self):
-        return self.name
+        return "%s in %s" % (self.name, self.city.name)
 
-# ------------------------------------------------------- # 
-# To add
-# ------------------------------------------------------- # 
-# - rank (either +/- score or votes + total stars)
-# - guides
-# ------------------------------------------------------- # 
+# -------------------------------------------------------- #
+# User Guides
+# -------------------------------------------------------- #
+
+class Guide(models.Model):
+    name = models.CharField(max_length=200)
+    description = models.TextField()
+    pub_date = models.DateTimeField(auto_now_add=True)
+    user = models.ForeignKey(User, unique=True)
+
+    class Meta:
+        ordering = ('pub_date',)
+
+    def __unicode__(self):
+        return "%s by %s" % (self.name, self.user.get_full_name())
+
+class GuideCityEntry(models.Model):
+    city = models.ForeignKey(City)
+    spots = models.ForeignKey(Guide)
+
+    class Meta:
+        verbose_name_plural = "guide city entries"
+
+    def __unicode__(self):
+        return self.city.name
+
+class GuideSpotEntry(models.Model):
+    spot = models.ForeignKey(Spot)
+    entry = models.ForeignKey(GuideCityEntry)
+
+    class Meta:
+        verbose_name_plural = "guide spot entries"
+
+    def __unicode__(self):
+        return self.spot.name
+
