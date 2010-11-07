@@ -45,19 +45,33 @@
     <section id="content" class="clearfix">
 
       <div class="grid_4">
-        <input type="text" />
-        <div id="map-canvas"></div>
-        <ul id="city-list">
-		  <li><a href="#">London, England</a></li>
-		  <li><a href="#">Tijuana, Mexica</a></li>
-		  <li><a href="#">St. Louis, Missouri</a></li>
-        </ul>
-	    <div class="clearfix"></div>
+        <form id="spot-search">
+          <input class="auto-search" type="search" placeholder="Where do you want to go?" />
+        </form>
       </div>
 
-      <div id="top-ten-list" class="grid_8">
-        <article class="guide-slide-wide clearfix">
-          <h1><span>Paris Trip</span></h1>
+      <div class="grid_8">
+        <h2 id="spot-result-header">The Top Ten</h2>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="grid_4">
+        <section id="spot-search-block">
+          <div class="map-block medium"></div>
+          <h2>Current Itenerary</h2>
+          <ul id="city-list">
+		    <li><a href="#">London, England</a></li>
+		    <li><a href="#">Tijuana, Mexica</a></li>
+		    <li><a href="#">St. Louis, Missouri</a></li>
+          </ul>
+	      <div class="clearfix"></div>
+        </section>
+      </div>
+
+      <div id="spot-result-list" class="grid_8">
+        <article class="spot-summary clearfix">
+          <h1>The Eye of London</h1>
+          <a href="#" class="button yellow small">+ add to guide</a>
           <img src="img/image2.jpg" height="150px" />
           <p>lorum impLorem ipsum dolor sit amet, consectetur adipiscing elit.s
              Nullam semper laoreet nisl vel facilisis. Morbi dolor nunc, sagittis non vehicula sit amet,
@@ -66,8 +80,10 @@
              Integer aliquam tincidunt odio, eget posuere odio consectetur non.
              Maecenas a sapien a est pharetra auctor.</p>
         </article>
-        <article class="guide-slide-wide clearfix">
-          <h1>Paris Trip</h1>
+
+        <article class="spot-summary clearfix">
+          <h1>Houses of Parliament</h1>
+          <a href="#" class="button yellow small">+ add to guide</a>
           <img src="img/image2.jpg" height="150px" />
           <p>lorum impLorem ipsum dolor sit amet, consectetur adipiscing elit.s
              Nullam semper laoreet nisl vel facilisis. Morbi dolor nunc, sagittis non vehicula sit amet,
@@ -76,8 +92,10 @@
              Integer aliquam tincidunt odio, eget posuere odio consectetur non.
              Maecenas a sapien a est pharetra auctor.</p>
         </article>
-        <article class="guide-slide-wide clearfix">
-          <h1>Paris Trip</h1>
+
+        <article class="spot-summary clearfix">
+          <h1>The Portrait Gallery</h1>
+          <a href="#" class="button yellow small">+ add to guide</a>
           <img src="img/image2.jpg" height="150px" />
           <p>lorum impLorem ipsum dolor sit amet, consectetur adipiscing elit.s
              Nullam semper laoreet nisl vel facilisis. Morbi dolor nunc, sagittis non vehicula sit amet,
@@ -86,8 +104,10 @@
              Integer aliquam tincidunt odio, eget posuere odio consectetur non.
              Maecenas a sapien a est pharetra auctor.</p>
         </article>
-        <article class="guide-slide-wide clearfix">
-          <h1>Paris Trip</h1>
+
+        <article class="spot-summary clearfix">
+          <h1>National Museum</h1>
+          <a href="#" class="button yellow small">+ add to guide</a>
           <img src="img/image2.jpg" height="150px" />
           <p>lorum impLorem ipsum dolor sit amet, consectetur adipiscing elit.s
              Nullam semper laoreet nisl vel facilisis. Morbi dolor nunc, sagittis non vehicula sit amet,
@@ -96,8 +116,10 @@
              Integer aliquam tincidunt odio, eget posuere odio consectetur non.
              Maecenas a sapien a est pharetra auctor.</p>
         </article>
-        <article class="guide-slide-wide clearfix">
-          <h1>Paris Trip</h1>
+
+        <article class="spot-summary clearfix">
+          <h1>Museum of Modern Art</h1>
+          <a href="#" class="button yellow small">+ add to guide</a>
           <img src="img/image2.jpg" height="150px" />
           <p>lorum impLorem ipsum dolor sit amet, consectetur adipiscing elit.s
              Nullam semper laoreet nisl vel facilisis. Morbi dolor nunc, sagittis non vehicula sit amet,
@@ -117,7 +139,7 @@
       <ul id="social-network">
 	    <li class="email"><a href="http://technocrat.com/tripme/"><span>Email</span></a></li>
 	    <li class="tech"><a href="http://technocrat.com/tripme/"><span>Technocrat</span></a></li>
-	    <li class="t"><a href="http://twitter.com/tripme/"><span>Twitter</span></a></li>
+	    <li class="twit"><a href="http://twitter.com/tripme/"><span>Twitter</span></a></li>
 	    <li class="rss"><a href="http://tripme.com/feed/rss/"><span>RSS</span></a></li>
       </ul>
       <p>copyright &copy; 2010 bashwork - powered by spunk and vigor</p>
@@ -148,22 +170,22 @@
 		  style : google.maps.NavigationControlStyle.SMALL
 		}
       };
-      var map = new google.maps.Map(document.getElementById("map-canvas"), options);
-        $("#add-city-dialog").dialog({
-            modal : true,
-            position: 'center',
-            title : 'Add A New City', 
-			autoOpen : false,
-            resizable : false,
-            buttons : [
-            { text : "Add", click : function() { $(this).dialog("close"); } },
-            { text : "Cancel", click: function() { $(this).dialog("close"); } },
-            ],
-        });
+      var map = new google.maps.Map($(".map-block").get(0), options);
 
-	  $("#button-add-city").click(function() {
-        $("#add-city-dialog").dialog('open');
-	  });
+      var data = $(".spot-summary h1").map(function() {
+	  	return $(this).text();
+	  }).get();
+      $(".auto-search").autocomplete({source:jQuery.unique(data)});
+      $("#spot-search").submit(function() {
+      	var term = $("input:first").val().toLowerCase();
+      	$(".spot-summary").each(function() {
+      		if ($(this).text().toLowerCase().indexOf(term) <= 0) {
+      			$(this).fadeOut();
+      		}
+      		else { $(this).fadeIn(); }
+      	});
+      	return false;
+      });
     });
     </script>
 
