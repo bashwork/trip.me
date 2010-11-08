@@ -23,9 +23,10 @@ class Country(models.Model):
       * United Kingdom
     '''
     name = models.CharField(max_length=50)
-    description = models.TextField()
+    description = models.TextField(null=True, blank=True)
     code = models.CharField(max_length=4)
     capital = models.CharField(max_length=50)
+    reference = models.CharField(max_length=50)
     pub_date = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
 
@@ -44,7 +45,7 @@ class Region(models.Model):
       * England, UK
     '''
     name = models.CharField(max_length=50)
-    description = models.TextField()
+    description = models.TextField(null=True, blank=True)
     code = models.CharField(max_length=4)
     country = models.ForeignKey(Country)
     pub_date = models.DateTimeField(auto_now_add=True)
@@ -64,7 +65,7 @@ class City(models.Model):
       * London, England, UK
     '''
     name = models.CharField(max_length=50)
-    description = models.TextField()
+    description = models.TextField(null=True, blank=True)
     code = models.CharField(max_length=4)
     region = models.ForeignKey(Region)
     country = models.ForeignKey(Country)
@@ -92,6 +93,8 @@ class Spot(models.Model):
     name = models.CharField(max_length=200)
     description = models.TextField()
     city = models.ForeignKey(City)
+    region = models.ForeignKey(Region)
+    country = models.ForeignKey(Country)
     address = models.CharField(max_length=200)
     zipcode = models.CharField(max_length=10)
     image = models.ImageField(upload_to="spots/%Y/%m/%d", null=True, blank=True)
