@@ -101,3 +101,33 @@ div#splash-signup {
 #spot-search-block #city-list {
     height: 300px;
 }
+
+/* user profile page
+----------------------------------------------------------------------*/
+#user-profile { text-align: center; }
+#user-profile p {
+    font-size: 120%;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.user-slide {
+	position:relative;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	cursor: pointer;
+    margin-bottom: 10px;
+}
+.user-slide img {
+	width:95%;
+	padding: 5px;
+	display:block;
+	margin: auto;
+}
+
+#user-profile ul {
+
+}
+#user-profile ul li {
+    display:inline-block;
+}

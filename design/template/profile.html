@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8" />
+	<title>{% block title %}{{ site.name }}{% endblock %}</title>
+	<meta name="description" content="Here is the description of your project." />
+	<meta name="author" content="Galen Collins" />
+	<meta name="Copyright" content="Copyright Galen Collins 2010. All Rights Reserved." />
+	<meta name="DC.title" content="Trip.Me" />
+	<meta name="DC.subject" content="What you're about." />
+	<meta name="DC.creator" content="Who made this site." />
+	<meta name="google-site-verification" content="" />
+	<link rel="shortcut icon" href="/img/favicon.ico"/>
+	<link rel="apple-touch-icon" href="/img/custom_icon.png"/>
+	<link rel="stylesheet" href="css/main.css" />
+	
+	<!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js"></script>
+	<![endif]-->
+	
+	<script src="js/modernizr.min.js"></script>
+</head>
+
+<body>
+  <div id="container" class="container_12">
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Site Header -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <header>
+      <h1><a href="/"><span>{{ site.name }}</span></a></h1>
+      <nav>
+        <ul>
+          <li><a href="/home/">Home</a></li>
+          <li><a href="/browse/">Browse Guides</a></li>
+          <li><a href="/help/">Help</a></li>
+          <li><a href="/login/">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Site Content -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section id="content" class="clearfix">
+
+      <div class="grid_4">
+        <section id="user-profile">
+          <figure class="user-slide">
+            <img src="img/image1.jpg" height="200px"/>
+          </figure>
+          <p>lorum impLorem ipsum dolor sit amet, consectetur adipiscing elit.s
+             Nullam semper laoreet nisl vel facilisis. Morbi dolor nunc, sagittis non vehicula sit amet,
+             porta in augue. Fusce nec odio erat. Nullam eu mattis lorem. Praesent egestas pharetra
+             neque. In hac habitasse platea dictumst. Pellentesque nec elit felis, et molestie lorem.
+             Integer aliquam tincidunt odio, eget posuere odio consectetur non.
+             Maecenas a sapien a est pharetra auctor.</p>
+          <ul id="profile-social">
+            <li><a href="#" class="facebok">Facebook</a></li>
+            <li><a href="#" class="twitter">Twitter</a></li>
+            <li><a href="#" class="linkedn">LinkedIn</a></li>
+            <li><a href="#" class="youtube">Youtube</a></li>
+          </ul>
+	    </section>
+      </div>
+
+      <section class="row_8">
+        <div class="grid_4">
+          <h2>Created Guides</h2>
+        </div>
+        <div class="grid_4">
+          <a href="#" class="button large red">Add New Guide</a>
+        </div>
+      </section>
+
+      <section class="column_8">
+        <div class="grid_4">
+	      <figure class="guide-slide">
+            <img src="img/image2.jpg" height="200px"/>
+	    	<div>
+	        <h1>Paris Trip</h1>
+	    	  <p>Some kind of description for the guide</p>
+	    	</div>
+	      </figure>
+	    </div>
+
+        <div class="grid_4">
+	      <figure class="guide-slide">
+            <img src="img/image3.jpg" height="200px"/>
+	    	<div>
+	        <h1>Melborne Trip</h1>
+	    	  <p>Some kind of description for the guide</p>
+	    	</div>
+	      </figure>
+	    </div>
+
+        <div class="grid_4">
+	      <figure class="guide-slide">
+            <img src="img/image1.jpg" height="200px"/>
+	    	<div>
+	          <h1>Egypt Trip</h1>
+	    	  <p>Some kind of description for the guide</p>
+	    	</div>
+	      </figure>
+	    </div>
+
+        <div class="grid_4">
+	      <figure class="guide-slide">
+            <img src="img/image2.jpg" height="200px"/>
+	    	<div>
+	          <h1>London Trip</h1>
+	    	  <p>Some kind of description for the guide</p>
+	    	</div>
+	      </figure>
+	    </div>
+	  </section>
+
+    </section>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Site Footer -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <footer>
+      <ul id="social-network">
+	    <li class="email"><a href="http://technocrat.com/tripme/"><span>Email</span></a></li>
+	    <li class="tech"><a href="http://technocrat.com/tripme/"><span>Technocrat</span></a></li>
+	    <li class="twit"><a href="http://twitter.com/tripme/"><span>Twitter</span></a></li>
+	    <li class="rss"><a href="http://tripme.com/feed/rss/"><span>RSS</span></a></li>
+      </ul>
+      <p>copyright &copy; 2010 bashwork - powered by spunk and vigor</p>
+    </footer>
+  </div>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Javascript Includes -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        var data = $(".guide-slide h1").map(function() {
+			return $(this).text().split(' ')[0];
+		}).get();
+        $("form#guide-search input").autocomplete({source:jQuery.unique(data)});
+        $("form#guide-search").submit(function() {
+			var term = $("input:first").val().toLowerCase();
+			$(".guide-slide").each(function() {
+				if ($(this).text().toLowerCase().indexOf(term) <= 0) {
+					$(this).fadeOut();
+				}
+				else { $(this).fadeIn(); }
+			});
+			return false;
+		});
+    });
+    </script>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Javascript Analytics -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <script>
+     var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+     (function(d, t) {
+      var g = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      g.async = true;
+      g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g, s);
+     })(document, 'script');
+    </script>
+
+</body>
+</html>

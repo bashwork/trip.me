@@ -66,15 +66,6 @@ a:hover { color:#28a; }
 .yellow.button, .yellow.button:visited    { background-color: #ffb515; }
 .yellow.button:hover                      { background-color: #fc9200; }
 
-/* input text elements
-----------------------------------------------------------------------*/
-input.auto-search {
-	width: 100%;
-	font-size: 20px;
-    margin-bottom: 1em;
-	background: #fff url(../img/search.png) 100% 0 no-repeat;
-}
-
 /* site header element
 ----------------------------------------------------------------------*/
 header {
@@ -220,6 +211,35 @@ footer ul#social-network li.email a { background:url(../img/email-logo.png) no-r
     width: 65%;
     font-size: 120%;
     overflow: hide;
+}
+
+/* input text elements
+----------------------------------------------------------------------*/
+input.auto-search {
+	width: 100%;
+	font-size: 20px;
+    margin-bottom: 1em;
+	background: #fff url(../img/search.png) 100% 0 no-repeat;
+}
+
+form fieldset.text-entry-set {
+    padding: 10px;
+    font-size:120%;
+    font-weight:bold;
+}
+form fieldset.text-entry-set ol { list-style:none; }
+form fieldset.text-entry-set ol li {
+    clear:both;
+}
+form fieldset.text-entry-set ol li label { float:left; }
+form fieldset.text-entry-set ol li input {
+    float:right;
+    font-size:120%;
+    margin-bottom:10px;
+}
+form fieldset.button-entry-set {
+    text-align:right;
+    padding: 10px;
 }
 
 /* Browse Styles
