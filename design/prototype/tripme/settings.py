@@ -113,6 +113,7 @@ INSTALLED_APPS = (
     'django.contrib.markup',
     'django.contrib.flatpages',
     #'debug_toolbar',
+    'alphafilter',
     'tripme.guides',
 )
 

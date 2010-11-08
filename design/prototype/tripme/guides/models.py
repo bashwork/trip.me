@@ -37,6 +37,9 @@ class Country(models.Model):
     def __unicode__(self):
         return self.name
 
+    def get_absolute_url(self):
+        return "/country/%s" % self.id
+
 class Region(models.Model):
     '''
     This represents a sub-region, ex::
@@ -56,6 +59,9 @@ class Region(models.Model):
 
     def __unicode__(self):
         return "%s, %s" % (self.name, self.country.name)
+
+    def get_absolute_url(self):
+        return "/region/%s" % self.id
 
 class City(models.Model):
     '''
@@ -83,6 +89,9 @@ class City(models.Model):
     def __unicode__(self):
         return "%s, %s, %s" % (self.name, self.region.name, self.country.name)
 
+    def get_absolute_url(self):
+        return "/city/%s" % self.id
+
 class Spot(models.Model):
     '''
     This represents a location in a given city, ex::
@@ -108,6 +117,9 @@ class Spot(models.Model):
 
     def __unicode__(self):
         return "%s in %s" % (self.name, self.city.name)
+
+    def get_absolute_url(self):
+        return "/spot/%s" % self.id
 
 # -------------------------------------------------------- #
 # User Guides
