@@ -96,7 +96,7 @@ MIDDLEWARE_CLASSES = (
     #'django_toolbar.middleware.DebugToolbarMiddleware',
 )
 
-ROOT_URLCONF = 'trip-me.urls'
+ROOT_URLCONF = 'tripme.urls'
 
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_ROOT, 'templates'),
@@ -113,7 +113,7 @@ INSTALLED_APPS = (
     'django.contrib.markup',
     'django.contrib.flatpages',
     #'debug_toolbar',
-    'guides',
+    'tripme.guides',
 )
 
 #------------------------------------------------------------------------------ 

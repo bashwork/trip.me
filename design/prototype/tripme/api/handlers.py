@@ -1,5 +1,5 @@
 from piston.handler import BaseHandler
-from guides.models import *
+from tripme.guides.models import *
 
 class CountryHandler(BaseHandler):
     allowed_methods = ('GET',)

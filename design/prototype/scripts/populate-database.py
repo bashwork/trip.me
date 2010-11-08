@@ -1,8 +1,12 @@
 #!/usr/bin/env python
+import os,zipfile,sys,glob
 sys.path.append(os.path.join(os.path.abspath('..'), '.'))
-os.environ['DJANGO_SETTINGS_MODULE'] = 'trip_me.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'tripme.settings'
 
-from guides.models import *
+from tripme.guides.models import *
+# from django.core.management import setup_environ
+# setup_environ(settings)
+# from tripme import settings
 
 # -------------------------------------------------------- #
 # helper functions for manipulating files
@@ -95,9 +99,9 @@ class Database(object):
     def save_all(self):
         ''' Load all of the database information into django
         '''
-        self.load_countries()
-        self.load_regions()
-        self.load_cities()
+        self.save_countries()
+        self.save_regions()
+        self.save_cities()
 
     def save_countries(self):
         ''' Store all the countries from the database into django
@@ -120,7 +124,14 @@ class Database(object):
             c = City(**city)
             c.save()
 
-if __name__ == "__main__":
+# -------------------------------------------------------- #
+# main runner script
+# -------------------------------------------------------- #
+def main():
+    ''' main runner script '''
+    if len(glob.glob("*.txt")) == 0:
+        zipfile.ZipFile('geo-world-map.zip').extractall('.')
+
     handle = Database()
     print "starting database load..."
     handle.save_all()
@@ -129,3 +140,6 @@ if __name__ == "__main__":
         len(handle.regions),
         len(handle.cities)
     )
+
+if __name__ == "__main__":
+    sys.exit(main())
