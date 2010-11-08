@@ -25,7 +25,7 @@ body {
 }
 a { color:#08a; text-decoration:none; }
 a:hover { color:#28a; }
-
+ol, ul { list-style:none; }
 
 /* input button elements:
  * http://www.zurb.com/blog_uploads/0000/0617/buttons-03.html
@@ -37,6 +37,7 @@ a:hover { color:#28a; }
 	color: #fff;
 	font-weight: bold;
 	line-height: 1;
+    letter-spacing:1px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
@@ -222,25 +223,58 @@ input.auto-search {
 	background: #fff url(../img/search.png) 100% 0 no-repeat;
 }
 
-form fieldset.text-entry-set {
-    padding: 10px;
+form.styled-form {
+    background: #ddd;
+    border: 1px solid #666;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 20px;
+}
+form.styled-form fieldset {
     font-size:120%;
     font-weight:bold;
-}
-form fieldset.text-entry-set ol { list-style:none; }
-form fieldset.text-entry-set ol li {
-    clear:both;
-}
-form fieldset.text-entry-set ol li label { float:left; }
-form fieldset.text-entry-set ol li input {
-    float:right;
-    font-size:120%;
+    border:none;
     margin-bottom:10px;
 }
-form fieldset.button-entry-set {
-    text-align:right;
-    padding: 10px;
+form.styled-form fieldset:last-of-type { margin-bottom: 0; }
+form.styled-form legend {
+color:#384313;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-shadow: 0 1px 1px #c0d576;
 }
+
+form.styled-form ol li {
+    background: rgba(255,255,255,.3);
+    border: 2px solid rgba(255,255,255,.6);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    line-height: 30px;
+    clear:both;
+    padding: 5px 10px;
+    margin-bottom:5px;
+}
+form.styled-form label {
+    float:left;
+    font-size: 13px;
+    width:110px;
+}
+form.styled-form input,
+form.styled-form textarea {
+    background: #fff;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 5px;
+    width: 260px;
+}
+form.styled-form button {
+    display:block;
+    margin-left:10px;
+    float:right;
+}
+form.styled-form button:last-of-type { margin-left:0; }
 
 /* Browse Styles
 ----------------------------------------------------------------------*/

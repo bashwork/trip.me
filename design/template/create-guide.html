@@ -47,28 +47,28 @@
      <div class="grid_6 prefix_3 suffix_3">
       <form class="styled-form">
         <fieldset>
-          <legend>Your Account Details</legend>
+          <legend>Trip Details</legend>
           <ol>
           <li>
-            <label for="username"/>Username</label>
-            <input name="username" type="username" placeholder="superuser" required autofocus/>
+            <label for="title"/>Title</label>
+            <input name="title" type="text" placeholder="My Awesome Trip" required autofocus/>
           </li>
           <li>
-            <label for="email">Email Address</label>
-            <input name="email" type="email" placeholder="example@host.com" required/>
+            <label for="sdate">Start Date</label>
+            <input name="sdate" type="date" placeholder="November 1, 2010" required/>
           </li>
           <li>
-            <label for="password">Password</label>
-            <input name="password" type="password" placeholder="s3cr3t" required/>
+            <label for="edate">End Date</label>
+            <input name="edate" type="date" placeholder="November 9, 2010" required/>
           </li>
           <li>
-            <label for="verify">Verify Password</label>
-            <input name="verify" type="password" placeholder="s3cr3t" required/>
+            <label for="description">Description</label>
+            <textarea name="description" rows="5"></textarea>
           </li>
           </ol>
         </fieldset>
         <fieldset>
-          <button class="button blue large" type="submit">Sign Up</button>
+          <button class="button blue large" type="submit">Create Trip</button>
         </fieldset>
       </form>
      </div>
