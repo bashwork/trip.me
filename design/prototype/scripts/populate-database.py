@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+'''
+If this fails to work correctly, open the database txt files
+and save them explicitly as utf-8.
+'''
 import os,zipfile,sys,glob
 sys.path.append(os.path.join(os.path.abspath('..'), '.'))
 os.environ['DJANGO_SETTINGS_MODULE'] = 'tripme.settings'
@@ -19,7 +23,7 @@ def _country_formatter(line):
     '''
     fields = [value.replace('"','') for value in line.split(',')]
     return {
-        'id':fields[0],
+        'id':int(fields[0]),
         'name':fields[1],
         'code':fields[3],
         'capital':fields[7],
@@ -34,8 +38,8 @@ def _region_formatter(line):
     '''
     fields = [value.replace('"','') for value in line.split(',')]
     return {
-        'id':fields[0],
-        'country':fields[1],
+        'id':int(fields[0]),
+        'country_id':int(fields[1]),
         'name':fields[2],
         'code':fields[3],
     }
@@ -48,11 +52,11 @@ def _city_formatter(line):
     '''
     fields = [value.replace('"','') for value in line.split(',')]
     return {
-        'id':fields[0],
+        'id':int(fields[0]),
         'name':fields[3],
         'code':fields[8],
-        'country':fields[1],
-        'region':fields[2],
+        'country_id':int(fields[1]),
+        'region_id':int(fields[2]),
         'latitude':fields[4],
         'longitude':fields[5],
         'timezone':fields[6],
@@ -64,7 +68,8 @@ def file_generator(filename):
     :input filename: The filename to convert to a generator
     :return: The generator over the given file
     '''
-    with open(filename) as handle:
+    import codecs
+    with codecs.open(filename, mode="r", encoding="utf-8") as handle:
         handle.readline() # jump over header
         for line in handle:
             yield line
