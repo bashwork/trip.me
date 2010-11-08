@@ -93,7 +93,7 @@ header h2 {
 header nav { 
 	padding: .7em;
 	font-weight: bold;
-	border-bottom: 1px solid #666;
+	border-bottom: 1px solid #aaa;
 	border-top: 1px solid #666;
 	text-align: right;
 }

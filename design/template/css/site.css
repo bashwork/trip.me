@@ -79,6 +79,8 @@ div#splash-signup {
 	padding: 4px 10px;
 	border-bottom:1px dotted #666;
 }
+#city-list li:nth-child(odd),
+#city-list li.odd { background-color: #efefef; }
 
 /* Add spots page
 ----------------------------------------------------------------------*/
@@ -95,7 +97,7 @@ div#splash-signup {
     font-size: 160%;
 	background: rgba(39,64,139,0.65);
     color: white;
-    padding: .5em;
+    padding: 6px;
     border: 1px solid #666;
 }
 #spot-search-block #city-list {
