@@ -93,7 +93,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
-    #'django_toolbar.middleware.DebugToolbarMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 ROOT_URLCONF = 'tripme.urls'
@@ -112,10 +112,18 @@ INSTALLED_APPS = (
     'django.contrib.comments',
     'django.contrib.markup',
     'django.contrib.flatpages',
-    #'debug_toolbar',
+    #--------------------------------------------
+    # third party applications
+    #--------------------------------------------
+    'debug_toolbar',
     'alphafilter',
+    'tagging',
+    #--------------------------------------------
+    # custom applications
+    #--------------------------------------------
     'tripme.guides',
 )
+INTERNAL_IPS = ['127.0.0.1']
 
 #------------------------------------------------------------------------------ 
 # Global Context Settings
