@@ -4,7 +4,7 @@ If this fails to work correctly, open the database txt files
 and save them explicitly as utf-8.
 '''
 import os,zipfile,sys,glob
-sys.path.append(os.path.join(os.path.abspath('..'), '.'))
+sys.path.append(os.path.dirname(os.path.abspath('..')))
 os.environ['DJANGO_SETTINGS_MODULE'] = 'tripme.settings'
 
 from tripme.guides.models import *
