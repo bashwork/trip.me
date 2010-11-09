@@ -4,6 +4,7 @@
 @import url("reset.css");
 @import url("960.css");
 @import url("jquery.lightbox.css");
+@import url("jquery.jgrowl.css");
 @import url("ui-lightness/jquery-ui-1.8.6.custom.css");
 
 /*-  Core, patch-free design
