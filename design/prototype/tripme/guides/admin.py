@@ -41,9 +41,10 @@ admin.site.register(Spot,
 # User Guides
 # -------------------------------------------------------- #
 admin.site.register(Guide,
-    ordering      = ["name"],
-    search_fields = ["name","user","pub_date"],
-    list_display  = ["name","user","pub_date"],
-    list_filter   = ["name","pub_date"],
+    alphabet_filter = "name",
+    ordering      = ["last_modified"],
+    search_fields = ["name","user"],
+    list_display  = ["name","user","pub_date","last_modified"],
+    list_filter   = ["last_modified"],
     list_per_page = 500,
 )

@@ -46,11 +46,26 @@ class CityHandler(BaseHandler):
 class SpotHandler(BaseHandler):
     allowed_methods = ('GET',)
     model = Spot
+    __max__ = 20
 
     def read(self, request, id=None, name=None):
         '''
         '''
-        if id != None: cities = City.objects.get(id=id)
-        elif not name: cities = City.objects.all()
-        else: cities = City.objects.filter(name__icontains=name)
-        return cities
+        if id != None: spots = Spot.objects.get(id=id)
+        elif not name: spots = Spot.objects.all()[:self.__max__]
+        else: spots = Spot.objects.filter(name__icontains=name)[:self.__max__]
+        return spots
+
+class GuideHandler(BaseHandler):
+    allowed_methods = ('GET',)
+    model = Guide
+    fields = ('id', 'description', 'name', 'last_modified',('user',('id','username')))
+    __max__ = 20
+
+    def read(self, request, id=None, name=None):
+        '''
+        '''
+        if id != None: guides = Guide.objects.get(id=id)
+        elif not name: guides = Guide.objects.all()[:self.__max__]
+        else: guides = Guide.objects.filter(name__icontains=name)[:self.__max__]
+        return guides
