@@ -5,7 +5,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     (r'^$', 'django.views.generic.simple.direct_to_template', {'template':'splash.html'}),
-    (r'^api/', include('tripme.apps.api.urls')),
+    (r'^api/', include('tripme.api.urls')),
     (r'^admin/', include(admin.site.urls)),
     (r'^comments/', include('django.contrib.comments.urls')),
 )

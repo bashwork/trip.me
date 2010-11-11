@@ -2,27 +2,43 @@ from django.conf.urls.defaults import *
 from piston.resource import Resource
 from api.handlers import *
 
+urlpatterns = []
 # -------------------------------------------------------- #
-# Resources
+# country api references
 # -------------------------------------------------------- #
 country_handler_resource = Resource(CountryHandler)
+urlpatterns += patterns('',
+    url(r'^country/$', country_handler_resource),
+    url(r'^country/search/(?P<name>[^/]+)/', country_handler_resource),
+    url(r'^country/show/(?P<id>[^/]+)/', country_handler_resource),
+)
+
+# -------------------------------------------------------- #
+# region api reference
+# -------------------------------------------------------- #
 region_handler_resource = Resource(RegionHandler)
+urlpatterns += patterns('',
+    url(r'^region/$', region_handler_resource),
+    url(r'^region/search/(?P<name>[^/]+)/', region_handler_resource),
+    url(r'^region/show/(?P<id>[^/]+)/', region_handler_resource),
+)
+
+# -------------------------------------------------------- #
+# city api references
+# -------------------------------------------------------- #
 city_handler_resource = Resource(CityHandler)
+urlpatterns += patterns('',
+    url(r'^city/$', city_handler_resource),
+    url(r'^city/search/(?P<name>[^/]+)/', city_handler_resource),
+    url(r'^city/show/(?P<id>[^/]+)/', city_handler_resource),
+)
+
+# -------------------------------------------------------- #
+# spot api references
+# -------------------------------------------------------- #
 spot_handler_resource = Resource(SpotHandler)
-
-# -------------------------------------------------------- #
-# Url Patterns
-# -------------------------------------------------------- #
-urlpatterns = patterns('',
-    url(r'^country/*$', country_handler_resource),
-    url(r'^country/(?P<name>[^/]+)/', country_handler_resource),
-
-    url(r'^region/*$', region_handler_resource),
-    url(r'^region/(?P<name>[^/]+)/', region_handler_resource),
-
-    url(r'^city/*$', city_handler_resource),
-    url(r'^city/(?P<name>[^/]+)/', city_handler_resource),
-
-    url(r'^spot/*$', spot_handler_resource),
-    url(r'^spot/(?P<name>[^/]+)/', spot_handler_resource),
+urlpatterns += patterns('',
+    url(r'^spot/$', spot_handler_resource),
+    url(r'^spot/search/(?P<name>[^/]+)/', spot_handler_resource),
+    url(r'^spot/show/(?P<id>[^/]+)/', spot_handler_resource),
 )
