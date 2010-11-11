@@ -1,8 +1,9 @@
 #------------------------------------------------------------------------------ 
-# Default Project Root
+# set up project roots
 #------------------------------------------------------------------------------ 
 import os,sys
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
 
 #------------------------------------------------------------------------------ 
 # Django settings for prototype project.
@@ -11,19 +12,15 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Galen Collins', 'x@gmail.com'),
+    ('Galen Collins', 'admin@trip.me'),
 )
 
 MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': os.path.join(PROJECT_ROOT, 'db/database'),                      # Or path to database file if using sqlite3.
-        'USER': '',                      # Not used with sqlite3.
-        'PASSWORD': '',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(PROJECT_ROOT, 'db/database'),
     }
 }
 
@@ -130,5 +127,5 @@ INTERNAL_IPS = ['127.0.0.1']
 #------------------------------------------------------------------------------ 
 import django.conf.global_settings as DEFAULT_SETTINGS
 TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
-    'context_processors.aggregator_conext',
+    'context_processors.global_settings',
 )

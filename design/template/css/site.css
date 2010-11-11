@@ -19,6 +19,8 @@
 	margin: 7px;
 }
 div#splash-market {
+position:relative;
+    font-family: 'Yanone Kaffeesatz';
 	text-align:left;
 	margin-bottom: 2em;
 }
@@ -39,13 +41,14 @@ div#splash-market h1 {
 	line-height:1em;
 	text-shadow: 0px 1px 2px #ddd;
 	font-weight:500;
-	font-size:58px;
+	font-size:60px;
 }
 div#splash-market h2 {
 	line-height:1em;
-	text-shadow: 0px 1px 2px #ddd;
+color:rgba(0,0,0,.1);
+    text-shadow: 0px 1px 2px #ddd;
 	font-weight:500;
-	font-size:30px;
+	font-size:60px;
 	font-style:italic;
 }
 div#splash-market a {

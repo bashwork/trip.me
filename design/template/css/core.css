@@ -12,6 +12,12 @@
   font-weight: normal;
   src: local('Neuton Regular'), local('Neuton'), url('http://themes.googleusercontent.com/font?kit=9R-MGIOQUdjAVeB6nE6PcQ') format('truetype');
 }
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url('http://themes.googleusercontent.com/font?kit=YDAoLskQQ5MOAgvHUQCcLdXn3cHbFGWU4T2HrSN6JF4') format('truetype');
+}
 
 /* base styles
 ----------------------------------------------------------------------*/
@@ -70,6 +76,7 @@ ol, ul { list-style:none; }
 /* site header element
 ----------------------------------------------------------------------*/
 header {
+    font-family: 'Yanone Kaffeesatz';
 	margin-top: 1em;
 	margin-bottom: 2em;
 }
