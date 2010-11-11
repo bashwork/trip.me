@@ -119,6 +119,7 @@ INSTALLED_APPS = (
     # custom applications
     #--------------------------------------------
     'tripme.guides',
+    'tripme.accounts',
 )
 INTERNAL_IPS = ['127.0.0.1']
 

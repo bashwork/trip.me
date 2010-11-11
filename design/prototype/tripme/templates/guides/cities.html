@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}trip.me - -guide-{% endblock %}
+{% block content_title %}Adding Cities to -guide-{% endblock %}
+
+{% block content %}
+
+      <article class="grid_10 instructions">
+	    <p>This is some text that describes how to use this interface</p>
+      </article>
+      <figure class="grid_2">
+	    <button id="button-add-city">Add New City</button>
+      </figure>
+	  <div class="clearfix"></div>
+
+      <section class="grid_4">
+        <ul id="city-list">
+		  <li><a href="#">London, England</a></li>
+		  <li><a href="#">Tijuana, Mexica</a></li>
+		  <li><a href="#">St. Louis, Missouri</a></li>
+        </ul>
+      </section>
+      <figure class="grid_8">
+        <div id="map-canvas"></div>
+      </figure>
+
+{% endblock %}
+
+{% block extra_dom %}
+    <div id="add-city-dialog" style="display:none">
+	  <input type="text" placeholder="Where do you want to go?"/>
+    </div>
+{% endblock %}
+
+{% block extra_javascript %}
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+    <script>
+    $(document).ready(function() {
+      var options = {
+        zoom : 2,
+        center : new google.maps.LatLng(-34.397, 150.644),
+		mapTypeControl : false,
+        mapTypeId : google.maps.MapTypeId.ROADMAP,
+		navigationControlOptions : {
+		  style : google.maps.NavigationControlStyle.SMALL
+		}
+      };
+      var map = new google.maps.Map(document.getElementById("map-canvas"), options);
+        $("#add-city-dialog").dialog({
+            modal : true,
+            position: 'center',
+            title : 'Add A New City', 
+			autoOpen : false,
+            resizable : false,
+            buttons : [
+            { text : "Add", click : function() { $(this).dialog("close"); } },
+            { text : "Cancel", click: function() { $(this).dialog("close"); } },
+            ],
+        });
+
+	  $("#button-add-city").click(function() {
+        $("#add-city-dialog").dialog('open');
+	  });
+    });
+    </script>
+{% endblock %}

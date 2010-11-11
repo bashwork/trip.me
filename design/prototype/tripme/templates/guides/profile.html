@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}trip.me - -guide-{% endblock %}
+{% block content_title %}Adding Cities to -guide-{% endblock %}
+
+{% block content %}
+
+      <div class="grid_4">
+        <section id="user-profile">
+          <figure class="user-slide">
+            <img src="img/image1.jpg" height="200px"/>
+          </figure>
+          <p>lorum impLorem ipsum dolor sit amet, consectetur adipiscing elit.s
+             Nullam semper laoreet nisl vel facilisis. Morbi dolor nunc, sagittis non vehicula sit amet,
+             porta in augue. Fusce nec odio erat. Nullam eu mattis lorem. Praesent egestas pharetra
+             neque. In hac habitasse platea dictumst. Pellentesque nec elit felis, et molestie lorem.
+             Integer aliquam tincidunt odio, eget posuere odio consectetur non.
+             Maecenas a sapien a est pharetra auctor.</p>
+          <ul id="profile-social">
+            <li><a href="#" class="facebok">Facebook</a></li>
+            <li><a href="#" class="twitter">Twitter</a></li>
+            <li><a href="#" class="linkedn">LinkedIn</a></li>
+            <li><a href="#" class="youtube">Youtube</a></li>
+          </ul>
+	    </section>
+      </div>
+
+      <section class="row_8">
+        <div class="grid_4">
+          <h2>Created Guides</h2>
+        </div>
+        <div class="grid_4">
+          <a href="#" class="button large red">Add New Guide</a>
+        </div>
+      </section>
+
+      <section class="column_8">
+        <div class="grid_4">
+	      <figure class="guide-slide">
+            <img src="img/image2.jpg" height="200px"/>
+	    	<div>
+	        <h1>Paris Trip</h1>
+	    	  <p>Some kind of description for the guide</p>
+	    	</div>
+	      </figure>
+	    </div>
+
+        <div class="grid_4">
+	      <figure class="guide-slide">
+            <img src="img/image3.jpg" height="200px"/>
+	    	<div>
+	        <h1>Melborne Trip</h1>
+	    	  <p>Some kind of description for the guide</p>
+	    	</div>
+	      </figure>
+	    </div>
+
+        <div class="grid_4">
+	      <figure class="guide-slide">
+            <img src="img/image1.jpg" height="200px"/>
+	    	<div>
+	          <h1>Egypt Trip</h1>
+	    	  <p>Some kind of description for the guide</p>
+	    	</div>
+	      </figure>
+	    </div>
+
+        <div class="grid_4">
+	      <figure class="guide-slide">
+            <img src="img/image2.jpg" height="200px"/>
+	    	<div>
+	          <h1>London Trip</h1>
+	    	  <p>Some kind of description for the guide</p>
+	    	</div>
+	      </figure>
+	    </div>
+	  </section>
+{% endblock %}
+
+{% block extra_javascript %}
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+	<script src="js/jquery.jgrowl.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (!localStorage["first-time"]) {
+            $.jGrowl("You should recieve an email with your account information. Happy travels!", {
+                header: "Welcome to Trip.Me",
+                sticky: true,
+                position: 'center',
+                speed: 1000,
+            });
+            localStorage["first-time"] = true;
+        }
+        $("a").click(function() {
+            return !$.jGrowl("Just pretend this worked kthx");
+        });
+    });
+    </script>
+{% endblock %}
