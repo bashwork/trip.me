@@ -9,6 +9,7 @@ django-profiles==0.2
 django-tagging==0.3.1
 django-voting==0.1
 docutils==0.7
+gunicorn==0.11.2
 ipdb==0.2
 ipython==0.10.1
 wsgiref==0.1.2

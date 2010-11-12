@@ -137,3 +137,4 @@ TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
 #------------------------------------------------------------------------------ 
 ACCOUNT_ACTIVATION_DAYS = 7
 AUTH_PROFILE_MODULE = "guides.UserProfile"
+LOGIN_REDIRECT_URL = "/"
