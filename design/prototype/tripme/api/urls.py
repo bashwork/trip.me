@@ -44,11 +44,21 @@ urlpatterns += patterns('',
 )
 
 # -------------------------------------------------------- #
-# spot api references
+# guide api references
 # -------------------------------------------------------- #
 guide_handler_resource = Resource(GuideHandler)
 urlpatterns += patterns('',
     url(r'^guide/$', guide_handler_resource),
     url(r'^guide/search/(?P<name>[^/]+)/', guide_handler_resource),
     url(r'^guide/show/(?P<id>[^/]+)/', guide_handler_resource),
+)
+
+# -------------------------------------------------------- #
+# user api references
+# -------------------------------------------------------- #
+user_handler_resource = Resource(UserHandler)
+urlpatterns += patterns('',
+    url(r'^user/$', user_handler_resource),
+    url(r'^user/search/(?P<name>[^/]+)/', user_handler_resource),
+    url(r'^user/show/(?P<id>[^/]+)/', user_handler_resource),
 )

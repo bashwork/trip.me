@@ -7,12 +7,7 @@ class CountryHandler(BaseHandler):
     model = Country
 
     def read(self, request, id=None, name=None):
-        '''
-        '''
-        if id != None: countries = Country.objects.get(id=id)
-        elif not name: countries = Country.objects.all()
-        else: countries = Country.objects.filter(name__icontains=name)
-        return countries
+        return api_query_helper(request, model=Country, id=id, name=name)
 
 class RegionHandler(BaseHandler):
     allowed_methods = ('GET',)
@@ -21,12 +16,8 @@ class RegionHandler(BaseHandler):
     __max__ = 100
 
     def read(self, request, id=None, name=None):
-        '''
-        '''
-        if id != None: regions = Region.objects.get(id=id)
-        elif not name: regions = Region.objects.all()[:self.__max__]
-        else: regions = Region.objects.filter(name__icontains=name)[:self.__max__]
-        return regions
+        result = api_query_helper(request, model=Region, id=id, name=name)
+        return result[:self.__max__]
 
 class CityHandler(BaseHandler):
     allowed_methods = ('GET',)
@@ -36,12 +27,8 @@ class CityHandler(BaseHandler):
     __max__ = 20
 
     def read(self, request, id=None, name=None):
-        '''
-        '''
-        if id != None: cities = City.objects.get(id=id)
-        elif not name: cities = City.objects.all()[:self.__max__]
-        else: cities = City.objects.filter(name__icontains=name)[:self.__max__]
-        return cities
+        result = api_query_helper(request, model=City, id=id, name=name)
+        return result[:self.__max__]
 
 class SpotHandler(BaseHandler):
     allowed_methods = ('GET',)
@@ -49,12 +36,8 @@ class SpotHandler(BaseHandler):
     __max__ = 20
 
     def read(self, request, id=None, name=None):
-        '''
-        '''
-        if id != None: spots = Spot.objects.get(id=id)
-        elif not name: spots = Spot.objects.all()[:self.__max__]
-        else: spots = Spot.objects.filter(name__icontains=name)[:self.__max__]
-        return spots
+        result = api_query_helper(request, model=Spot, id=id, name=name)
+        return result[:self.__max__]
 
 class GuideHandler(BaseHandler):
     allowed_methods = ('GET',)
@@ -63,9 +46,28 @@ class GuideHandler(BaseHandler):
     __max__ = 20
 
     def read(self, request, id=None, name=None):
-        '''
-        '''
-        if id != None: guides = Guide.objects.get(id=id)
-        elif not name: guides = Guide.objects.all()[:self.__max__]
-        else: guides = Guide.objects.filter(name__icontains=name)[:self.__max__]
-        return guides
+        result = api_query_helper(request, model=Guide, id=id, name=name)
+        return result[:self.__max__]
+
+class UserHandler(BaseHandler):
+    allowed_methods = ('GET',)
+    model = Guide
+    #fields = ('id', 'description', 'name', 'last_modified',('user',('id','username')))
+    __max__ = 20
+
+    def read(self, request, id=None, name=None):
+        result = api_query_helper(request, model=UserProfile, id=id, name=name)
+        return result[:self.__max__]
+
+#------------------------------------------------------------------------------ 
+# helper methods
+#------------------------------------------------------------------------------ 
+def api_query_helper(request, **kwargs):
+    id = kwargs.get('id',None)
+    name = kwargs.get('name', None)
+    model = kwargs.get('model')
+
+    if id != None: results = model.objects.filter(id=id)
+    elif not name: results = model.objects.all()
+    else: results = model.objects.filter(name__icontains=name)
+    return results

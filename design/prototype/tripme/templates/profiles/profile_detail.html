@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content_title %}{{ user.username }}'s Profile{% endblock %}
+
+{% block content %}
+
+<div>
+  {% csrf_token %}
+
+  <fieldset>
+  <ol>
+    {% for field in form %}
+      <li> {{ field.label_tag }} {{ field }} {{ field.errors }}</li>
+    {% endfor %}
+  </ol>
+  </fieldset>
+</div>
+
+{% endblock %}

@@ -27,7 +27,7 @@
   {% block full_container %}
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!-- Site Header -->
+    <!-- site header -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <header>
       <h1><a href="/"><span>{{ site.name }}</span></a></h1>
@@ -35,8 +35,12 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/guides/">Browse Guides</a></li>
-          <li><a href="/help/">Help</a></li>
-          <li><a href="/login/">Login</a></li>
+          <li><a href="/content/help/">Help</a></li>
+          {% if user.is_authenticated %}
+            <li><a href="/accounts/logout/">Logout</a></li>
+          {% else %}
+            <li><a href="/accounts/login/">Login</a></li>
+          {% endif %}
           {% block extra_navigation %}{% endblock %}
         </ul>
       </nav>
@@ -44,14 +48,14 @@
     </header>
     
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!-- Site Content -->
+    <!-- site content -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <section id="content" class="clearfix">
       {% block content %}{% endblock %}
     </section>
     
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!-- Site Footer -->
+    <!-- site footer -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <footer>
     {% block full_footer %}
@@ -69,9 +73,19 @@
     {% block extra_dom %}{% endblock %}
   {% endblock %}
   </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- site extra -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    {% if messages %}
+      <div class="message-list">
+        {% for messages in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </div>
+    {% endif %}
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!-- Javascript Includes -->
+    <!-- javascript includes -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script>!window.jQuery && document.write(unescape('%3Cscript src="{{ MEDIA_URL }}js/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -80,7 +94,7 @@
     </script>
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!-- Javascript Analytics -->
+    <!-- javascript analytics -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <script>
      var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];

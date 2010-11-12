@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}trip.me - login{% endblock %}
-{% block content_title %}Log in to your account{% endblock %}
+{% block content_title %}Create your account{% endblock %}
 
 {% block content %}
 
@@ -12,7 +11,7 @@
 </p>
 {% endif %}
 
-<form method="post" action="{% url django.contrib.auth.views.login %}">
+<form method="post" action="">
   {% csrf_token %}
 
   <fieldset>
@@ -25,7 +24,7 @@
 
 
   <fieldset>
-    <input type="submit" value"Login" />
+    <input type="submit" value"Create Account" />
     <input type="hidden" name="next" value="{{ next }}" />
   </fieldset>
 </form>

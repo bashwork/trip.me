@@ -39,7 +39,7 @@ a { color:#08a; text-decoration:none; }
 	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
 	position-relative;
 	cursor: pointer;
-	background-color: #2daebf; }
+	background-color: #2daebf;
 }
 .button:hover { background-color: #007d9a; }
 
@@ -116,10 +116,11 @@ footer ul#social-network li a:hover {
 	-moz-transition: all 1s ease-in-out;
 	-o-transition: all 1s ease-in-out;
 }
-footer ul#social-network li.t a { background:url(../img/twitter-logo.png) no-repeat; }
-footer ul#social-network li.rss a { background:url(../img/rss-logo.png) no-repeat; }
-footer ul#social-network li.tech a { background:url(../img/technorati-logo.png) no-repeat; }
+footer ul#social-network li.twit a  { background:url(../img/twitter-logo.png) no-repeat; }
+footer ul#social-network li.rss a   { background:url(../img/rss-logo.png) no-repeat; }
+footer ul#social-network li.tech a  { background:url(../img/technorati-logo.png) no-repeat; }
 footer ul#social-network li.email a { background:url(../img/email-logo.png) no-repeat; }
+footer ul#social-network li.blog a  { background:url(../img/blogger-logo.png) no-repeat; }
 
 /* Splash Page
 ----------------------------------------------------------------------*/
