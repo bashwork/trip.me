@@ -121,8 +121,6 @@ INSTALLED_APPS = (
     # custom applications
     #--------------------------------------------
     'tripme.guides',
-    #'tripme.accounts',
-
 )
 INTERNAL_IPS = ['127.0.0.1']
 
@@ -138,3 +136,4 @@ TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
 # third party configuration
 #------------------------------------------------------------------------------ 
 ACCOUNT_ACTIVATION_DAYS = 7
+AUTH_PROFILE_MODULE = "guides.UserProfile"

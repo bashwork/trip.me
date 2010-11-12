@@ -182,3 +182,14 @@ class GuideSpotEntry(models.Model):
     def __unicode__(self):
         return self.spot.name
 
+# -------------------------------------------------------- #
+# user profile extension
+# -------------------------------------------------------- #
+class UserProfile(models.Model):
+    user = models.ForeignKey(User, unique=True)
+    image = models.ImageField(upload_to="users/%Y/%m", null=True, blank=True)
+    description = models.TextField(null=True, blank=True)
+    twitter = models.CharField(max_length=50)
+    facebook = models.CharField(max_length=50)
+    youtube = models.CharField(max_length=50)
+    flickr = models.CharField(max_length=50)

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content_title %}Create your profile{% endblock %}
+
+{% block content %}
+
+{% if form.errors %}
+<p class="error">
+  There were errors in the profile data you entered. Please
+  correct the errors and try again.
+</p>
+{% endif %}
+
+<form method="post" action="">
+  {% csrf_token %}
+
+  <fieldset>
+  <ol>
+    {% for field in form %}
+      <li> {{ field.label_tag }} {{ field }} {{ field.errors }}</li>
+    {% endfor %}
+  </ol>
+  </fieldset>
+
+
+  <fieldset>
+    <input type="submit" value"Update Profile" />
+    <input type="hidden" name="next" value="{{ next }}" />
+  </fieldset>
+</form>
+
+{% endblock %}
