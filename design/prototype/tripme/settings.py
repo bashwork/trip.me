@@ -115,11 +115,14 @@ INSTALLED_APPS = (
     'debug_toolbar',
     'alphafilter',
     'tagging',
+    'profiles',
+    'registration',
     #--------------------------------------------
     # custom applications
     #--------------------------------------------
     'tripme.guides',
-    'tripme.accounts',
+    #'tripme.accounts',
+
 )
 INTERNAL_IPS = ['127.0.0.1']
 
@@ -130,3 +133,8 @@ import django.conf.global_settings as DEFAULT_SETTINGS
 TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
     'context_processors.global_settings',
 )
+
+#------------------------------------------------------------------------------ 
+# third party configuration
+#------------------------------------------------------------------------------ 
+ACCOUNT_ACTIVATION_DAYS = 7

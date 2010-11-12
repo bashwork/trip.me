@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}trip.me - login{% endblock %}
+{% block content_title %}Log in to your account{% endblock %}
+
+{% block content %}
+
+{% if form.errors %}
+<p class="error">
+Your username and password didn't match our records.
+Please try again. If you have forgotten your password,
+we can help you reset it, just <a href="/accounts/password/reset">click here</a>.
+</p>
+{% endif %}
+
+<form method="post" action="">
+  {% csrf_token %}
+
+  <fieldset>
+  <ol>
+    {% for field in form %}
+      <li> {{ field.label_tag }} {{ field }} {{ field.errors }}</li>
+    {% endfor %}
+  </ol>
+  </fieldset>
+
+
+  <fieldset>
+    <input type="submit" value"Login" />
+    <input type="hidden" name="next" value="{{ next }}" />
+  </fieldset>
+</form>
+
+{% endblock %}

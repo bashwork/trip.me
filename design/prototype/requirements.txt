@@ -4,6 +4,8 @@ distribute==0.6.14
 django-alphafilter==0.5
 django-debug-toolbar==0.8.3
 django-piston==0.2.2
+django-profiles==0.2
+-e hg+http://bitbucket.org/ubernostrum/django-registration/@d36a38202ee3d09d342b000f4ff634296f90df49#egg=django_registration-tip
 django-tagging==0.3.1
 django-voting==0.1
 docutils==0.7
