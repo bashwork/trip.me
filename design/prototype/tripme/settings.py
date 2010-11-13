@@ -120,7 +120,7 @@ INSTALLED_APPS = (
     #--------------------------------------------
     # custom applications
     #--------------------------------------------
-    'tripme.guides',
+    'tripme.apps.guides',
     'tripme.apps.users',
     'tripme.apps.api',
 )

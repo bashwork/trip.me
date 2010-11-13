@@ -7,12 +7,12 @@ urlpatterns = patterns('',
     (r'^$', 'django.views.generic.simple.direct_to_template', {'template':'splash.html'}),
     (r'^accounts/', include('registration.backends.simple.urls')),
     #(r'^accounts/', include('registration.backends.default.urls')),
-    (r'^guides/', include('tripme.guides.urls')),
     (r'^users/', include('profiles.urls')),
-    (r'^api/v1/', include('tripme.apps.api.urls')),
     (r'^admin/', include(admin.site.urls)),
     (r'^comments/', include('django.contrib.comments.urls')),
     (r'^content/(?P<name>[^/]+)/', include('django.contrib.comments.urls')),
+    (r'^guides/', include('tripme.apps.guides.urls')),
+    (r'^api/v1/', include('tripme.apps.api.urls')),
 )
 
 #------------------------------------------------------------------------------ 
