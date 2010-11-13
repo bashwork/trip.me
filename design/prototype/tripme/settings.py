@@ -20,7 +20,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(PROJECT_ROOT, 'db/database'),
+        'NAME': os.path.join(PROJECT_ROOT, 'db/development.db'),
     }
 }
 
@@ -117,6 +117,7 @@ INSTALLED_APPS = (
     'tagging',
     'profiles',
     'registration',
+    'south',
     #--------------------------------------------
     # custom applications
     #--------------------------------------------

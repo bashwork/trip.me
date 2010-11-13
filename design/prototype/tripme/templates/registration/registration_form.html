@@ -11,22 +11,24 @@
 </p>
 {% endif %}
 
-<form method="post" action="">
-  {% csrf_token %}
-
-  <fieldset>
-  <ol>
-    {% for field in form %}
-      <li> {{ field.label_tag }} {{ field }} {{ field.errors }}</li>
-    {% endfor %}
-  </ol>
-  </fieldset>
-
-
-  <fieldset>
-    <input type="submit" value"Create Account" />
-    <input type="hidden" name="next" value="{{ next }}" />
-  </fieldset>
-</form>
+<div class="grid_6 prefix_3 suffix_3">
+  <form class="styled-form" method="post" action="">
+    {% csrf_token %}
+  
+    <fieldset>
+    <legend>Account Information</legend>
+    <ol>
+      {% for field in form %}
+        <li> {{ field.label_tag }} {{ field }} {{ field.errors }}</li>
+      {% endfor %}
+    </ol>
+    </fieldset>
+  
+    <fieldset>
+      <button class="button blue larege" type="submit">Create Account</button>
+      <input type="hidden" name="next" value="{{ next }}" />
+    </fieldset>
+  </form>
+</div>
 
 {% endblock %}

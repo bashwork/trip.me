@@ -10,12 +10,12 @@ admin.site.register(UserProfile,
     list_per_page = 200,
 )
 
-#admin.site.register(Service,
-#    ordering      = ["profile"],
-#    search_fields = ["profile"],
-#    list_display  = ["profile","service"],
-#    list_filter   = ["profile","service"],
-#    list_per_page = 200,
-#)
-#
-#admin.site.register(ServiceType)
+admin.site.register(Service,
+    ordering      = ["profile"],
+    search_fields = ["profile"],
+    list_display  = ["profile","service"],
+    list_filter   = ["profile","service"],
+    list_per_page = 200,
+)
+
+admin.site.register(ServiceType)
