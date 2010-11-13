@@ -8,6 +8,8 @@
   <ol>
     {% for profile in object_list %}
       <li><a href="{{ profile.get_absolute_url }}">{{ profile.username }}</a></li>
+    {% empty %}
+      <li>Sorry, there are currently not any users in the system.</a></li>
     {% endfor %}
   </ol>
 </div>
