@@ -127,6 +127,7 @@ INSTALLED_APPS = (
     'tripme.apps.guides',
     'tripme.apps.users',
     'tripme.apps.api',
+    'tripme.apps.extra',
 )
 INTERNAL_IPS = ['127.0.0.1']
 

@@ -33,6 +33,21 @@ a { color:#08a; text-decoration:none; }
 a:hover { color:#28a; }
 ol, ul { list-style:none; }
 
+blockquote {
+    display:block;
+    font-size:40px;
+    font-style:italic;
+}
+
+blockquote:before {
+    font-size: 700%;
+    color: rgba(0,0,0,0.5);
+    width:50px;
+    content: open-quote;
+    height: 0;
+    margin-left: -0.55em;
+}
+
 /* input button elements:
  * http://www.zurb.com/blog_uploads/0000/0617/buttons-03.html
 ----------------------------------------------------------------------*/

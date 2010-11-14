@@ -1,0 +1,394 @@
+[
+    {
+        "pk": 1,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Travel is fatal to prejudice, bigotry, and narrow-mindedness.",
+            "author": "Mark Twain" 
+        } 
+    },
+    {
+        "pk": 2,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "The world is a book and those who do not travel read only one page.",
+            "author": "St. Augustine" 
+        } 
+    },
+    {
+        "pk": 3,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "There are no foreign lands. It is the traveler only who is foreign.",
+            "author": "Robert Louis Stevenson" 
+        } 
+    },
+    {
+        "pk": 4,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "The use of traveling is to regulate imagination by reality, and instead of thinking how things may be, to see them as they are.",
+            "author": "Samuel Johnson" 
+        } 
+    },
+    {
+        "pk": 5,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "All the pathos and irony of leaving one’s youth behind is thus implicit in every joyous moment of travel: one knows that the first joy can never be recovered, and the wise traveler learns not to repeat successes but tries new places all the time.",
+            "author": "Paul Fussell" 
+        } 
+    },
+    {
+        "pk": 6,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Our battered suitcases were piled on the sidewalk again; we had longer ways to go. But no matter, the road is life.",
+            "author": "Jack Kerouac" 
+        } 
+    },
+    {
+        "pk": 7,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "He who does not travel does not know the value of men.",
+            "author": "Moorish proverb" 
+        } 
+    },
+    {
+        "pk": 8,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "People travel to faraway places to watch, in fascination, the kind of people they ignore at home.",
+            "author": "Dagobert D. Runes" 
+        } 
+    },
+    {
+        "pk": 9,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "A journey is like marriage. The certain way to be wrong is to think you control it.",
+            "author": "John Steinbeck" 
+        } 
+    },
+    {
+        "pk": 10,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "No one realizes how beautiful it is to travel until he comes home and rests his head on his old, familiar pillow.",
+            "author": "Lin Yutang" 
+        } 
+    },
+    {
+        "pk": 11,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Your true traveler finds boredom rather agreeable than painful. It is the symbol of his liberty-his excessive freedom. He accepts his boredom, when it comes, not merely philosophically, but almost with pleasure.",
+            "author": "Aldous Huxley" 
+        } 
+    },
+    {
+        "pk": 12,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "All travel has its advantages. If the passenger visits better countries, he may learn to improve his own. And if fortune carries him to worse, he may learn to enjoy it.",
+            "author": "Samuel Johnson" 
+        } 
+    },
+    {
+        "pk": 13,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "For my part, I travel not to go anywhere, but to go. I travel for travel’s sake. The great affair is to move.",
+            "author": "Robert Louis Stevenson" 
+        } 
+    },
+    {
+        "pk": 14,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Traveling is a brutality. It forces you to trust strangers and to lose sight of all that familiar comfort of home and friends. You are constantly off balance. Nothing is yours except the essential things – air, sleep, dreams, the sea, the sky – all things tending towards the eternal or what we imagine of it.",
+            "author": "Cesare Pavese" 
+        } 
+    },
+    {
+        "pk": 15,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "One’s destination is never a place, but a new way of seeing things.",
+            "author": "Henry Miller" 
+        } 
+    },
+    {
+        "pk": 16,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "When we get out of the glass bottle of our ego and when we escape like the squirrels in the cage of our personality and get into the forest again, we shall shiver with cold and fright. But things will happen to us so that we don’t know ourselves. Cool, unlying life will rush in.",
+            "author": "D. H. Lawrence" 
+        } 
+    },
+    {
+        "pk": 17,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "To awaken quite alone in a strange town is one of the pleasantest sensations in the world.",
+            "author": "Freya Stark" 
+        } 
+    },
+    {
+        "pk": 18,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Twenty years from now you will be more disappointed by the things you didn’t do than by the ones you did do. So throw off the bowlines, sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.",
+            "author": "Mark Twain" 
+        } 
+    },
+    {
+        "pk": 19,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Travel is more than the seeing of sights; it is a change that goes on, deep and permanent, in the ideas of living.",
+            "author": "Miriam Beard" 
+        } 
+    },
+    {
+        "pk": 20,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "We live in a wonderful world that is full of beauty, charm and adventure. There is no end to the adventures we can have if only we seek them with our eyes open.",
+            "author": "Jawaharial Nehru" 
+        } 
+    },
+    {
+        "pk": 21,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Tourists don’t know where they’ve been, travelers don’t know where they’re going.",
+            "author": "Paul Theroux" 
+        } 
+    },
+    {
+        "pk": 22,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "To my mind, the greatest reward and luxury of travel is to be able to experience everyday things as if for the first time, to be in a position in which almost nothing is so familiar it is taken for granted.",
+            "author": "Bill Bryson" 
+        } 
+    },
+    {
+        "pk": 23,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Do not follow where the path may lead. Go instead where there is no path and leave a trail",
+            "author": "Ralph Waldo Emerson" 
+        } 
+    },
+    {
+        "pk": 24,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Two roads diverged in a wood and I – I took the one less traveled by.",
+            "author": "Robert Frost" 
+        } 
+    },
+    {
+        "pk": 25,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "A journey of a thousand miles must begin with a single step.",
+            "author": "Lao Tzu" 
+        } 
+    },
+    {
+        "pk": 26,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "There is no moment of delight in any pilgrimage like the beginning of it.",
+            "author": "Charles Dudley Warner" 
+        } 
+    },
+    {
+        "pk": 27,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "A good traveler has no fixed plans and is not intent on arriving.",
+            "author": "Lao Tzu" 
+        } 
+    },
+    {
+        "pk": 28,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "If you reject the food, ignore the customs, fear the religion and avoid the people, you might better stay at home.",
+            "author": "James Michener" 
+        } 
+    },
+    {
+        "pk": 29,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "The journey not the arrival matters.",
+            "author": "T. S. Eliot" 
+        } 
+    },
+    {
+        "pk": 30,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "A journey is best measured in friends, rather than miles.",
+            "author": "Tim Cahill" 
+        } 
+    },
+    {
+        "pk": 31,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "I have found out that there ain’t no surer way to find out whether you like people or hate them than to travel with them.",
+            "author": "Mark Twain" 
+        } 
+    },
+    {
+        "pk": 32,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Once you have traveled, the voyage never ends, but is played out over and over again in the quiestest chambers. The mind can never break off from the journey.",
+            "author": "Pat Conroy" 
+        } 
+    },
+    {
+        "pk": 33,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Not all those who wander are lost.",
+            "author": "J. R. R. Tolkien" 
+        } 
+    },
+    {
+        "pk": 34,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Like all great travelers, I have seen more than I remember, and remember more than I have seen.",
+            "author": "Benjamin Disraeli" 
+        } 
+    },
+    {
+        "pk": 35,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Perhaps travel cannot prevent bigotry, but by demonstrating that all peoples cry, laugh, eat, worry, and die, it can introduce the idea that if we try and understand each other, we may even become friends.",
+            "author": "Maya Angelou" 
+        } 
+    },
+    {
+        "pk": 36,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Too often travel, instead of broadening the mind, merely lengthens the conversation.",
+            "author": "Elizabeth Drew" 
+        } 
+    },
+    {
+        "pk": 37,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Wandering re-establishes the original harmony which once existed between man and the universe",
+            "author": "Anatole France" 
+        } 
+    },
+    {
+        "pk": 38,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Travel and change of place impart new vigor to the mind.",
+            "author": "Seneca" 
+        } 
+    },
+    {
+        "pk": 39,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "What you’ve done becomes the judge of what you’re going to do – especially in other people’s minds. When you’re traveling, you are what you are right there and then. People don’t have your past to hold against you. No yesterdays on the road.",
+            "author": "William Least Heat Moon" 
+        } 
+    },
+    {
+        "pk": 40,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "I soon realized that no journey carries one far unless, as it extends into the world around us, it goes an equal distance into the world within.",
+            "author": "Lillian Smith" 
+        } 
+    },
+    {
+        "pk": 41,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "To travel is to discover that everyone is wrong about other countries.",
+            "author": "Aldous Huxley" 
+        } 
+    },
+    {
+        "pk": 42,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Travel does what good novelists also do to the life of everyday, placing it like a picture in a frame or a gem in its setting, so that the intrinsic qualities are made more clear. Travel does this with the very stuff that everyday life is made of, giving to it the sharp contour and meaning of art.",
+            "author": "Freya Stark" 
+        } 
+    },
+    {
+        "pk": 43,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "The first condition of understanding a foreign country is to smell it.",
+            "author": "Rudyard Kipling" 
+        } 
+    },
+    {
+        "pk": 44,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Travel is glamorous only in retrospect.",
+            "author": "Paul Theroux" 
+        } 
+    },
+    {
+        "pk": 45,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "The whole object of travel is not to set foot on foreign land; it is at last to set foot on one’s own country as a foreign land.",
+            "author": "G. K. Chesterton" 
+        } 
+    },
+    {
+        "pk": 46,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "When you travel, remember that a foreign country is not designed to make you comfortable. It is designed to make its own people comfortable.",
+            "author": "Clifton Fadiman" 
+        } 
+    },
+    {
+        "pk": 47,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "A wise traveler never despises his own country.",
+            "author": "Carlo Goldoni" 
+        } 
+    },
+    {
+        "pk": 48,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "Adventure is a path. Real adventure – self-determined, self-motivated, often risky – forces you to have firsthand encounters with the world. The world the way it is, not the way you imagine it. Your body will collide with the earth and you will bear witness. In this way you will be compelled to grapple with the limitless kindness and bottomless cruelty of humankind – and perhaps realize that you yourself are capable of both. This will change you. Nothing will ever again be black-and-white.",
+            "author": "Mark Jenkins" 
+        } 
+    },
+    {
+        "pk": 49,
+        "model" : "extra.quote",
+        "fields" : {
+            "quote" : "A journey of a thousand miles must begin with a single step.",
+            "author": "Lao Tzu" 
+        } 
+    } 
+]

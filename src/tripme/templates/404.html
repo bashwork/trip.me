@@ -1,10 +1,15 @@
 {% extends "base.html" %}
 
-{% block title %}We Couldn't Find That{% endblock %}
-
 {% block content_title %}We Couldn't Find That{% endblock %}
 
 {% block content %}
-Sorry, we were not able to find that, maybe try going back
-where you were?
+{% load random_quote %}
+
+<section class="lost-block">
+  <p>We couldn't find what you were looking for, but we
+  would hate to leave you empty handed:</p>
+
+  {% random_quote %} 
+</section>
+
 {% endblock %}
