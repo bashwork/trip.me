@@ -1,0 +1,3577 @@
+[
+    {
+        "pk": 1, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "AF", 
+            "name": "Afghanistan", 
+            "reference": "Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Kabul ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "AL", 
+            "name": "Albania", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Tirana ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "DZ", 
+            "name": "Algeria", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Algiers ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "AS", 
+            "name": "American Samoa", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Pago Pago ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "AD", 
+            "name": "Andorra", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Andorra la Vella ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "AO", 
+            "name": "Angola", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Luanda ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "AI", 
+            "name": "Anguilla", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "The Valley ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "AQ", 
+            "name": "Antarctica", 
+            "reference": "Antarctic Region ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "AG", 
+            "name": "Antigua and Barbuda", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Saint John's ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "AR", 
+            "name": "Argentina", 
+            "reference": "South America ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Buenos Aires ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "AM", 
+            "name": "Armenia", 
+            "reference": "Commonwealth of Independent States ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Yerevan ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "AW", 
+            "name": "Aruba", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Oranjestad ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Ashmore and Cartier", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "AU", 
+            "name": "Australia", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Canberra ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "AT", 
+            "name": "Austria", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Vienna ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "AZ", 
+            "name": "Azerbaijan", 
+            "reference": "Commonwealth of Independent States ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Baku (Baki) ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BH", 
+            "name": "Bahrain", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Manama ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Baker Island", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BD", 
+            "name": "Bangladesh", 
+            "reference": "Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Dhaka ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BB", 
+            "name": "Barbados", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Bridgetown ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Bassas da India", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BY", 
+            "name": "Belarus", 
+            "reference": "Commonwealth of Independent States ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Minsk ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BE", 
+            "name": "Belgium", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Brussels ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BZ", 
+            "name": "Belize", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Belmopan ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BJ", 
+            "name": "Benin", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Porto-Novo  ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BM", 
+            "name": "Bermuda", 
+            "reference": "North America ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Hamilton ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BT", 
+            "name": "Bhutan", 
+            "reference": "Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Thimphu ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BO", 
+            "name": "Bolivia", 
+            "reference": "South America ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "La Paz /Sucre ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BA", 
+            "name": "Bosnia and Herzegovina", 
+            "reference": "Bosnia and Herzegovina", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Sarajevo ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BW", 
+            "name": "Botswana", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Gaborone ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BV", 
+            "name": "Bouvet Island", 
+            "reference": "Antarctic Region ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BR", 
+            "name": "Brazil", 
+            "reference": "South America ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Brasilia ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "IO", 
+            "name": "British Indian Ocean Territory", 
+            "reference": "World ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "VG", 
+            "name": "British Virgin Islands", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Road Town ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BN", 
+            "name": "Brunei Darussalam", 
+            "reference": "", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BG", 
+            "name": "Bulgaria", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Sofia ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BF", 
+            "name": "Burkina Faso", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Ouagadougou ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MM", 
+            "name": "Burma", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Rangoon ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BI", 
+            "name": "Burundi", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Bujumbura ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "KH", 
+            "name": "Cambodia", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Phnom Penh ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CM", 
+            "name": "Cameroon", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Yaounde ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CA", 
+            "name": "Canada", 
+            "reference": "North America ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Ottawa ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CV", 
+            "name": "Cape Verde", 
+            "reference": "World ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Praia ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "KY", 
+            "name": "Cayman Islands", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "George Town ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CF", 
+            "name": "Central African Republic", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Bangui ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "TD", 
+            "name": "Chad", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "N'Djamena ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CL", 
+            "name": "Chile", 
+            "reference": "South America ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Santiago ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CN", 
+            "name": "China", 
+            "reference": "Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Beijing ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CX", 
+            "name": "Christmas Island", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "The Settlement ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Clipperton Island", 
+            "reference": "World ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CC", 
+            "name": "Cocos (Keeling) Islands", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "West Island ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CO", 
+            "name": "Colombia", 
+            "reference": "South America", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Bogota ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "KM", 
+            "name": "Comoros", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Moroni ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CG", 
+            "name": "Congo", 
+            "reference": "Kinshasa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "CD", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CF", 
+            "name": "Congo", 
+            "reference": "Brazzaville ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "CG", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CK", 
+            "name": "Cook Islands", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Avarua ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Coral Sea Islands", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CR", 
+            "name": "Costa Rica", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "San Jose ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CI", 
+            "name": "Cote d'Ivoire", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Yamoussoukro", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 61, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "HR", 
+            "name": "Croatia", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Zagreb ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CU", 
+            "name": "Cuba", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Havana ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CY", 
+            "name": "Cyprus", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Nicosia ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 64, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CZ", 
+            "name": "Czech Republic", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Prague ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 65, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "DK", 
+            "name": "Denmark", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Copenhagen ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 66, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "DJ", 
+            "name": "Djibouti", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Djibouti ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 67, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "DM", 
+            "name": "Dominica", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Roseau ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 68, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "DO", 
+            "name": "Dominican Republic", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Santo Domingo ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 69, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "TL", 
+            "name": "East Timor", 
+            "reference": "", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 70, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "EC", 
+            "name": "Ecuador", 
+            "reference": "South America ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Quito ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 71, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "EG", 
+            "name": "Egypt", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Cairo ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 72, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SV", 
+            "name": "El Salvador", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "San Salvador ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 73, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GQ", 
+            "name": "Equatorial Guinea", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Malabo ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 74, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "ER", 
+            "name": "Eritrea", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Asmara ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 75, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "EE", 
+            "name": "Estonia", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Tallinn ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 76, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "ET", 
+            "name": "Ethiopia", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Addis Ababa ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 77, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Europa Island", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 78, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "FK", 
+            "name": "Falkland Islands (Islas Malvinas)", 
+            "reference": "South America", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Stanley", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 79, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "FO", 
+            "name": "Faroe Islands", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Torshavn ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 80, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "FJ", 
+            "name": "Fiji", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Suva ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 81, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "FI", 
+            "name": "Finland", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Helsinki ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 82, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "FR", 
+            "name": "France", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Paris ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 83, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "France", 
+            "reference": "", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "FX", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 84, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GF", 
+            "name": "French Guiana", 
+            "reference": "South America ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Cayenne ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 85, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "PF", 
+            "name": "French Polynesia", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Papeete ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 86, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "TF", 
+            "name": "French Southern and Antarctic Lands", 
+            "reference": "Antarctic Region ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 87, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GA", 
+            "name": "Gabon", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Libreville ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 89, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Gaza Strip", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 90, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GE", 
+            "name": "Georgia", 
+            "reference": "Commonwealth of Independent States ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "T'bilisi ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 91, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "DE", 
+            "name": "Germany", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Berlin ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 92, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GH", 
+            "name": "Ghana", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Accra ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 93, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GI", 
+            "name": "Gibraltar", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Gibraltar ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 94, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Glorioso Islands", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 95, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GR", 
+            "name": "Greece", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Athens ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 96, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GL", 
+            "name": "Greenland", 
+            "reference": "Arctic Region ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Nuuk ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 97, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GD", 
+            "name": "Grenada", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Saint George's ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 98, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GP", 
+            "name": "Guadeloupe", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Basse-Terre ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 99, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GU", 
+            "name": "Guam", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Hagatna", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 100, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GT", 
+            "name": "Guatemala", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Guatemala ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 101, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Guernsey", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Saint Peter Port ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 102, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GN", 
+            "name": "Guinea", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Conakry ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 103, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GW", 
+            "name": "Guinea-Bissau", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Bissau ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 104, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GY", 
+            "name": "Guyana", 
+            "reference": "South America ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Georgetown ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 105, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "HT", 
+            "name": "Haiti", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Port-au-Prince ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 106, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "HM", 
+            "name": "Heard Island and McDonald Islands", 
+            "reference": "Antarctic Region ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 107, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "VA", 
+            "name": "Holy See (Vatican City)", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Vatican City ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 108, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "HN", 
+            "name": "Honduras", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Tegucigalpa ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 109, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "HK", 
+            "name": "Hong Kong (SAR)", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 110, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Howland Island", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 111, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "HU", 
+            "name": "Hungary", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Budapest ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 112, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "IS", 
+            "name": "Iceland", 
+            "reference": "Arctic Region ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Reykjavik ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 113, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "IN", 
+            "name": "India", 
+            "reference": "Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "New Delhi ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 114, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "ID", 
+            "name": "Indonesia", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Jakarta ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 115, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "IR", 
+            "name": "Iran", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Tehran ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 116, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "IQ", 
+            "name": "Iraq", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Baghdad ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 117, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "IE", 
+            "name": "Ireland", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Dublin ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 118, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "IL", 
+            "name": "Israel", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Jerusalem", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 119, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "IT", 
+            "name": "Italy", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Rome ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 120, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "JM", 
+            "name": "Jamaica", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Kingston ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 121, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Jan Mayen", 
+            "reference": "Arctic Region ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 122, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "JP", 
+            "name": "Japan", 
+            "reference": "Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Tokyo ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 123, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Jarvis Island", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 124, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Jersey", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Saint Helier ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 125, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Johnston Atoll", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 126, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "JO", 
+            "name": "Jordan", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Amman ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 127, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Juan de Nova Island", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 128, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "KZ", 
+            "name": "Kazakhstan", 
+            "reference": "Commonwealth of Independent States ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Astana ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 129, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "KE", 
+            "name": "Kenya", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Nairobi ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 130, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Kingman Reef", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 131, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "KI", 
+            "name": "Kiribati", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Tarawa ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 132, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "KN", 
+            "name": "Korea", 
+            "reference": "P'yongyang ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "KP", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 133, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "KS", 
+            "name": "Korea", 
+            "reference": "Seoul ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "KR", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 134, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "KW", 
+            "name": "Kuwait", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Kuwait ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 135, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "KG", 
+            "name": "Kyrgyzstan", 
+            "reference": "Commonwealth of Independent States ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Bishkek ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 136, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "LA", 
+            "name": "Laos", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Vientiane ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 137, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "LV", 
+            "name": "Latvia", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Riga ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 138, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "LB", 
+            "name": "Lebanon", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Beirut ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 139, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "LS", 
+            "name": "Lesotho", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Maseru ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 140, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "LR", 
+            "name": "Liberia", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Monrovia ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 141, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "LY", 
+            "name": "Libya", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Tripoli ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 142, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "LI", 
+            "name": "Liechtenstein", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Vaduz ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 143, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "LT", 
+            "name": "Lithuania", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Vilnius ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 144, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "LU", 
+            "name": "Luxembourg", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Luxembourg ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 145, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MO", 
+            "name": "Macao", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 146, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MK", 
+            "name": "Macedonia", 
+            "reference": "Skopje ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "MK", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 147, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MG", 
+            "name": "Madagascar", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Antananarivo ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 148, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MW", 
+            "name": "Malawi", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Lilongwe ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 149, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MY", 
+            "name": "Malaysia", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Kuala Lumpur ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 150, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MV", 
+            "name": "Maldives", 
+            "reference": "Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Male ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 151, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "ML", 
+            "name": "Mali", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Bamako ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 152, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MT", 
+            "name": "Malta", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Valletta ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 153, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "IM", 
+            "name": "Man", 
+            "reference": "Douglas ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "IM", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 154, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MH", 
+            "name": "Marshall Islands", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Majuro ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 155, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MQ", 
+            "name": "Martinique", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Fort-de-France ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 156, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MR", 
+            "name": "Mauritania", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Nouakchott ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 157, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MU", 
+            "name": "Mauritius", 
+            "reference": "World ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Port Louis ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 158, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "YT", 
+            "name": "Mayotte", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Mamoutzou ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 159, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MX", 
+            "name": "Mexico", 
+            "reference": "North America ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Mexico ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 160, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "FM", 
+            "name": "Micronesia", 
+            "reference": "Palikir ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "FM", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 161, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Midway Islands", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 162, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Miscellaneous (French)", 
+            "reference": "", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 163, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MD", 
+            "name": "Moldova", 
+            "reference": "Commonwealth of Independent States ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Chisinau ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 164, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MC", 
+            "name": "Monaco", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Monaco ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 165, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MN", 
+            "name": "Mongolia", 
+            "reference": "Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Ulaanbaatar ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 166, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Montenegro", 
+            "reference": "", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 167, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MS", 
+            "name": "Montserrat", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Plymouth", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 168, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MA", 
+            "name": "Morocco", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Rabat ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 169, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MZ", 
+            "name": "Mozambique", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Maputo ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 170, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Myanmar", 
+            "reference": "", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 171, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "NA", 
+            "name": "Namibia", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Windhoek ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 172, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "NR", 
+            "name": "Nauru", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 173, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Navassa Island", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 174, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "NP", 
+            "name": "Nepal", 
+            "reference": "Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Kathmandu ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 175, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "NL", 
+            "name": "Netherlands", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Amsterdam ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 176, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "AN", 
+            "name": "Netherlands Antilles", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Willemstad ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 177, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "NC", 
+            "name": "New Caledonia", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Noumea ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 178, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "NZ", 
+            "name": "New Zealand", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Wellington ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 179, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "NI", 
+            "name": "Nicaragua", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Managua ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 180, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "NE", 
+            "name": "Niger", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Niamey ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 181, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "NG", 
+            "name": "Nigeria", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Abuja", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 182, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "NU", 
+            "name": "Niue", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Alofi ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 183, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "NF", 
+            "name": "Norfolk Island", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Kingston ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 184, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "MP", 
+            "name": "Northern Mariana Islands", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Saipan ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 185, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "NO", 
+            "name": "Norway", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Oslo ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 186, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "OM", 
+            "name": "Oman", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Muscat ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 187, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "PK", 
+            "name": "Pakistan", 
+            "reference": "Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Islamabad ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 188, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "PW", 
+            "name": "Palau", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Koror ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 275, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Palestinian Territory", 
+            "reference": "", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "PS", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 189, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Palmyra Atoll", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 190, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "PA", 
+            "name": "Panama", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Panama ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 191, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "PG", 
+            "name": "Papua New Guinea", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Port Moresby ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 192, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Paracel Islands", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 193, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "PY", 
+            "name": "Paraguay", 
+            "reference": "South America ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Asuncion ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 194, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "PE", 
+            "name": "Peru", 
+            "reference": "South America ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Lima ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 195, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "PH", 
+            "name": "Philippines", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Manila ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 196, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "PN", 
+            "name": "Pitcairn Islands", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Adamstown ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 197, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "PL", 
+            "name": "Poland", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Warsaw ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 198, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "PT", 
+            "name": "Portugal", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Lisbon ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 199, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "PR", 
+            "name": "Puerto Rico", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "San Juan ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 200, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "QA", 
+            "name": "Qatar", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Doha ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 202, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "RO", 
+            "name": "Romania", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Bucharest ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 203, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "RU", 
+            "name": "Russia", 
+            "reference": "Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Moscow ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 204, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "RW", 
+            "name": "Rwanda", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Kigali ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 201, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "RE", 
+            "name": "R\u00e9union", 
+            "reference": "World", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Saint-Denis", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 205, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SH", 
+            "name": "Saint Helena", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Jamestown ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 206, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "KN", 
+            "name": "Saint Kitts and Nevis", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Basseterre ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 207, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "LC", 
+            "name": "Saint Lucia", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Castries ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 208, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "PM", 
+            "name": "Saint Pierre and Miquelon", 
+            "reference": "North America ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Saint-Pierre ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 209, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "VC", 
+            "name": "Saint Vincent and the Grenadines", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Kingstown ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 210, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "WS", 
+            "name": "Samoa", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Apia ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 211, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SM", 
+            "name": "San Marino", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "San Marino ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 213, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SA", 
+            "name": "Saudi Arabia", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Riyadh ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 214, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SN", 
+            "name": "Senegal", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Dakar ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 215, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Serbia", 
+            "reference": "", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 216, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Serbia and Montenegro", 
+            "reference": "", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 217, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SC", 
+            "name": "Seychelles", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Victoria ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 218, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SL", 
+            "name": "Sierra Leone", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Freetown ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 219, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SG", 
+            "name": "Singapore", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Singapore ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 220, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SK", 
+            "name": "Slovakia", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Bratislava ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 221, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SI", 
+            "name": "Slovenia", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Ljubljana ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 222, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SB", 
+            "name": "Solomon Islands", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Honiara ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 223, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SO", 
+            "name": "Somalia", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Mogadishu ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 224, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "ZA", 
+            "name": "South Africa", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Pretoria", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 225, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GS", 
+            "name": "South Georgia and the South Sandwich Islands", 
+            "reference": "Antarctic Region ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 226, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "ES", 
+            "name": "Spain", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Madrid ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 227, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Spratly Islands", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 228, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "LK", 
+            "name": "Sri Lanka", 
+            "reference": "Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Colombo", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 229, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SD", 
+            "name": "Sudan", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Khartoum ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 230, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SR", 
+            "name": "Suriname", 
+            "reference": "South America ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Paramaribo ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 231, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SJ", 
+            "name": "Svalbard", 
+            "reference": "Arctic Region ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Longyearbyen ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 232, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SZ", 
+            "name": "Swaziland", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Mbabane ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 233, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SE", 
+            "name": "Sweden", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Stockholm ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 234, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "CH", 
+            "name": "Switzerland", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Bern ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 235, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "SY", 
+            "name": "Syria", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Damascus ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 212, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "ST", 
+            "name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe", 
+            "reference": "Africa", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Sao Tome", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 236, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "TW", 
+            "name": "Taiwan", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Taipei ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 237, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "TJ", 
+            "name": "Tajikistan", 
+            "reference": "Commonwealth of Independent States ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Dushanbe ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 238, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "TZ", 
+            "name": "Tanzania", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Dar es Salaam", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 239, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "TH", 
+            "name": "Thailand", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Bangkok ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "BS", 
+            "name": "The Bahamas", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Nassau ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 88, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GM", 
+            "name": "The Gambia", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Banjul ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 240, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "TG", 
+            "name": "Togo", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Lome ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 241, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "TK", 
+            "name": "Tokelau", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 242, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "TO", 
+            "name": "Tonga", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Nuku'alofa ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 243, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "TT", 
+            "name": "Trinidad and Tobago", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Port-of-Spain ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 244, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Tromelin Island", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 245, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "TN", 
+            "name": "Tunisia", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Tunis ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 246, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "TR", 
+            "name": "Turkey", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Ankara ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 247, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "TM", 
+            "name": "Turkmenistan", 
+            "reference": "Commonwealth of Independent States ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Ashgabat ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 248, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "TC", 
+            "name": "Turks and Caicos Islands", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Cockburn Town ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 249, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "TV", 
+            "name": "Tuvalu", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Funafuti ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 250, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "UG", 
+            "name": "Uganda", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Kampala ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 251, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "UA", 
+            "name": "Ukraine", 
+            "reference": "Commonwealth of Independent States ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Kiev ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 252, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "AE", 
+            "name": "United Arab Emirates", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Abu Dhabi ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 253, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "GB", 
+            "name": "United Kingdom", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "London ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 254, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "US", 
+            "name": "United States", 
+            "reference": " DC ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Washington", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 255, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "UM", 
+            "name": "United States Minor Outlying Islands", 
+            "reference": "", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 256, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "UY", 
+            "name": "Uruguay", 
+            "reference": "South America ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Montevideo ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 257, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "UZ", 
+            "name": "Uzbekistan", 
+            "reference": "Commonwealth of Independent States ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Tashkent", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 258, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "VU", 
+            "name": "Vanuatu", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Port-Vila ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 259, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "VE", 
+            "name": "Venezuela", 
+            "reference": "South America", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Caracas ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 260, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "VN", 
+            "name": "Vietnam", 
+            "reference": "Southeast Asia ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Hanoi ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 261, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "VI", 
+            "name": "Virgin Islands", 
+            "reference": "Central America and the Caribbean ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Charlotte Amalie ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 262, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Virgin Islands (UK)", 
+            "reference": "", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 263, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Virgin Islands (US)", 
+            "reference": "", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 264, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Wake Island", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 265, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "WF", 
+            "name": "Wallis and Futuna", 
+            "reference": "Oceania ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Mata-Utu", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 266, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "West Bank", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 267, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "EH", 
+            "name": "Western Sahara", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 268, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Western Samoa", 
+            "reference": "", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 269, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "World", 
+            "reference": "World", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 270, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "YE", 
+            "name": "Yemen", 
+            "reference": "Middle East ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Sanaa ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 271, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "YU", 
+            "name": "Yugoslavia", 
+            "reference": "Europe ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Belgrade ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 272, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "--", 
+            "name": "Zaire", 
+            "reference": "", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 273, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "ZM", 
+            "name": "Zambia", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Lusaka ", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 274, 
+        "model": "guides.country", 
+        "fields": {
+            "code": "ZW", 
+            "name": "Zimbabwe", 
+            "reference": "Africa ", 
+            "created": "2010-11-13", 
+            "modified": "2010-11-13", 
+            "capital": "Harare ", 
+            "description": null
+        }
+    }
+]

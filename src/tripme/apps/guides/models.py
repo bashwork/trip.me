@@ -74,7 +74,6 @@ class City(models.Model):
     description = models.TextField(null=True, blank=True)
     code = models.CharField(max_length=4)
     region = models.ForeignKey(Region)
-    country = models.ForeignKey(Country)
     image = models.ImageField(upload_to="cities/%Y/%m", null=True, blank=True)
     timezone = models.CharField(max_length=6)
     latitude = models.CharField(max_length=10)
@@ -87,7 +86,7 @@ class City(models.Model):
         verbose_name_plural = "cities"
 
     def __unicode__(self):
-        return "%s, %s, %s" % (self.name, self.region.name, self.country.name)
+        return "%s, %s, %s" % (self.name, self.region.name, self.region.country.name)
 
     def get_absolute_url(self):
         return "/city/%s" % self.id
@@ -102,8 +101,6 @@ class Spot(models.Model):
     name = models.CharField(max_length=200)
     description = models.TextField()
     city = models.ForeignKey(City)
-    region = models.ForeignKey(Region)
-    country = models.ForeignKey(Country)
     address = models.CharField(max_length=200)
     zipcode = models.CharField(max_length=10)
     image = models.ImageField(upload_to="spots/%Y/%m/%d", null=True, blank=True)
@@ -159,7 +156,7 @@ class GuideLocationEntry(models.Model):
       * St. Louis
     '''
     city = models.ForeignKey(City)
-    spots = models.ForeignKey(Guide)
+    guide = models.ForeignKey(Guide)
 
     class Meta:
         verbose_name_plural = "guide Location entries"

@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 
-{% block title %}trip.me - browse{% endblock %}
 {% block content_title %}Browsing Guides{% endblock %}
 
 {% block content %}
@@ -10,94 +9,22 @@
       </form>
 	  <div class="clearfix"></div>
 
+  {% for guide in object_list %}
       <div class="grid_4">
 	    <figure class="guide-slide">
-          <img src="img/image1.jpg" height="200px"/>
+          <img src="{{ guide.image.url }}" height="200px"/>
 	  	<div>
-	      <h1>London Trip</h1>
-	  	  <p>Some kind of description for the guide</p>
+	      <h1>{{ guide.name }}</h1>
+	  	  <h2>by {{ guide.user.username }}</h2>
+	  	  <p>{{ guide.description }}</p>
 	  	</div>
 	    </figure>
 	  </div>
-      <div class="grid_4">
-	    <figure class="guide-slide">
-          <img src="img/image2.jpg" height="200px"/>
-	  	<div>
-	      <h1>Paris Trip</h1>
-	  	  <p>Some kind of description for the guide</p>
-	  	</div>
-	    </figure>
-	  </div>
-      <div class="grid_4">
-	    <figure class="guide-slide">
-          <img src="img/image3.jpg" height="200px"/>
-	  	<div>
-	      <h1>Melborne Trip</h1>
-	  	  <p>Some kind of description for the guide</p>
-	  	</div>
-	    </figure>
-	  </div>
-
-      <div class="grid_4">
-	    <figure class="guide-slide">
-          <img src="img/image1.jpg" height="200px"/>
-	  	<div>
-	        <h1>Egypt Trip</h1>
-	  	  <p>Some kind of description for the guide</p>
-	  	</div>
-	    </figure>
-	  </div>
-      <div class="grid_4">
-	    <figure class="guide-slide">
-          <img src="img/image2.jpg" height="200px"/>
-	  	<div>
-	        <h1>London Trip</h1>
-	  	  <p>Some kind of description for the guide</p>
-	  	</div>
-	    </figure>
-	  </div>
-      <div class="grid_4">
-	    <figure class="guide-slide">
-          <img src="img/image3.jpg" height="200px"/>
-	  	<div>
-	        <h1>American Trip</h1>
-	  	  <p>Some kind of description for the guide</p>
-	  	</div>
-	    </figure>
-	  </div>
-
-      <div class="grid_4">
-	    <figure class="guide-slide">
-          <img src="img/image1.jpg" height="200px"/>
-	  	<div>
-	        <h1>Tunesia Trip</h1>
-	  	  <p>Some kind of description for the guide</p>
-	  	</div>
-	    </figure>
-	  </div>
-      <div class="grid_4">
-	    <figure class="guide-slide">
-          <img src="img/image2.jpg" height="200px"/>
-	  	<div>
-	        <h1>London Trip</h1>
-	  	  <p>Some kind of description for the guide</p>
-	  	</div>
-	    </figure>
-	  </div>
-      <div class="grid_4">
-	    <figure class="guide-slide">
-          <img src="img/image3.jpg" height="200px"/>
-	  	<div>
-	        <h1>Mexico Trip</h1>
-	  	  <p>Some kind of description for the guide</p>
-	  	</div>
-	    </figure>
-	  </div>
+  {% endfor %}
 
 {% endblock %}
 
 {% block extra_javascript %}
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
     <script>
     $(document).ready(function() {
         var data = $(".guide-slide h1").map(function() {

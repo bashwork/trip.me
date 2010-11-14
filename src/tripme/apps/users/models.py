@@ -13,6 +13,13 @@ GENDER_CHOICES = (
 # user profile extension
 # -------------------------------------------------------- #
 class UserProfile(models.Model):
+    '''
+    This is an extension to the django user model to add
+    extra profile information for the specified user. It
+    is linked to the following models:
+
+    * :model:`auth.User`
+    '''
     user = models.ForeignKey(User, unique=True)
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES, null=True, blank=True)
     image = models.ImageField(upload_to="img/users/%Y/%m", null=True, blank=True)
@@ -31,6 +38,11 @@ class UserProfile(models.Model):
         return ('profiles_profile_detail', (), { 'username': self.user.username })
 
 class ServiceType(models.Model):
+    '''
+    This defines a type of social networking service that a
+    user can link their profile to. Examples include twitter,
+    facebook, flickr, etc.
+    '''
     title = models.CharField(max_length=100, blank=True)
     icon = models.ImageField(upload_to="icons/", null=True, blank=True)
     url = models.URLField(blank=True, verify_exists=False,
@@ -40,6 +52,14 @@ class ServiceType(models.Model):
         return "%s" % self.title
 
 class Service(models.Model):
+    '''
+    This is an instance of a given social networking service
+    that a user has linked to. This is connected to the
+    following tables:
+
+    * :model:`users.UserProfile`
+    * :model:`users.ServiceType`
+    '''
     service = models.ForeignKey(ServiceType)
     profile = models.ForeignKey(UserProfile)
     username = models.CharField(max_length=100,

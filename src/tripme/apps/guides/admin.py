@@ -24,8 +24,9 @@ admin.site.register(City,
     alphabet_filter = "name",
     ordering      = ["name"],
     search_fields = ["name","code"],
-    list_display  = ["name","code","country","region","timezone","latitude","longitude"],
+    list_display  = ["name","code","region","timezone","latitude","longitude"],
     list_filter   = [],
+    raw_id_fields = ["region"],
     list_per_page = 200,
 )
 admin.site.register(Spot,
@@ -34,6 +35,7 @@ admin.site.register(Spot,
     search_fields = ["name","zipcode"],
     list_display  = ["name","city","address","zipcode","latitude","longitude"],
     list_filter   = [],
+    raw_id_fields = ["city"],
     list_per_page = 200,
 )
 

@@ -10,11 +10,11 @@
   <div class="clearfix"></div>
 
   {% for profile in object_list %}
-    <div class="grid_4">
+    <div class="grid_3">
       <figure class="guide-slide">
           <img src="{{ profile.image.url }}" height="200px"/>
 	  	<div>
-	      <h1>{{ profile.user.get_full_name}}</h1>
+	      <h1>{{ profile.user.username}}</h1>
 	  	</div>
       </figure>
     </div>

@@ -1,7 +1,7 @@
 import logging
 from django.db.models import signals
 from django.contrib.auth.models import User
-from apps.users.models import UserProfile
+from users.models import UserProfile
 
 logger = logging.getLogger(__name__)
 

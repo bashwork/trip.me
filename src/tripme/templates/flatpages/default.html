@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content_title %}{{ flatpage.title }}{% endblock %}
+
+{% block content %}
+
+<article class="flat-data">
+  {% load markup %}
+  {{ flatpage.content|markdown }}
+</article>
+
+{% endblock %}

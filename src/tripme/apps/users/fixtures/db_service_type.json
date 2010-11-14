@@ -1,0 +1,154 @@
+    {
+        "pk": 1, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://www.facebook.com/{user}", 
+            "icon": "", 
+            "title": "Facebook"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://www.myspace.com/{user}", 
+            "icon": "", 
+            "title": "MySpace"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://twitter.com/{user}", 
+            "icon": "", 
+            "title": "Twitter"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://www.youtube.com/user/{user}", 
+            "icon": "", 
+            "title": "Youtube"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://www.linkedin.com/profile/view?id={user}", 
+            "icon": "", 
+            "title": "LinkedIn"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://www.delicious.com/{user}", 
+            "icon": "", 
+            "title": "Delicious"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://www.flickr.com/photos/{user}", 
+            "icon": "", 
+            "title": "Flikr"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://picasaweb.google.com/{user}", 
+            "icon": "", 
+            "title": "Picassa"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://{user}.tumblr.com", 
+            "icon": "", 
+            "title": "Tumblr"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://www.last.fm/user/{user}", 
+            "icon": "", 
+            "title": "Last.fm"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://vimeo.com/{user}", 
+            "icon": "", 
+            "title": "Vimeo"
+        }
+    },
+    {
+        "pk": 12, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://{user}.blogger.com", 
+            "icon": "", 
+            "title": "Blogger"
+        }
+    },
+    {
+        "pk": 13, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://community.livejournal.com/{user}/", 
+            "icon": "", 
+            "title": "LiveJournal"
+        }
+    },
+    {
+        "pk": 14, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://foursquare.com/{user}", 
+            "icon": "", 
+            "title": "Foursquare"
+        }
+    },
+    {
+        "pk": 15, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://www.stumbleupon.com/stumbler/{user}/", 
+            "icon": "", 
+            "title": "StumbleUpon"
+        }
+    },
+    {
+        "pk": 16, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://digg.com/{user}", 
+            "icon": "", 
+            "title": "digg"
+        }
+    },
+    {
+        "pk": 17, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://www.reddit.com/user/{user}", 
+            "icon": "", 
+            "title": "reddit"
+        }
+    }
+]

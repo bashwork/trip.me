@@ -90,6 +90,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
+    'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
@@ -106,9 +107,11 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.admin',
+    'django.contrib.admindocs',
     'django.contrib.comments',
     'django.contrib.markup',
     'django.contrib.flatpages',
+    'django.contrib.redirects',
     #--------------------------------------------
     # third party applications
     #--------------------------------------------

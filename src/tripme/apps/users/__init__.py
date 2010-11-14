@@ -1,1 +1,1 @@
-import apps.users.signals
+import users.signals
