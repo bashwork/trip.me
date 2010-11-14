@@ -42,9 +42,9 @@ admin.site.register(Spot,
 # -------------------------------------------------------- #
 admin.site.register(Guide,
     alphabet_filter = "name",
-    ordering      = ["last_modified"],
+    ordering      = ["modified"],
     search_fields = ["name","user"],
-    list_display  = ["name","user","pub_date","last_modified"],
-    list_filter   = ["last_modified"],
+    list_display  = ["name","user","created","modified"],
+    list_filter   = ["modified"],
     list_per_page = 500,
 )

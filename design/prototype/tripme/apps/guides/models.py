@@ -27,8 +27,8 @@ class Country(models.Model):
     code = models.CharField(max_length=4)
     capital = models.CharField(max_length=50)
     reference = models.CharField(max_length=50)
-    pub_date = models.DateTimeField(auto_now_add=True)
-    last_modified = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
 
     class Meta:
         ordering = ('name',)
@@ -51,8 +51,8 @@ class Region(models.Model):
     description = models.TextField(null=True, blank=True)
     code = models.CharField(max_length=4)
     country = models.ForeignKey(Country)
-    pub_date = models.DateTimeField(auto_now_add=True)
-    last_modified = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
 
     class Meta:
         ordering = ('name',)
@@ -79,8 +79,8 @@ class City(models.Model):
     timezone = models.CharField(max_length=6)
     latitude = models.CharField(max_length=10)
     longitude = models.CharField(max_length=10)
-    pub_date = models.DateTimeField(auto_now_add=True)
-    last_modified = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
 
     class Meta:
         ordering = ('name',)
@@ -109,8 +109,8 @@ class Spot(models.Model):
     image = models.ImageField(upload_to="spots/%Y/%m/%d", null=True, blank=True)
     latitude = models.CharField(max_length=10)
     longitude = models.CharField(max_length=10)
-    pub_date = models.DateTimeField(auto_now_add=True)
-    last_modified = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
 
     class Meta:
         ordering = ('name',)
@@ -139,8 +139,10 @@ class Guide(models.Model):
     name = models.CharField(max_length=200)
     description = models.TextField()
     user = models.ForeignKey(User, unique=True)
-    pub_date = models.DateTimeField(auto_now_add=True)
-    last_modified = models.DateTimeField(auto_now=True)
+    start_date = models.DateTimeField(null=True, blank=True)
+    end_date = models.DateTimeField(null=True, blank=True)
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
 
     class Meta:
         ordering = ('pub_date',)
