@@ -38,8 +38,10 @@
           <li><a href="/content/help/">Help</a></li>
           {% if user.is_authenticated %}
             <li><a href="/accounts/logout/">Logout</a></li>
+            <li><a href="/users/{{ user.username }}/">Profile</a></li>
           {% else %}
             <li><a href="/accounts/login/">Login</a></li>
+            <li><a href="/accounts/register/">Sign Up</a></li>
           {% endif %}
           {% block extra_navigation %}{% endblock %}
         </ul>

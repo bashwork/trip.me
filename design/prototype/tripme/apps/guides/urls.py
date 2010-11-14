@@ -1,10 +1,15 @@
 from django.conf.urls.defaults import *
-import guides.signals
+from django.views.generic import DetailView, ListView
+from guides.models import *
 
 # -------------------------------------------------------- #
-# user management urls
+# guide get urls
 # -------------------------------------------------------- #
 urlpatterns = patterns('guides.views',
-#    (r'^account/login/$', 'django.contrib.auth.view.login', {'template_name':'guides/login.html'}),
-#    (r'^account/logout/$', 'django.contrib.auth.view.logout', {'template_name':'guides/logout.html'}),
+    (r'^/$', ListView.as_view(model=Guide,
+        context_object_name='latest_guide_list',
+        template_name='guides/guide_list.html')),
+
+    (r'^(?P<pk>\d+)/$', DetailView.as_view(model=Guide,
+        template_name='guides/guide_detail.html')),
 )

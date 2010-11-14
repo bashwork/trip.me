@@ -15,7 +15,7 @@ GENDER_CHOICES = (
 class UserProfile(models.Model):
     user = models.ForeignKey(User, unique=True)
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES, null=True, blank=True)
-    image = models.ImageField(upload_to="users/%Y/%m", null=True, blank=True)
+    image = models.ImageField(upload_to="img/users/%Y/%m", null=True, blank=True)
     birth_date = models.DateField(blank=True, null=True)
     city = models.CharField(max_length=100, blank=True)
     state = models.CharField(max_length=100, blank=True)
@@ -42,7 +42,8 @@ class ServiceType(models.Model):
 class Service(models.Model):
     service = models.ForeignKey(ServiceType)
     profile = models.ForeignKey(UserProfile)
-    username = models.CharField(max_length=100, help_text="Username or id to be inserted into the service url")
+    username = models.CharField(max_length=100,
+        help_text="Username or id to be inserted into the service url")
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
 
