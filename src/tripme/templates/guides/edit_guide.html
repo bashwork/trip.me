@@ -4,91 +4,28 @@
 
 {% block content %}
 
-      <div class="grid_4">
-        <form id="spot-search">
-          <input class="auto-search" type="search" placeholder="Where do you want to go?" />
-        </form>
-      </div>
+   <article class="grid_10 instructions">
+     <p>This is some text that describes how to use this interface</p>
+   </article>
+   <figure class="grid_2">
+     <button id="button-add-city">Add New City</button>
+   </figure>
+   <div class="clearfix"></div>
 
-      <div class="grid_8">
-        <h2 id="spot-result-header">The Top Ten</h2>
-      </div>
-      <div class="clearfix"></div>
+   <div class="grid_4">
+     <ul id="city-list">
+       {% for entry in guide.guidelocationentry_set %}
+         <li class="edit-delete">
+           <a href="{{ entry.city.get_absolute_url }}">{{ entry.city }}</a>
+         </li>
+       {% endfor %}
+     </ul>
+   </div>
 
-      <div class="grid_4">
-        <section id="spot-search-block">
-          <div class="map-block medium"></div>
-          <h2>Current Itenerary</h2>
-          <ul id="city-list">
-		    <li><a href="#">London, England</a></li>
-		    <li><a href="#">Tijuana, Mexica</a></li>
-		    <li><a href="#">St. Louis, Missouri</a></li>
-          </ul>
-	      <div class="clearfix"></div>
-        </section>
-      </div>
+   <figure class="grid_8">
+     <div id="map-canvas"></div>
+   </figure>
 
-      <div id="spot-result-list" class="grid_8">
-        <article class="spot-summary clearfix">
-          <h1>The Eye of London</h1>
-          <a href="#" class="button yellow small">+ add to guide</a>
-          <img src="img/image2.jpg" height="150px" />
-          <p>lorum impLorem ipsum dolor sit amet, consectetur adipiscing elit.s
-             Nullam semper laoreet nisl vel facilisis. Morbi dolor nunc, sagittis non vehicula sit amet,
-             porta in augue. Fusce nec odio erat. Nullam eu mattis lorem. Praesent egestas pharetra
-             neque. In hac habitasse platea dictumst. Pellentesque nec elit felis, et molestie lorem.
-             Integer aliquam tincidunt odio, eget posuere odio consectetur non.
-             Maecenas a sapien a est pharetra auctor.</p>
-        </article>
-
-        <article class="spot-summary clearfix">
-          <h1>Houses of Parliament</h1>
-          <a href="#" class="button yellow small">+ add to guide</a>
-          <img src="img/image2.jpg" height="150px" />
-          <p>lorum impLorem ipsum dolor sit amet, consectetur adipiscing elit.s
-             Nullam semper laoreet nisl vel facilisis. Morbi dolor nunc, sagittis non vehicula sit amet,
-             porta in augue. Fusce nec odio erat. Nullam eu mattis lorem. Praesent egestas pharetra
-             neque. In hac habitasse platea dictumst. Pellentesque nec elit felis, et molestie lorem.
-             Integer aliquam tincidunt odio, eget posuere odio consectetur non.
-             Maecenas a sapien a est pharetra auctor.</p>
-        </article>
-
-        <article class="spot-summary clearfix">
-          <h1>The Portrait Gallery</h1>
-          <a href="#" class="button yellow small">+ add to guide</a>
-          <img src="img/image2.jpg" height="150px" />
-          <p>lorum impLorem ipsum dolor sit amet, consectetur adipiscing elit.s
-             Nullam semper laoreet nisl vel facilisis. Morbi dolor nunc, sagittis non vehicula sit amet,
-             porta in augue. Fusce nec odio erat. Nullam eu mattis lorem. Praesent egestas pharetra
-             neque. In hac habitasse platea dictumst. Pellentesque nec elit felis, et molestie lorem.
-             Integer aliquam tincidunt odio, eget posuere odio consectetur non.
-             Maecenas a sapien a est pharetra auctor.</p>
-        </article>
-
-        <article class="spot-summary clearfix">
-          <h1>National Museum</h1>
-          <a href="#" class="button yellow small">+ add to guide</a>
-          <img src="img/image2.jpg" height="150px" />
-          <p>lorum impLorem ipsum dolor sit amet, consectetur adipiscing elit.s
-             Nullam semper laoreet nisl vel facilisis. Morbi dolor nunc, sagittis non vehicula sit amet,
-             porta in augue. Fusce nec odio erat. Nullam eu mattis lorem. Praesent egestas pharetra
-             neque. In hac habitasse platea dictumst. Pellentesque nec elit felis, et molestie lorem.
-             Integer aliquam tincidunt odio, eget posuere odio consectetur non.
-             Maecenas a sapien a est pharetra auctor.</p>
-        </article>
-
-        <article class="spot-summary clearfix">
-          <h1>Museum of Modern Art</h1>
-          <a href="#" class="button yellow small">+ add to guide</a>
-          <img src="img/image2.jpg" height="150px" />
-          <p>lorum impLorem ipsum dolor sit amet, consectetur adipiscing elit.s
-             Nullam semper laoreet nisl vel facilisis. Morbi dolor nunc, sagittis non vehicula sit amet,
-             porta in augue. Fusce nec odio erat. Nullam eu mattis lorem. Praesent egestas pharetra
-             neque. In hac habitasse platea dictumst. Pellentesque nec elit felis, et molestie lorem.
-             Integer aliquam tincidunt odio, eget posuere odio consectetur non.
-             Maecenas a sapien a est pharetra auctor.</p>
-        </article>
-      </div>
 {% endblock %}
 
 {% block extra_javascript %}
@@ -106,22 +43,30 @@
 		  style : google.maps.NavigationControlStyle.SMALL
 		}
       };
-      var map = new google.maps.Map($(".map-block").get(0), options);
+      var map = new google.maps.Map(document.getElementById("map-canvas"), options);
+        $("#add-city-dialog").dialog({
+            modal : true,
+            position: 'center',
+            title : 'Add A New City', 
+			autoOpen : false,
+            resizable : false,
+            buttons : [
+            { text : "Add", click : function() { $(this).dialog("close"); } },
+            { text : "Cancel", click: function() { $(this).dialog("close"); } },
+            ],
+        });
 
-      var data = $(".spot-summary h1").map(function() {
-	  	return $(this).text();
-	  }).get();
-      $(".auto-search").autocomplete({source:jQuery.unique(data)});
-      $("#spot-search").submit(function() {
-      	var term = $("input:first").val().toLowerCase();
-      	$(".spot-summary").each(function() {
-      		if ($(this).text().toLowerCase().indexOf(term) <= 0) {
-      			$(this).fadeOut();
-      		}
-      		else { $(this).fadeIn(); }
-      	});
-      	return false;
-      });
+	  $("#button-add-city").click(function() {
+        $("#add-city-dialog").dialog('open');
+	  });
     });
     </script>
+{% endblock %}
+
+{% block extra_dom %}
+
+   <div id="add-city-dialog" style="display:none">
+     <input type="search" placeholder="Where do you want to go?"/>
+   </div>
+
 {% endblock %}
