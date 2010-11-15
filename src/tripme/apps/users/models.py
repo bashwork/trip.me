@@ -44,7 +44,7 @@ class ServiceType(models.Model):
     facebook, flickr, etc.
     '''
     title = models.CharField(max_length=100, blank=True)
-    icon = models.ImageField(upload_to="icons/", null=True, blank=True)
+    icon = models.ImageField(upload_to="img/social", null=True, blank=True)
     url = models.URLField(blank=True, verify_exists=False,
         help_text='URL with a single \'{user}\' placeholder to turn a username into a service URL')
 

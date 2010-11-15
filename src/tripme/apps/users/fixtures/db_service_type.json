@@ -4,7 +4,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://www.facebook.com/{user}", 
-            "icon": "", 
+            "icon": "img/social/facebook.png", 
             "title": "Facebook"
         }
     }, 
@@ -13,7 +13,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://www.myspace.com/{user}", 
-            "icon": "", 
+            "icon": "img/social/myspace.png", 
             "title": "MySpace"
         }
     }, 
@@ -22,7 +22,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://twitter.com/{user}", 
-            "icon": "", 
+            "icon": "img/social/twitter.png", 
             "title": "Twitter"
         }
     }, 
@@ -31,7 +31,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://www.youtube.com/user/{user}", 
-            "icon": "", 
+            "icon": "img/social/youtube.png", 
             "title": "Youtube"
         }
     }, 
@@ -40,7 +40,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://www.linkedin.com/profile/view?id={user}", 
-            "icon": "", 
+            "icon": "img/social/linkedin.png", 
             "title": "LinkedIn"
         }
     }, 
@@ -49,7 +49,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://www.delicious.com/{user}", 
-            "icon": "", 
+            "icon": "img/social/delicious.png", 
             "title": "Delicious"
         }
     }, 
@@ -58,7 +58,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://www.flickr.com/photos/{user}", 
-            "icon": "", 
+            "icon": "img/social/flickr.png", 
             "title": "Flikr"
         }
     }, 
@@ -67,7 +67,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://picasaweb.google.com/{user}", 
-            "icon": "", 
+            "icon": "img/social/picassa.png", 
             "title": "Picassa"
         }
     }, 
@@ -76,7 +76,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://{user}.tumblr.com", 
-            "icon": "", 
+            "icon": "img/social/tumblr.png", 
             "title": "Tumblr"
         }
     }, 
@@ -85,7 +85,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://www.last.fm/user/{user}", 
-            "icon": "", 
+            "icon": "img/social/lastfm.png", 
             "title": "Last.fm"
         }
     }, 
@@ -94,7 +94,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://vimeo.com/{user}", 
-            "icon": "", 
+            "icon": "img/social/vimeo.png", 
             "title": "Vimeo"
         }
     },
@@ -103,7 +103,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://{user}.blogger.com", 
-            "icon": "", 
+            "icon": "img/social/blogger.png", 
             "title": "Blogger"
         }
     },
@@ -112,7 +112,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://community.livejournal.com/{user}/", 
-            "icon": "", 
+            "icon": "img/social/livejournal.png", 
             "title": "LiveJournal"
         }
     },
@@ -121,7 +121,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://foursquare.com/{user}", 
-            "icon": "", 
+            "icon": "img/social/foursquare.png", 
             "title": "Foursquare"
         }
     },
@@ -130,7 +130,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://www.stumbleupon.com/stumbler/{user}/", 
-            "icon": "", 
+            "icon": "img/social/stumbleupon.png", 
             "title": "StumbleUpon"
         }
     },
@@ -139,7 +139,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://digg.com/{user}", 
-            "icon": "", 
+            "icon": "img/social/digg.png", 
             "title": "digg"
         }
     },
@@ -148,7 +148,7 @@
         "model": "users.servicetype", 
         "fields": {
             "url": "http://www.reddit.com/user/{user}", 
-            "icon": "", 
+            "icon": "img/social/reddit.png", 
             "title": "reddit"
         }
     }

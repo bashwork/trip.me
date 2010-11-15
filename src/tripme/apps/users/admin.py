@@ -2,12 +2,18 @@ from django.contrib import admin
 from apps.users.models import *
 from django.contrib.auth.models import User
 
+# -------------------------------------------------------- #
+# admin inline classes
+# -------------------------------------------------------- #
 class UserProfileInline(admin.StackedInline):
-    model = UserProfile
+    model   = UserProfile
 
+# -------------------------------------------------------- #
+# admin class registration
+# -------------------------------------------------------- #
 admin.site.unregister(User)
 admin.site.register(User,
-    inlines         = [UserProfileInline]
+    inlines       = [UserProfileInline]
 )
 
 admin.site.register(Service,
@@ -17,5 +23,4 @@ admin.site.register(Service,
     list_filter   = ["profile","service"],
     list_per_page = 200,
 )
-
 admin.site.register(ServiceType)
