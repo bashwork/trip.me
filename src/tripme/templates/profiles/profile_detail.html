@@ -1,19 +1,58 @@
 {% extends "base.html" %}
 
-{% block content_title %}{{ object.full_name }}'s Profile{% endblock %}
+{% block content_title %}{{ profile.user.username }}'s Profile{% endblock %}
 
 {% block content %}
 
-<div>
-  {% csrf_token %}
+  <div class="grid_4">
+    <section id="user-profile">
+      <figure class="user-slide">
+        <img src="{{ profile.image.url }}" height="200px"/>
+      </figure>
+      <ul class="user-info">
+        <li>{{ profile.user.get_full_name }}</li>
+        <li>{{ profile.gender }}</li>
+        <li>{{ profile.birth_date }}</li>
+        <li>{{ profile.city }}, {{ profile.state }}</li>
+      </ul>
 
-  <fieldset>
-  <ol>
-    {% for field in form %}
-      <li> {{ field.label_tag }} {{ field }} {{ field.errors }}</li>
+      <p>{{ profile.description }}</p>
+
+      {% if profile.user.service_set.all %}
+      <h3 class="list_title">Services</h3>
+      <ul class="profile-social">
+        {% for service in profile.user.service_set.all %}
+        <li><a href="{{ service.service_url }}">{{ service.title }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </section>
+  </div>
+
+  <section class="row_8">
+    <div class="grid_4">
+      <h2>Created Guides</h2>
+    </div>
+    <div class="grid_4">
+      <a href="guides/create/" class="button large red">Add New Guide</a>
+    </div>
+  </section>
+
+  <section class="column_8">
+    {% for guide in profile.user.guide_set.all %}
+    <div class="grid_4">
+      <figure class="guide-slide">
+        <a href="{{ guide.get_absolute_url }}"><img src="{{ guide.get_random_image }}" height="200px"/></a>
+    	<div>
+          <h1>{{ guide.name }}</h1>
+    	  <p>{{ guide.description }}</p>
+    	</div>
+      </figure>
+    </div>
+    {% empty %}
+    <h1>You haven't created any guides, what are you waiting for?</h1>
     {% endfor %}
-  </ol>
-  </fieldset>
-</div>
+  </section>
 
 {% endblock %}
+

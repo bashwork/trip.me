@@ -160,5 +160,14 @@
             "icon": "img/social/friendfeed.png", 
             "title": "FriendFeed"
         }
+    }.
+    {
+        "pk": 19, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://apps.ycombinator.com/user?id={user}", 
+            "icon": "img/social/ycombinator.png", 
+            "title": "ycombinator"
+        }
     }
 ]

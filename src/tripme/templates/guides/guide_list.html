@@ -13,11 +13,11 @@
       <div class="grid_4">
 	    <figure class="guide-slide">
           <a href="{{ guide.get_absolute_url }}"><img src="{{ guide.get_random_image }}" height="200px"/></a>
-	  	<div>
-	      <h1>{{ guide.name }}</h1>
-	  	  <h2><a href="{{ guide.user.get_absolute_url }}">by {{ guide.user.username }}</a></h2>
-	  	  <p>{{ guide.description }}</p>
-	  	</div>
+	  	  <div>
+	        <h1>{{ guide.name }}</h1>
+	  	    <h2><a href="{{ guide.user.get_absolute_url }}">by {{ guide.user.username }}</a></h2>
+	  	    <p>{{ guide.description }}</p>
+	  	  </div>
 	    </figure>
 	  </div>
   {% endfor %}

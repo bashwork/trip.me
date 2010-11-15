@@ -35,6 +35,7 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/guides/">Browse Guides</a></li>
+          <li><a href="/users/">Browse Users</a></li>
           <li><a href="/content/help/">Help</a></li>
           {% if user.is_authenticated %}
             <li><a href="/accounts/logout/">Logout</a></li>
@@ -69,6 +70,7 @@
 	    <li class="rss"><a href="http://tripme.com/feed/rss/"><span>RSS</span></a></li>
       </ul>
       <p>copyright &copy; {% now "Y" %} bashwork - powered by spunk and vigor</p>
+      <p><a href="/admin/">admin</a></p>
       {% block extra_footer %}{% endblock %}
     {% endblock %}
     </footer>
