@@ -15,7 +15,9 @@ you back to the main page.
 {% endblock %}
 
 {% block extra_javascript %}
+<script>
 $(document).ready(function() {
     setTimeout(function() { window.location = "/"; }, 2000);
 });
+</script>
 {% endblock %}

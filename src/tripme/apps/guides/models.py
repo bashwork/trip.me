@@ -38,7 +38,7 @@ class Country(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return "/country/%s" % self.id
+        return "/data/country/%s" % self.id
 
 class Region(models.Model):
     '''
@@ -61,7 +61,7 @@ class Region(models.Model):
         return "%s, %s" % (self.name, self.country.name)
 
     def get_absolute_url(self):
-        return "/region/%s" % self.id
+        return "/data/region/%s" % self.id
 
 class City(models.Model):
     '''
@@ -89,7 +89,7 @@ class City(models.Model):
         return "%s, %s, %s" % (self.name, self.region.name, self.region.country.name)
 
     def get_absolute_url(self):
-        return "/city/%s" % self.id
+        return "/data/city/%s" % self.id
 
 class Spot(models.Model):
     '''
@@ -116,7 +116,7 @@ class Spot(models.Model):
         return "%s in %s" % (self.name, self.city.name)
 
     def get_absolute_url(self):
-        return "/spot/%s" % self.id
+        return "/data/spot/%s" % self.id
 
 # -------------------------------------------------------- #
 # User Guides
@@ -135,17 +135,32 @@ class Guide(models.Model):
     '''
     name = models.CharField(max_length=200)
     description = models.TextField()
-    user = models.ForeignKey(User, unique=True)
-    start_date = models.DateTimeField(null=True, blank=True)
-    end_date = models.DateTimeField(null=True, blank=True)
+    user = models.ForeignKey(User)
+    start_date = models.DateField(null=True, blank=True)
+    end_date = models.DateField(null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ('pub_date',)
+        ordering = ('modified',)
 
     def __unicode__(self):
         return "%s by %s" % (self.name, self.user.get_full_name())
+
+    @models.permalink
+    def get_absolute_url(self):
+        return ('guides.views.guide_detail', [str(self.id)])
+
+    def get_random_image(self):
+        '''
+        This will randomly return an image for one
+        of the cities that is currently included in this guide
+
+        :returns: A random ImageField or None
+        '''
+        set = self.guidelocationentry_set.exclude(city__image='')
+        set = set.order_by('?')
+        return None if not any(set) else set[0].city.image.url
 
 class GuideLocationEntry(models.Model):
     '''

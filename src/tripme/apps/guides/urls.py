@@ -12,12 +12,17 @@ guide_list_detail = {
     'paginate_by'   : 9,
     #'template_name' : 'guides/guide_list.html'
 }
+guide_detail = {
+    'queryset'      : Guide.objects.all(),
+}
 
 # -------------------------------------------------------- #
 # guide get urls
 # -------------------------------------------------------- #
 urlpatterns = patterns('guides.views',
+    url(r'^$', list_detail.object_list,
+        guide_list_detail, name='guide_list'),
 #    (r'^create/$', 'create_guide_view'),
-    (r'^/$', list_detail.object_list, guide_list_detail),
-    (r'^(?P<object_id>\d+)/$', list_detail.object_detail, guide_list_detail),
+    url(r'^(?P<id>\d+)/$', 'guide_detail'),
+    url(r'^(?P<id>\d+)/spots/$', 'guide_detail_spots'),
 )

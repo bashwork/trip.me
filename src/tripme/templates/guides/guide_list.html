@@ -12,10 +12,10 @@
   {% for guide in object_list %}
       <div class="grid_4">
 	    <figure class="guide-slide">
-          <img src="{{ guide.image.url }}" height="200px"/>
+          <a href="{{ guide.get_absolute_url }}"><img src="{{ guide.get_random_image }}" height="200px"/></a>
 	  	<div>
 	      <h1>{{ guide.name }}</h1>
-	  	  <h2>by {{ guide.user.username }}</h2>
+	  	  <h2><a href="{{ guide.user.get_absolute_url }}">by {{ guide.user.username }}</a></h2>
 	  	  <p>{{ guide.description }}</p>
 	  	</div>
 	    </figure>

@@ -198,6 +198,11 @@ footer ul#social-network li.blog a  { background:url(../img/blogger-logo.png) no
 	font-size: 140%;
 	line-height:20px;
 }
+.guide-slide h2 {
+	padding: 0 7px;
+    font-style:italic;
+    font-weight:normal;
+}
 .guide-slide p { padding: 0 7px; }
 
 /* spot summary elements

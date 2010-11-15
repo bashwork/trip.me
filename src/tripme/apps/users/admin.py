@@ -1,13 +1,13 @@
 from django.contrib import admin
 from apps.users.models import *
+from django.contrib.auth.models import User
 
-admin.site.register(UserProfile,
-    alphabet_filter = "user",
-    ordering      = ["user"],
-    search_fields = ["user"],
-    list_display  = ["user"],
-    list_filter   = [],
-    list_per_page = 200,
+class UserProfileInline(admin.StackedInline):
+    model = UserProfile
+
+admin.site.unregister(User)
+admin.site.register(User,
+    inlines         = [UserProfileInline]
 )
 
 admin.site.register(Service,

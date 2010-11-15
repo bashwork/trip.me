@@ -3,7 +3,7 @@ from apps.guides.models import *
 
 class CountryHandler(BaseHandler):
     allowed_methods = ('GET',)
-    exclude = ('code','pub_date', 'last_modified')
+    exclude = ('code','created', 'modified')
     model = Country
 
     def read(self, request, id=None, name=None):
@@ -11,7 +11,7 @@ class CountryHandler(BaseHandler):
 
 class RegionHandler(BaseHandler):
     allowed_methods = ('GET',)
-    exclude = ('pub_date', 'last_modified')
+    exclude = ('created', 'modified')
     model = Region
     __max__ = 100
 
@@ -21,7 +21,7 @@ class RegionHandler(BaseHandler):
 
 class CityHandler(BaseHandler):
     allowed_methods = ('GET',)
-    exclude = ('code','pub_date', 'last_modified')
+    exclude = ('code','created', 'modified')
     #fields = ('id', 'description', 'name', 'image','latitude','longitude','country_id','region_id')
     model = City
     __max__ = 20
@@ -42,7 +42,7 @@ class SpotHandler(BaseHandler):
 class GuideHandler(BaseHandler):
     allowed_methods = ('GET',)
     model = Guide
-    fields = ('id', 'description', 'name', 'last_modified',('user',('id','username')))
+    fields = ('id', 'description', 'name', 'modified',('user',('id','username')))
     __max__ = 20
 
     def read(self, request, id=None, name=None):
@@ -52,7 +52,7 @@ class GuideHandler(BaseHandler):
 class UserHandler(BaseHandler):
     allowed_methods = ('GET',)
     model = Guide
-    #fields = ('id', 'description', 'name', 'last_modified',('user',('id','username')))
+    #fields = ('id', 'description', 'name', 'modified',('user',('id','username')))
     __max__ = 20
 
     def read(self, request, id=None, name=None):

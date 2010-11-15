@@ -149,3 +149,8 @@ CACHE_BACKEND = 'dummy://'
 DEBUG_TOOLBAR_CONFIG = {
     'INTERCEPT_REDIRECTS': False,
 }
+DEFAULT_IMAGES = {
+    'user' : MEDIA_URL + 'img/user/default.jpg',
+    'city' : MEDIA_URL + 'img/city/default.jpg',
+    'spot' : MEDIA_URL + 'img/spot/default.jpg',
+}

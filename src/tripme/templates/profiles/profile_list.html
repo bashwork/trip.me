@@ -12,7 +12,7 @@
   {% for profile in object_list %}
     <div class="grid_3">
       <figure class="guide-slide">
-          <img src="{{ profile.image.url }}" height="200px"/>
+          <a href="{{ profile.user.get_absolute_url }}"><img src="{{ profile.image.url }}" height="200px"/></a>
 	  	<div>
 	      <h1>{{ profile.user.username}}</h1>
 	  	</div>

@@ -21,6 +21,7 @@ things todo
 * links to all the profile functions (pw-reset, delete, edit, etc)
 * design, design, design
 * user tags / categories -> comments to tips (foursquare)
+* slugs instead of ids maybe
 
 --------------------------------------------------------------------------- 
 nice to haves
@@ -28,5 +29,4 @@ nice to haves
 * advanced account creation
 * caching (later)
 * split settings
-* slugs instead of ids
-
+* guide pdf output (reportlab)

@@ -42,11 +42,17 @@ admin.site.register(Spot,
 # -------------------------------------------------------- #
 # User Guides
 # -------------------------------------------------------- #
+class GuideLocationEntryInline(admin.StackedInline):
+    model = GuideLocationEntry
+    raw_id_fields = ["city"]
+    extra = 3
+
 admin.site.register(Guide,
     alphabet_filter = "name",
-    ordering      = ["modified"],
-    search_fields = ["name","user"],
-    list_display  = ["name","user","created","modified"],
-    list_filter   = ["modified"],
-    list_per_page = 500,
+    ordering        = ["modified"],
+    search_fields   = ["name","user"],
+    list_display    = ["name","user","created","modified"],
+    list_filter     = ["modified"],
+    list_per_page   = 500,
+    inlines         = [GuideLocationEntryInline]
 )
