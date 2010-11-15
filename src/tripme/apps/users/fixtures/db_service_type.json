@@ -151,5 +151,14 @@
             "icon": "img/social/reddit.png", 
             "title": "reddit"
         }
+    },
+    {
+        "pk": 18, 
+        "model": "users.servicetype", 
+        "fields": {
+            "url": "http://friendfeed.com/{user}", 
+            "icon": "img/social/friendfeed.png", 
+            "title": "FriendFeed"
+        }
     }
 ]
