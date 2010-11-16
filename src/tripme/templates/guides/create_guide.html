@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content_title %}Create a new Guide{% endblock %}
+
+{% block content %}
+
+{% if form.errors %}
+<p class="error">
+  There were errors in the profile data you entered. Please
+  correct the errors and try again.
+</p>
+{% endif %}
+
+<div class="grid_6 prefix_3 suffix_3">
+  <form class="styled-form" method="post" action="">
+    {% csrf_token %}
+
+    <fieldset>
+    <legend>Guide Information</legend>
+    <ol>
+      {% for field in form %}
+        <li> {{ field.label_tag }} {{ field }} {{ field.errors }}</li>
+      {% endfor %}
+    </ol>
+    </fieldset>
+
+    <fieldset>
+      <button class="button blue larege" type="submit">Create Guide</button>
+      <input type="hidden" name="next" value="{{ next }}" />
+    </fieldset>
+  </form>
+</div>
+
+{% endblock %}

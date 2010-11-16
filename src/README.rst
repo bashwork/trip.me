@@ -6,6 +6,7 @@ handy resources
 * https://github.com/washingtontimes/django-categories
 * http://code.google.com/p/django-mptt/
 * http://django-mptt.github.com/django-mptt/models.html#setting-up-a-django-model-for-mptt
+* https://github.com/jbalogh/zamboni/
 
 --------------------------------------------------------------------------- 
 things todo

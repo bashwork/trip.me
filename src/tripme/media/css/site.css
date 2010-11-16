@@ -19,7 +19,7 @@
 	margin: 7px;
 }
 div#splash-market {
-position:relative;
+    position:relative;
     font-family: 'Yanone Kaffeesatz';
 	text-align:left;
 	margin-bottom: 2em;
@@ -45,7 +45,7 @@ div#splash-market h1 {
 }
 div#splash-market h2 {
 	line-height:1em;
-color:rgba(0,0,0,.1);
+    color:rgba(0,0,0,.1);
     text-shadow: 0px 1px 2px #ddd;
 	font-weight:500;
 	font-size:60px;
@@ -124,15 +124,20 @@ div#splash-signup {
     margin-bottom: 10px;
 }
 .user-slide img {
-	width:95%;
 	padding: 5px;
 	display:block;
 	margin: auto;
 }
 
-#user-profile ul {
-
+#user-profile .user-info {
+    list-style:none;
+    text-align:left;
+    margin-bottom: 10px;
 }
-#user-profile ul li {
+#user-profile .user-info span {
+    font-weight: bold;
+    padding-right: 5px;
+}
+#user-profile .profile-social ul li {
     display:inline-block;
 }

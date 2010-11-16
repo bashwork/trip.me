@@ -1,5 +1,7 @@
-from django import forms
+from django.forms import ModelForm
+from guides.models import Guide
 
-class GuideForm(forms.Form):
+class GuideForm(ModelForm):
     class Meta:
         model = Guide
+        exclude = ('created', 'modified', 'user')

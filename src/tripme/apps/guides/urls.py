@@ -22,7 +22,7 @@ guide_detail = {
 urlpatterns = patterns('guides.views',
     url(r'^$', list_detail.object_list,
         guide_list_detail, name='guide_list'),
-#    (r'^create/$', 'create_guide_view'),
+    url(r'^create/$', 'create_guide'),
     url(r'^(?P<id>\d+)/$', 'guide_detail'),
     url(r'^(?P<id>\d+)/spots/$', 'guide_detail_spots'),
 )

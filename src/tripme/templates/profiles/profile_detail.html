@@ -4,16 +4,19 @@
 
 {% block content %}
 
-  <div class="grid_4">
+  <div class="grid_3 suffix_1">
     <section id="user-profile">
       <figure class="user-slide">
-        <img src="{{ profile.image.url }}" height="200px"/>
+        <img src="{{ profile.image.url }}" height="300px"/>
       </figure>
+      {% if profile.user == user %}
+        <a href="/users/edit/" class="button large red">Edit Profile</a>
+      {% endif %}
       <ul class="user-info">
-        <li>{{ profile.user.get_full_name }}</li>
-        <li>{{ profile.gender }}</li>
-        <li>{{ profile.birth_date }}</li>
-        <li>{{ profile.city }}, {{ profile.state }}</li>
+        <li><span>name:</span>{{ profile.user.get_full_name }}</li>
+        <li><span>gender:</span>{{ profile.gender }}</li>
+        <li><span>birth date:</span>{{ profile.birth_date }}</li>
+        <li><span>location:</span>{{ profile.city }}, {{ profile.state }}</li>
       </ul>
 
       <p>{{ profile.description }}</p>
@@ -34,7 +37,7 @@
       <h2>Created Guides</h2>
     </div>
     <div class="grid_4">
-      <a href="guides/create/" class="button large red">Add New Guide</a>
+      <a href="/guides/create/" class="button large red">Add New Guide</a>
     </div>
   </section>
 

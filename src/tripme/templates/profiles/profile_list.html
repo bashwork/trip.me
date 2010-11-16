@@ -5,14 +5,14 @@
 {% block content %}
 
   <form id="guide-search" class="grid_4">
-    <input class="auto-search" type="search" placeholder="Where do you want to go?" />
+    <input class="auto-search" type="search" placeholder="Who do you want to meet?" />
   </form>
   <div class="clearfix"></div>
 
   {% for profile in object_list %}
     <div class="grid_3">
       <figure class="guide-slide">
-          <a href="{{ profile.user.get_absolute_url }}"><img src="{{ profile.image.url }}" height="200px"/></a>
+          <a href="{{ profile.user.get_absolute_url }}"><img src="{{ profile.image.url }}" height="300px"/></a>
 	  	<div>
 	      <h1>{{ profile.user.username}}</h1>
 	  	</div>
@@ -20,4 +20,25 @@
     </div>
   {% endfor %}
 
+{% endblock %}
+
+{% block extra_javascript %}
+    <script>
+    $(document).ready(function() {
+        var data = $(".guide-slide h1").map(function() {
+			return $(this).text().split(' ')[0];
+		}).get();
+        $("form#guide-search input").autocomplete({source:jQuery.unique(data)});
+        $("form#guide-search").submit(function() {
+			var term = $("input:first").val().toLowerCase();
+			$(".guide-slide").each(function() {
+				if ($(this).text().toLowerCase().indexOf(term) <= 0) {
+					$(this).fadeOut();
+				}
+				else { $(this).fadeIn(); }
+			});
+			return false;
+		});
+    });
+    </script>
 {% endblock %}
