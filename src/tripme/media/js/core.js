@@ -28,20 +28,31 @@ $.debug = function(message) {
  */
 (function($) {
 
+  var base = "http://localhost:8080/api/v1/";
   var helper = function(root) {
-    var base = "http://localhost:8000/api/v1/" + root + '/';
+    var step = base + root + '/';
 
     return {
       all : function(callback) {
-        $.getJSON(base, callback);
+        $.getJSON(step, callback);
       },
       get : function(query, callback) {
-        $.getJSON(base + 'show/' + query + '/', callback);
+        $.getJSON(step + 'show/' + query + '/', callback);
       },
       search : function(query, callback) {
-        $.getJSON(base + 'search/' + query + '/', callback);
+        $.getJSON(step + 'search/' + query + '/', callback);
       },
     };
+  }
+
+  function markup(data, callback) {
+    $.post(base + 'markup/', {data : data }, function(result) {
+      if (result.length > 0) {
+        callback(result.content);
+      } else {
+        $.debug(result.content);
+      }
+    }, "json");
   }
 
   $.tripme = {
@@ -51,6 +62,7 @@ $.debug = function(message) {
     user    : helper("user"),
     spot    : helper("spot"),
     guide   : helper("guide"),
+    markup  : markup,
   };
 
 })(jQuery);

@@ -25,10 +25,26 @@
     </fieldset>
 
     <fieldset>
-      <button class="button blue larege" type="submit">Create Guide</button>
+      <button type="submit">Create Guide</button>
       <input type="hidden" name="next" value="{{ next }}" />
     </fieldset>
   </form>
 </div>
 
+{% endblock %}
+
+{% block extra_javascript %}
+ <script>
+   $('button').button();
+   $('#id_start_date').datepicker({
+     changeYear  : true,
+     changeMonth : true,
+     yearRange   : '-0:+10'
+   });
+   $('#id_end_date').datepicker({
+     changeYear  : true,
+     changeMonth : true,
+     yearRange   : '-0:+10'
+   });
+ </script>
 {% endblock %}

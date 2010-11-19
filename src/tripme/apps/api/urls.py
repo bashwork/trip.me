@@ -1,6 +1,13 @@
 from django.conf.urls.defaults import *
 from piston.resource import Resource
+from piston.authentication import HttpBasicAuthentication
 from api.handlers import *
+
+# -------------------------------------------------------- #
+# authentication
+# -------------------------------------------------------- #
+auth = HttpBasicAuthentication(realm="trip.me realm")
+ad   = { 'authentication' : auth }
 
 urlpatterns = []
 # -------------------------------------------------------- #
@@ -61,4 +68,13 @@ urlpatterns += patterns('',
     url(r'^user/$', user_handler_resource),
     url(r'^user/search/(?P<name>[^/]+)/', user_handler_resource),
     url(r'^user/show/(?P<id>[^/]+)/', user_handler_resource),
+)
+
+# -------------------------------------------------------- #
+# markup api references
+# -------------------------------------------------------- #
+markup_handler_resource = CsrfExemptResource(MarkupHandler)
+urlpatterns += patterns('',
+    url(r'^markup/$', markup_handler_resource),
+    url(r'^markup/(?P<type>[^/]+)/', markup_handler_resource),
 )

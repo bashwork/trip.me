@@ -25,10 +25,21 @@
     </fieldset>
   
     <fieldset>
-      <button class="button blue larege" type="submit">Update Profile</button>
+      <button type="submit">Update Profile</button>
       <input type="hidden" name="next" value="{{ next }}" />
     </fieldset>
   </form>
 </div>
 
+{% endblock %}
+
+{% block extra_javascript %}
+ <script>
+   $('button').button();
+   $('#id_birth_date').datepicker({
+     changeYear  : true,
+     changeMonth : true,
+     yearRange   : '-80:+0'
+   });
+ </script>
 {% endblock %}

@@ -50,7 +50,7 @@ blockquote:before {
 
 /* input button elements:
  * http://www.zurb.com/blog_uploads/0000/0617/buttons-03.html
-----------------------------------------------------------------------*/
+----------------------------------------------------------------------
 .button, .button:visited {
 	background-color: #222;
 	display: inline-block;
@@ -87,7 +87,7 @@ blockquote:before {
 .orange.button:hover                      { background-color: #d45500; }
 .yellow.button, .yellow.button:visited    { background-color: #ffb515; }
 .yellow.button:hover                      { background-color: #fc9200; }
-
+*/
 /* site header element
 ----------------------------------------------------------------------*/
 header {

@@ -4,11 +4,12 @@
 
 {% block content %}
 
-   <article class="grid_10 instructions">
+   <article class="grid_8 instructions">
      <p>This is some text that describes how to use this interface</p>
    </article>
-   <figure class="grid_2">
+   <figure id="edit-city-buttons" class="grid_4">
      <button id="button-add-city">Add New City</button>
+     <button id="button-delete-guide">Delete Guide</button>
    </figure>
    <div class="clearfix"></div>
 
@@ -59,12 +60,12 @@
       });
 
       $("#add-city-dialog").dialog({
-          modal    : true,
-          position : 'center',
-          title    : 'Add A New City', 
-	  	autoOpen : false,
-          resizable : false,
-          buttons : [
+          modal       : true,
+          position    : 'center',
+          title       : 'Add A New City', 
+	  	  autoOpen    : false,
+          resizable   : false,
+          buttons     : [
             {
               text  : "Add City",
               click : function() {
@@ -80,11 +81,41 @@
             },
           ],
       });
+      $("#delete-guide-dialog").dialog({
+          dialogClass : 'alert-dialog',
+          modal       : true,
+          position    : 'center',
+          title       : 'Are You Sure?', 
+	  	  autoOpen    : false,
+          resizable   : false,
+          buttons     : [
+            {
+              text  : "Delete",
+              click : function() {
+                $(this).dialog("close");
+                // delete guide
+              },
+            },
+            {
+              text  : "Cancel",
+              click : function() {
+                $(this).dialog("close");s
+              }
+            },
+          ],
+      });
 
+	  $("#button-delete-guide").button().click(function() {
+        $("#delete-guide-dialog").dialog('open');
+      });
 	  $("#button-add-city").button().click(function() {
         $("#add-city-dialog input").val('');
         $("#add-city-dialog").dialog('open');
 	  });
+      $("#add-city-dialog form").submit(function() {
+        $(".ui-dialog .ui-button").first().click();
+        return false;
+      });
 
       $(".map-block").gmaps();
     });
@@ -100,5 +131,8 @@
    </form> 
  </div>
  
+ <div id="delete-guide-dialog" title="Are You Sure?">
+  <p>If you delete your guide, it is gone forever!</p>
+ </div>
 
 {% endblock %}

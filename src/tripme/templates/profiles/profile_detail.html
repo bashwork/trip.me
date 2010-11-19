@@ -10,7 +10,7 @@
         <img src="{{ profile.image.url }}" height="300px"/>
       </figure>
       {% if profile.user == user %}
-        <a href="/users/edit/" class="button large red">Edit Profile</a>
+        <a href="/users/edit/" class="button">Edit Profile</a>
       {% endif %}
       <ul class="user-info">
         <li><span>name:</span>{{ profile.user.get_full_name }}</li>
@@ -38,7 +38,7 @@
     </div>
     <div class="grid_4">
     {% if profile.user == user %}
-      <a href="/guides/create/" class="button large red">Add New Guide</a>
+      <a class="button" href="/guides/create/">Add New Guide</a>
     {% endif %}
     </div>
   </section>
@@ -61,3 +61,8 @@
 
 {% endblock %}
 
+{% block extra_javascript %}
+ <script>
+   $('.button').button();
+ </script>
+{% endblock %}

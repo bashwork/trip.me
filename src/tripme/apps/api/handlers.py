@@ -1,7 +1,21 @@
+from django.views.decorators.csrf import csrf_exempt
 from piston.handler import BaseHandler
 from apps.guides.models import *
 from apps.users.models  import UserProfile
+from piston.resource import Resource
 
+# -------------------------------------------------------- #
+# csrf exempt resource
+# -------------------------------------------------------- #
+class CsrfExemptResource(Resource):
+
+    def __init__(self, handler, authentication=None):
+        super(CsrfExemptResource, self).__init__(handler, authentication)
+        self.csrf_exempt = getattr(self.handler, 'csrf_exempt', True)
+
+# -------------------------------------------------------- #
+# api handler
+# -------------------------------------------------------- #
 class CountryHandler(BaseHandler):
     allowed_methods = ('GET',)
     exclude = ('code','created', 'modified')
@@ -59,6 +73,15 @@ class UserHandler(BaseHandler):
     def read(self, request, id=None, name=None):
         result = uapi_query_helper(request, model=UserProfile, id=id, name=name)
         return result[:self.__max__]
+
+import markdown
+class MarkupHandler(BaseHandler):
+    allowed_methods = ('POST',)
+
+    def create(self, request, type='markdown'):
+        print request.raw_post_data
+        content = markdown.markdown(request.raw_post_data)
+        return {'content' : content, 'length' : len(content) }
 
 #------------------------------------------------------------------------------ 
 # helper methods

@@ -6,6 +6,9 @@
 	text-shadow: 0px 1px 1px #ddd;
 	margin-bottom: 2em;
 }
+#edit-city-buttons {
+    text-align:right;
+}
 
 /* splash page style
 ----------------------------------------------------------------------*/
