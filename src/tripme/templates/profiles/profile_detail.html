@@ -32,12 +32,14 @@
     </section>
   </div>
 
-  <section class="row_8">
+  <section id="user-guides-header" class="row_8">
     <div class="grid_4">
       <h2>Created Guides</h2>
     </div>
     <div class="grid_4">
+    {% if profile.user == user %}
       <a href="/guides/create/" class="button large red">Add New Guide</a>
+    {% endif %}
     </div>
   </section>
 

@@ -29,44 +29,76 @@
 {% endblock %}
 
 {% block extra_javascript %}
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
     <script>
     $(document).ready(function() {
-      var options = {
-        zoom : 2,
-        center : new google.maps.LatLng(-34.397, 150.644),
-		mapTypeControl : false,
-        mapTypeId : google.maps.MapTypeId.ROADMAP,
-		navigationControlOptions : {
-		  style : google.maps.NavigationControlStyle.SMALL
-		}
-      };
-      var map = new google.maps.Map($(".map-block").get(0), options);
-        $("#add-city-dialog").dialog({
-            modal : true,
-            position: 'center',
-            title : 'Add A New City', 
-			autoOpen : false,
-            resizable : false,
-            buttons : [
-            { text : "Add", click : function() { $(this).dialog("close"); } },
-            { text : "Cancel", click: function() { $(this).dialog("close"); } },
-            ],
-        });
 
-	  $("#button-add-city").click(function() {
+      function do_add_city(city) {
+          $("#city-list").append("<li>"+city+"</li>");
+          $.gmaps.mark({ position : city });
+      }
+
+      $("#add-city-dialog input").autocomplete({
+        source: function(request, response) {
+          $.getJSON('http://ws.geonames.org/searchJSON',
+          {
+            style        : 'full',
+            maxRows      : 10,
+            featureClass : 'P',
+            q            : request.term,
+          }, function(data) {
+            response($.map(data.geonames, function(item) {
+              var result = item.name
+                + (item.adminName1 ? ", " + item.adminName1 : "")
+                + ", " + item.countryName;
+              return { label : result, value : result };
+            }));
+          });
+        }
+      });
+
+      $("#add-city-dialog").dialog({
+          modal    : true,
+          position : 'center',
+          title    : 'Add A New City', 
+	  	autoOpen : false,
+          resizable : false,
+          buttons : [
+            {
+              text  : "Add City",
+              click : function() {
+                $(this).dialog("close");
+                do_add_city($("#add-city-dialog input").attr("value"));
+              },
+            },
+            {
+              text  : "Cancel",
+              click : function() {
+                $(this).dialog("close");s
+              }
+            },
+          ],
+      });
+
+	  $("#button-add-city").button().click(function() {
+        $("#add-city-dialog input").val('');
         $("#add-city-dialog").dialog('open');
 	  });
+
+      $(".map-block").gmaps();
     });
     </script>
 {% endblock %}
 
 {% block extra_dom %}
 
-   <div id="add-city-dialog" style="display:none">
+ <div id="add-city-dialog" title="Add A New City">
+   <form> 
+     <label for="search">Search</label> 
      <input type="search" placeholder="Where do you want to go?"/>
-   </div>
+   </form> 
+ </div>
+ 
 
 {% endblock %}

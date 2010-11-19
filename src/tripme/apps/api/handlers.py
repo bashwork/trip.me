@@ -1,5 +1,6 @@
 from piston.handler import BaseHandler
 from apps.guides.models import *
+from apps.users.models  import UserProfile
 
 class CountryHandler(BaseHandler):
     allowed_methods = ('GET',)
@@ -51,12 +52,12 @@ class GuideHandler(BaseHandler):
 
 class UserHandler(BaseHandler):
     allowed_methods = ('GET',)
-    model = Guide
+    model = UserProfile
     #fields = ('id', 'description', 'name', 'modified',('user',('id','username')))
     __max__ = 20
 
     def read(self, request, id=None, name=None):
-        result = api_query_helper(request, model=UserProfile, id=id, name=name)
+        result = uapi_query_helper(request, model=UserProfile, id=id, name=name)
         return result[:self.__max__]
 
 #------------------------------------------------------------------------------ 
@@ -70,4 +71,14 @@ def api_query_helper(request, **kwargs):
     if id != None: results = model.objects.filter(id=id)
     elif not name: results = model.objects.all()
     else: results = model.objects.filter(name__icontains=name)
+    return results
+
+def uapi_query_helper(request, **kwargs):
+    id = kwargs.get('id',None)
+    name = kwargs.get('name', None)
+    model = kwargs.get('model')
+
+    if id != None: results = model.objects.filter(id=id)
+    elif not name: results = model.objects.all()
+    else: results = model.objects.filter(user__username__icontains=name)
     return results

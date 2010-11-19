@@ -7,6 +7,7 @@ handy resources
 * http://code.google.com/p/django-mptt/
 * http://django-mptt.github.com/django-mptt/models.html#setting-up-a-django-model-for-mptt
 * https://github.com/jbalogh/zamboni/
+* www.geoname.org
 
 --------------------------------------------------------------------------- 
 things todo

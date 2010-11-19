@@ -115,6 +115,10 @@ div#splash-signup {
     font-style: italic;
     margin-bottom: 10px;
 }
+#user-guides-header h2 {
+    font-size: 120%;
+	border-bottom: 1px solid #ccc;
+}
 
 .user-slide {
 	position:relative;

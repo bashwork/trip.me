@@ -27,10 +27,16 @@
 {% block extra_javascript %}
     <script>
     $(document).ready(function() {
-        var data = $(".guide-slide h1").map(function() {
-			return $(this).text().split(' ')[0];
-		}).get();
-        $("form#guide-search input").autocomplete({source:jQuery.unique(data)});
+        $("form#guide-search input").autocomplete({
+          source: function(request, response) {
+            $.tripme.guide.search(request.term, function(data) {
+              response($.map(data, function(item) {
+                var result = item.name;
+                return { label : result, value : result };
+              }));
+            });
+          },
+        });
         $("form#guide-search").submit(function() {
 			var term = $("input:first").val().toLowerCase();
 			$(".guide-slide").each(function() {
