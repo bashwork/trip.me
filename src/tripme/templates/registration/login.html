@@ -1,16 +1,19 @@
 {% extends "base.html" %}
 
-{% block title %}trip.me - login{% endblock %}
 {% block content_title %}Log in to your account{% endblock %}
 
 {% block content %}
 
 {% if form.errors %}
-<p class="error">
-Your username and password didn't match our records.
-Please try again. If you have forgotten your password,
-we can help you reset it, just <a href="/accounts/password/reset">click here</a>.
-</p>
+<div class="grid_6 prefix_3 suffix_3">
+  <div id="styled-form-error" class="ui-state-error ui-corner-all">
+    <p>
+    Your username and password didn't match our records.
+    Please try again. If you have forgotten your password,
+    we can help you reset it, just <a href="/accounts/password/reset">click here</a>.
+    </p>
+  </div>
+</div>
 {% endif %}
 
 <div class="grid_6 prefix_3 suffix_3">
@@ -27,10 +30,16 @@ we can help you reset it, just <a href="/accounts/password/reset">click here</a>
     </fieldset>
   
     <fieldset>
-      <button class="button blue larege" type="submit">Login</button>
+      <button class="button" type="submit">Login</button>
+      <button class='button' href="/accounts/password/reset">Reset Password</button>
       <input type="hidden" name="next" value="{{ next }}" />
     </fieldset>
   </form>
 </div>
 
+{% endblock %}
+{% block extra_javascript %}
+<script>
+$(".button").button();
+</script>
 {% endblock %}

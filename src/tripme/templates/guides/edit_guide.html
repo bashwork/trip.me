@@ -17,7 +17,7 @@
      <ul id="city-list">
        {% for entry in guide.guidelocationentry_set.all %}
          <li class="edit-delete">
-           <a href="{{ entry.city.get_absolute_url }}">{{ entry.city }}</a>
+           <a href="{{ entry.get_absolute_url }}">{{ entry.city }}</a>
          </li>
        {% endfor %}
      </ul>
@@ -37,7 +37,11 @@
 
       function do_add_city(city) {
           $("#city-list").append("<li>"+city+"</li>");
-          $.gmaps.mark({ position : city });
+          $.gmaps.mark({
+            position : city,
+            title    : city,
+            content  : '<h1>' + city + '</h1>',
+          }, true);
       }
 
       $("#add-city-dialog input").autocomplete({
@@ -76,7 +80,7 @@
             {
               text  : "Cancel",
               click : function() {
-                $(this).dialog("close");s
+                $(this).dialog("close");
               }
             },
           ],
@@ -92,14 +96,15 @@
             {
               text  : "Delete",
               click : function() {
-                $(this).dialog("close");
-                // delete guide
+                $.tripme.guide.remove('{{ guide.id }}', function(result) {
+                  $.redirect("{{ guide.user.get_absolute_url }}");
+                });
               },
             },
             {
               text  : "Cancel",
               click : function() {
-                $(this).dialog("close");s
+                $(this).dialog("close");
               }
             },
           ],
@@ -117,7 +122,13 @@
         return false;
       });
 
-      $(".map-block").gmaps();
+      var markers = [
+        {% for entry in guide.guidelocationentry_set.all %}
+          { position : [{{ entry.city.latitude }}, {{ entry.city.longitude }}] },
+        {% endfor %}
+      ];
+
+      $(".map-block").gmaps({ markers : markers });
     });
     </script>
 {% endblock %}

@@ -118,6 +118,15 @@ class Spot(models.Model):
     def get_absolute_url(self):
         return "/data/spot/%s" % self.id
 
+    @classmethod
+    def get_all_near(lat, long):
+        return Spots.objects.raw('''SELECT *,
+           SQRT(POW((69.1 * (locations.latitude - 27.950898)) , 2 ) +
+                       POW((53 * (locations.longitude - -82.461517)), 2)) AS distance
+           FROM locations
+           ORDER BY distance ASC
+           LIMIT 5''')
+
 # -------------------------------------------------------- #
 # User Guides
 # -------------------------------------------------------- #
@@ -178,6 +187,10 @@ class GuideLocationEntry(models.Model):
 
     def __unicode__(self):
         return self.city.name
+
+    @models.permalink
+    def get_absolute_url(self):
+        return ('guides.views.guide_detail_spots', [str(self.guide.id), str(self.id)])
 
 class GuideSpotEntry(models.Model):
     '''

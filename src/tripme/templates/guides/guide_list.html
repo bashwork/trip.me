@@ -7,6 +7,11 @@
       <form id="guide-search" class="grid_4">
         <input class="auto-search" type="search" placeholder="Where do you want to go?" />
       </form>
+      <div class="prefix_6 grid_2">
+      {% if user.is_authenticated %}
+        <a class="button" href="/guides/create/">Create A Guide</a>
+      {% endif %}
+      </div>
 	  <div class="clearfix"></div>
 
   {% for guide in object_list %}
@@ -48,5 +53,6 @@
 			return false;
 		});
     });
+    $('.button').button();
     </script>
 {% endblock %}

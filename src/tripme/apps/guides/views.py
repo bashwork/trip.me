@@ -39,7 +39,7 @@ def guide_detail(request, id):
     return render_to_response(view, { 'guide' : guide },
         context_instance=RequestContext(request))
 
-def guide_detail_spots(request, id):
+def guide_detail_spots(request, id, city):
     '''
     The view for retrieving detail about a given guide
 
@@ -47,8 +47,8 @@ def guide_detail_spots(request, id):
     :param id: the unique key for this guide
     '''
     guide = get_object_or_404(Guide, id=id)
-    view  = 'guides/guide_detail_spot.html'
+    view  = 'guides/guide_detail_entry.html'
     if request.user == guide.user:
-        view  = 'guides/edit_guide_spot.html'
-    return render_to_response(view, { 'guide' : guide },
+        view  = 'guides/edit_guide_entry.html'
+    return render_to_response(view, { 'guide' : guide, 'city' : city },
         context_instance=RequestContext(request))

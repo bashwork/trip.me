@@ -16,7 +16,6 @@ things todo
 * fix the default image problem (template tag with settings?)
   - auto image scale/crop for profiles/spots/etc
 * have the girls write all the copy in markdown (I'll do css)
-  - have them add some fucking spots
 * autofill fields and guide views (lots of css and js)
 * add user fields (email, name) to userprofile form
 * test password reset
@@ -24,6 +23,8 @@ things todo
 * design, design, design
 * user tags / categories -> comments to tips (foursquare)
 * slugs instead of ids maybe
+* connect about pages
+* splash page
 
 --------------------------------------------------------------------------- 
 nice to haves

@@ -1,3 +1,11 @@
+/**
+ * debug
+ * This loops through each jquery item and logs it
+ */
+$.redirect = function(url) {
+  window.location = url;
+};
+
 /*
  * global flag for jquery logging
  */
@@ -28,7 +36,7 @@ $.debug = function(message) {
  */
 (function($) {
 
-  var base = "http://localhost:8080/api/v1/";
+  var base = "/api/v1/";
   var helper = function(root) {
     var step = base + root + '/';
 
@@ -41,6 +49,13 @@ $.debug = function(message) {
       },
       search : function(query, callback) {
         $.getJSON(step + 'search/' + query + '/', callback);
+      },
+      remove : function(query, callback) {
+        $.ajax({
+          type     : 'DELETE',
+          url      : step + 'show/' + query + '/',
+          success  : callback,
+        });
       },
     };
   }
@@ -67,6 +82,68 @@ $.debug = function(message) {
 
 })(jQuery);
 
+/*
+ * wrapper for the foursquare api
+ */
+(function($) {
+
+  $.foursquare = {};
+  var base = "/api/v1/proxy/foursquare/";
+  //var base = "https://api.foursquare.com/v1/";
+  var options = { l : 30, };
+
+  function convert_options(query)
+  {
+    var result = {
+      geolat  : query.lat,
+      geolong : query.lng,
+    };
+    if (query.search) {
+      result.q = query.search;
+    }
+    return result;
+  }
+
+  $.foursquare.venue = {
+    /**
+     */
+    get : function(id, callback) {
+      $.getJSON(base + 'venue.json?callback=?',
+        { vid : id }, callback);
+    },
+
+    /**
+     */
+    search : function(query, callback) {
+      $.getJSON(base + 'venues.json?callback=?',
+        $.extend(options, convert_options(query)), callback);
+    },
+  };
+
+  $.foursquare.tips = {
+    /**
+     */
+    near : function(query, callback) {
+      $.getJSON(base + 'tips.json?callback=?',
+        $.extend(options, convert_options(query),
+          { filter : 'nearby' }), callback);
+    },
+  };
+
+  /**
+   */
+  $.foursquare.categories = function(callback) {
+    $.getJSON(base + 'categories.json?callback=?', callback);
+  };
+
+  /**
+   */
+  $.foursquare.test = function(callback) {
+    $.getJSON(base + 'test.json?callback=?', callback);
+  };
+
+})(jQuery);
+
 /**
  * jquery.gmaps v3
  *
@@ -80,6 +157,7 @@ $.debug = function(message) {
   * default configuration options and globals
   */
  var geocoder = new google.maps.Geocoder();
+ var infowindow = new google.maps.InfoWindow();
  //var Gmaps = function(opts) {
  //  this.options = $.extend({}, $.fn.gmaps.defaults, options);
  //  this.geocoder = new google.maps.Geocoder();
@@ -111,20 +189,20 @@ $.debug = function(message) {
    center                   : [39.50, -98.35],
    zoom                     : 3,
    maptype                  : 'roadmap',
-   disableDoubleClickZoom   : 'true',
-   mapTypeControl           : 'false',
-   streetViewControl        : 'false',
+   disableDoubleClickZoom   : true,
+   mapTypeControl           : false,
+   streetViewControl        : false,
    mapTypeControlOptions    : {
      style                  : 'default',
      position               : 'top_right',
    },
-   navigationControl        : 'true',
+   navigationControl        : true,
    navigationControlOptions : {
      style                  : 'small',
      position               : 'top_left',
    },
-   scaleControl             : 'false',
-   scrollwheel              : 'true',
+   scaleControl             : false,
+   scrollwheel              : true,
    prefix                   : 'gmarker',
    markers                  : [],
  };
@@ -145,6 +223,28 @@ $.debug = function(message) {
      return new google.maps.LatLng(area[0], area[1]);
    }
 
+   function get_options(opts) {
+     return {
+       //center                   : this.centerLatLng,
+       disableDoubleClickZoom   : opts.disableDoubleClickZoom,
+       streetViewControl        : opts.streetViewControl,
+       mapTypeControl           : opts.mapTypeControl,
+       mapTypeControlOptions    : {
+         style    : gapi.typeStyle(opts.mapTypeControlOptions.style),
+         position : gapi.typePosition(opts.mapTypeControlOptions.position),
+       },
+       mapTypeId                : gapi.mapType(opts.maptype),
+       navigationControl        : opts.navigationControl,
+       navigationControlOptions : {
+         style    : gapi.navStyle(opts.navigationControlOptions.style),
+         position : gapi.navPosition(opts.navigationControlOptions.position),
+       },
+       scaleControl             : opts.scaleControl,
+       scrollwheel              : opts.scrollwheel,
+       zoom                     : opts.zoom,
+     };
+   }
+
    return {
      mapType      : get('ROADMAP', google.maps.MapTypeId),
      typeStyle    : get('DEFAULT', google.maps.MapTypeControlStyle),
@@ -152,35 +252,14 @@ $.debug = function(message) {
      navStyle     : get('DEFAULT', google.maps.NavigationControlStyle),
      navPosition  : get('TOP_LEFT', google.maps.ControlPosition),
      latlng       : get_ll,
+     options      : get_options,
    };
  })();
-
- function gooptions(opts) {
-   return {
-     //center                   : this.centerLatLng,
-     disableDoubleClickZoom   : opts.disableDoubleClickZoom,
-     mapTypeControl           : opts.mapTypeControl,
-     streetViewControl        : opts.streetViewControl,
-     mapTypeControlOptions    : {
-       style    : gapi.typeStyle(opts.mapTypeControlOptions.style),
-       position : gapi.typePosition(opts.mapTypeControlOptions.position),
-     },
-     mapTypeId                : gapi.mapType(opts.maptype),
-     navigationControl        : opts.navigationControl,
-     navigationControlOptions : {
-       style    : gapi.navStyle(opts.navigationControlOptions.style),
-       position : gapi.navPosition(opts.navigationControlOptions.position),
-     },
-     scaleControl             : opts.scaleControl,
-     scrollwheel              : opts.scrollwheel,
-     zoom                     : opts.zoom,
-   };
- }
 
  /**
   */
  $.gmaps.init = function(opts) {
-   G.map = new google.maps.Map(G.id, gooptions(opts));
+   G.map = new google.maps.Map(G.id, gapi.options(opts));
    $.gmaps.center(opts.center);
 
    for (i = 0; i < opts.markers.length; ++i) {
@@ -199,21 +278,23 @@ $.debug = function(message) {
   */
  $.gmaps.update = function(opts) {
    var current = $.extend({}, G.opts, opts);
-   G.map.setOptions(gooptions(current));
+   G.map.setOptions(gapi.options(current));
    return this;
  }
 
  /**
   */
- $.gmaps.bind = function(ev, fn) {
-   google.maps.event.addListener(G.map, ev, fn);
+ $.gmaps.bind = function(ev, fn, source) {
+   google.maps.event.addListener(
+     source ? source : G.map, ev, fn);
    return this;
  };
 
  /**
   */
- $.gmaps.unbind = function(ev) {
-   google.maps.event.removeListener(G.map, ev);
+ $.gmaps.unbind = function(ev, source) {
+   google.maps.event.removeListener(
+     source ? source : G.map, ev);
    return this;
  };
 
@@ -231,16 +312,26 @@ $.debug = function(message) {
    return this;
  };
 
+ function add_info_window(marker)
+ {
+   $.gmaps.bind('click', function() {
+     infowindow.setContent(marker.content);
+     infowindow.open(G.map, marker);  
+   }, marker);
+ }
+
  /**
   * title, visible, id, icon, 
   */
- $.gmaps.mark = function(marker) {
+ $.gmaps.mark = function(marker, move) {
     
-   if ($.isArray(marker.position) && (marker.position == 2)) {
+   if ($.isArray(marker.position) && (marker.position.length == 2)) {
      marker.position = gapi.latlng(marker.position);
+   } else if (marker.position && marker.position.lat && marker.position.lng) {
+     // looks good to me
    } else if (typeof(marker.position) == 'string') {
      return $.gmaps.geocode(marker.position, function (po) {
-       $.gmaps.mark($.extend(marker, { position: po }));
+       $.gmaps.mark($.extend(marker, { position: po }), move);
      });
    } else {
      $.debug("invalid position type for marker");
@@ -252,6 +343,14 @@ $.debug = function(message) {
      draggable : false,
    }, marker);
    var marker = new google.maps.Marker(opts);
+
+   if (move) {
+     G.map.panTo(marker.position);
+   }
+
+   if (marker.content) {
+     add_info_window(marker);
+   }
 
    $(G.id).data(marker.id, marker);
    G.markers.push(marker.id);
@@ -274,6 +373,7 @@ $.debug = function(message) {
    marker.setVisible(false);
    marker.setMap(null);
    $(G.id).removeData(id);
+   // remove info window
  }
 
  /**
@@ -312,7 +412,7 @@ $.debug = function(message) {
         callback(results[0].geometry.location);
       } else {
         $.debug(status);
-        errback(status);
+        if (errback) { errback(status); }
       }
    });
    return this;
@@ -326,7 +426,7 @@ $.debug = function(message) {
         callback(results[0].formatted_address);
       } else {
         $.debug(status);
-        errback(status);
+        if (errback) { errback(status); }
       }
    });
    return this;

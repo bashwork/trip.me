@@ -1,5 +1,5 @@
 /* fonts
-----------------------------------------------------------------------*/
+----------------------------------------------------------------------
 @font-face {
   font-family: 'Cardo';
   font-style: normal;
@@ -17,15 +17,15 @@
   font-style: normal;
   font-weight: 400;
   src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url('http://themes.googleusercontent.com/font?kit=YDAoLskQQ5MOAgvHUQCcLdXn3cHbFGWU4T2HrSN6JF4') format('truetype');
-}
+}*/
 
 /* base styles
 ----------------------------------------------------------------------*/
 body {
     background: #fff;
 	/*background: url(../img/grid.png) #efefef -10em 0 repeat-y;*/
-    font-family: Georgia, Arial, Helvetica, Helvetica Neue, Verdana, sans-serif;
-    font-size: 12px;
+    font-family: Helvetica, Helvetica Neue, Verdana, sans-serif;
+    font-size: 13px;
     line-height: 1.5em;
     color: #555;
 }
@@ -88,10 +88,25 @@ blockquote:before {
 .yellow.button, .yellow.button:visited    { background-color: #ffb515; }
 .yellow.button:hover                      { background-color: #fc9200; }
 */
+/* tooltip element styles
+----------------------------------------------------------------------*/
+p#vtip {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    left: 5px;
+    font-size: 0.8em;
+    background-color: white;
+    border: 1px solid #a6c9e2;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    z-index: 9999
+}
+p#vtip #vtipArrow { position: absolute; top: -10px; left: 5px }
+
 /* site header element
 ----------------------------------------------------------------------*/
 header {
-    font-family: 'Yanone Kaffeesatz';
 	margin-top: 1em;
 	margin-bottom: 2em;
 }
@@ -120,6 +135,7 @@ header nav {
 	text-align: right;
 }
 header nav li { 
+    font-size: 120%;
 	font-weight: bold;
 	display: inline;
 	padding-left: 1em;
@@ -295,7 +311,7 @@ form.styled-form textarea {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     padding: 5px;
-    width: 260px;
+    width: 270px;
 }
 form.styled-form button {
     display:block;
@@ -303,6 +319,12 @@ form.styled-form button {
     float:right;
 }
 form.styled-form button:last-of-type { margin-left:0; }
+form.styled-form .errorlist { background: #ffbaba; }
+
+#styled-form-error {
+    padding: 10px;
+    margin-bottom: 1em;
+}
 
 /* Browse Styles
 ----------------------------------------------------------------------*/

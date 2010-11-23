@@ -78,3 +78,11 @@ urlpatterns += patterns('',
     url(r'^markup/$', markup_handler_resource),
     url(r'^markup/(?P<type>[^/]+)/', markup_handler_resource),
 )
+
+# -------------------------------------------------------- #
+# proxy api references
+# -------------------------------------------------------- #
+foursquare_proxy_resource = Resource(FoursquareProxy)
+urlpatterns += patterns('',
+    url(r'^proxy/foursquare/', foursquare_proxy_resource),
+)

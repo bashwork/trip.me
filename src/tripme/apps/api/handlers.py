@@ -3,6 +3,7 @@ from piston.handler import BaseHandler
 from apps.guides.models import *
 from apps.users.models  import UserProfile
 from piston.resource import Resource
+import urllib, urllib2, simplejson
 
 # -------------------------------------------------------- #
 # csrf exempt resource
@@ -55,7 +56,7 @@ class SpotHandler(BaseHandler):
         return result[:self.__max__]
 
 class GuideHandler(BaseHandler):
-    allowed_methods = ('GET',)
+    allowed_methods = ('GET','DELETE')
     model = Guide
     fields = ('id', 'description', 'name', 'modified',('user',('id','username')))
     __max__ = 20
@@ -105,3 +106,30 @@ def uapi_query_helper(request, **kwargs):
     elif not name: results = model.objects.all()
     else: results = model.objects.filter(user__username__icontains=name)
     return results
+
+#------------------------------------------------------------------------------ 
+# proxy methods
+#------------------------------------------------------------------------------ 
+class FoursquareProxy(BaseHandler):
+    allowed_methods = ('GET',)
+
+    def read(self, request):
+        query = request.path.split('/')[-1]
+        params = dict((a,b) for a,b in request.GET.items())
+        return _foursquare_request(query, params)
+
+def _foursquare_request(query, params=None):
+    query_url = 'http://api.foursquare.com/v1/' + query
+
+    if params:
+        params.pop('callback')
+        data = urllib.urlencode(params)
+        request = urllib2.Request('%s?%s' % (query_url, data) )
+    else:
+        request = urllib2.Request(query_url)
+
+    try:
+        result = simplejson.load(urllib2.urlopen(request))
+    except IOError, e:
+        result = simplejson.load(e)
+    return result

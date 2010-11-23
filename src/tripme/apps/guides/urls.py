@@ -24,5 +24,5 @@ urlpatterns = patterns('guides.views',
         guide_list_detail, name='guide_list'),
     url(r'^create/$', 'create_guide'),
     url(r'^(?P<id>\d+)/$', 'guide_detail'),
-    url(r'^(?P<id>\d+)/spots/$', 'guide_detail_spots'),
+    url(r'^(?P<id>\d+)/(?P<city>\d+)/$', 'guide_detail_spots'),
 )
