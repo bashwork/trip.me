@@ -144,7 +144,7 @@ class Guide(models.Model):
     '''
     name = models.CharField(max_length=200)
     description = models.TextField()
-    user = models.ForeignKey(User)
+    user = models.ForeignKey(User, related_name='guides')
     start_date = models.DateField(null=True, blank=True)
     end_date = models.DateField(null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
@@ -167,7 +167,7 @@ class Guide(models.Model):
 
         :returns: A random ImageField or None
         '''
-        set = self.guidelocationentry_set.exclude(city__image='')
+        set = self.entries.exclude(city__image='')
         set = set.order_by('?')
         return None if not any(set) else set[0].city.image.url
 
@@ -180,7 +180,7 @@ class GuideLocationEntry(models.Model):
       * St. Louis
     '''
     city = models.ForeignKey(City)
-    guide = models.ForeignKey(Guide)
+    guide = models.ForeignKey(Guide, related_name='entries')
 
     class Meta:
         verbose_name_plural = "guide Location entries"
@@ -201,7 +201,7 @@ class GuideSpotEntry(models.Model):
       * The Arch in St. Louis
     '''
     spot = models.ForeignKey(Spot)
-    entry = models.ForeignKey(GuideLocationEntry)
+    entry = models.ForeignKey(GuideLocationEntry, related_name='spots')
 
     class Meta:
         verbose_name_plural = "guide spot entries"

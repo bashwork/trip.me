@@ -432,6 +432,55 @@ $.debug = function(message) {
    return this;
  };
 
+/**
+ * jQuery flickr
+ * https://github.com/rpheath/jquery-flickr/blob/master/jquery.flickr.js
+ */
+(function($) {
+
+  var base = 'http://api.flickr.com/services/rest/';
+
+  function convert_options(query)
+  {
+    var result = {
+      lat : query.lat,
+      lon : query.lng,
+    };
+    return result;
+  }
+
+  $.flickr = {
+    /**
+     */
+    options : {
+      format  : 'json',
+      api_key : '802e2bd0c4f71377d5301a9638446104',
+      method  : 'flickr.photos.geo.photosForLocation',
+    },
+
+    /**
+     */
+    search : function(query, callback) {
+      $.getJSON(base + '?jsoncallback=?',
+        $.extend($.flickr.options, convert_options(query)), function(data) {
+          if (data.stat == 'ok') {
+            callback(data);
+          } else { $.debug(data); }
+      });
+    },
+  };
+
+  /**
+   */
+  $.fn.flickr = function(options) {
+      return this.each(function() {
+        var ul = $('<ul>').appendTo(this);
+        $.flickr.search(options, function(data) {
+          // do the things
+        });
+      });
+  };
+
 })(jQuery);
 
 /**

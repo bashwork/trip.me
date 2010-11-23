@@ -43,7 +43,7 @@ urlpatterns += patterns('',
 # -------------------------------------------------------- #
 # spot api references
 # -------------------------------------------------------- #
-spot_handler_resource = Resource(SpotHandler)
+spot_handler_resource = CsrfExemptResource(SpotHandler)
 urlpatterns += patterns('',
     url(r'^spot/$', spot_handler_resource),
     url(r'^spot/search/(?P<name>[^/]+)/', spot_handler_resource),
@@ -53,7 +53,7 @@ urlpatterns += patterns('',
 # -------------------------------------------------------- #
 # guide api references
 # -------------------------------------------------------- #
-guide_handler_resource = Resource(GuideHandler)
+guide_handler_resource = CsrfExemptResource(GuideHandler)
 urlpatterns += patterns('',
     url(r'^guide/$', guide_handler_resource),
     url(r'^guide/search/(?P<name>[^/]+)/', guide_handler_resource),
@@ -63,7 +63,7 @@ urlpatterns += patterns('',
 # -------------------------------------------------------- #
 # user api references
 # -------------------------------------------------------- #
-user_handler_resource = Resource(UserHandler)
+user_handler_resource = CsrfExemptResource(UserHandler)
 urlpatterns += patterns('',
     url(r'^user/$', user_handler_resource),
     url(r'^user/search/(?P<name>[^/]+)/', user_handler_resource),

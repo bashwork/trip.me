@@ -47,7 +47,7 @@ class CityHandler(BaseHandler):
         return result[:self.__max__]
 
 class SpotHandler(BaseHandler):
-    allowed_methods = ('GET',)
+    allowed_methods = ('GET', 'POST', 'PUT')
     model = Spot
     __max__ = 20
 
@@ -56,9 +56,11 @@ class SpotHandler(BaseHandler):
         return result[:self.__max__]
 
 class GuideHandler(BaseHandler):
-    allowed_methods = ('GET','DELETE')
+    allowed_methods = ('GET','DELETE', 'POST', 'PUT')
     model = Guide
-    fields = ('id', 'description', 'name', 'modified',('user',('id','username')))
+    fields = ('id', 'description', 'name', 'modified',
+        ('entries', ('city_id', 'id', 'spots', )),
+        ('user', ('id','username')))
     __max__ = 20
 
     def read(self, request, id=None, name=None):
@@ -66,7 +68,7 @@ class GuideHandler(BaseHandler):
         return result[:self.__max__]
 
 class UserHandler(BaseHandler):
-    allowed_methods = ('GET',)
+    allowed_methods = ('GET', 'PUT')
     model = UserProfile
     #fields = ('id', 'description', 'name', 'modified',('user',('id','username')))
     __max__ = 20
@@ -74,6 +76,13 @@ class UserHandler(BaseHandler):
     def read(self, request, id=None, name=None):
         result = uapi_query_helper(request, model=UserProfile, id=id, name=name)
         return result[:self.__max__]
+
+    #def update(self, request, *args, **kwargs):
+    #    #if request.content_type:
+    #    #   data = request.data
+    #    #   #self.model.objects.get()
+    #    #else:
+    #    return super(UserHandler, self).update(request, *args, **kwargs)
 
 import markdown
 class MarkupHandler(BaseHandler):
@@ -116,17 +125,18 @@ class FoursquareProxy(BaseHandler):
     def read(self, request):
         query = request.path.split('/')[-1]
         params = dict((a,b) for a,b in request.GET.items())
-        return _foursquare_request(query, params)
+        params.pop('callback')
+        proxy = 'http://api.foursquare.com/v1/'
 
-def _foursquare_request(query, params=None):
-    query_url = 'http://api.foursquare.com/v1/' + query
+        return _proxy_request(proxy, query, params)
+
+def _proxy_request(proxy, query, params=None):
+    query_url = proxy + query
 
     if params:
-        params.pop('callback')
         data = urllib.urlencode(params)
         request = urllib2.Request('%s?%s' % (query_url, data) )
-    else:
-        request = urllib2.Request(query_url)
+    else: request = urllib2.Request(query_url)
 
     try:
         result = simplejson.load(urllib2.urlopen(request))

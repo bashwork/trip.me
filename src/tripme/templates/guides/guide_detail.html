@@ -11,7 +11,7 @@
 
    <div class="grid_4">
      <ul id="city-list">
-       {% for entry in guide.guidelocationentry_set.all %}
+       {% for entry in guide.entries.all %}
          <li class="edit-delete">
            <a href="{{ entry.get_absolute_url }}">{{ entry.city }}</a>
          </li>
@@ -31,7 +31,7 @@
     <script>
     $(document).ready(function() {
       var markers = [
-        {% for entry in guide.guidelocationentry_set.all %}
+        {% for entry in guide.entries.all %}
           { position : [{{ entry.city.latitude }}, {{ entry.city.longitude }}] },
         {% endfor %}
       ];

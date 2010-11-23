@@ -44,7 +44,7 @@
   </section>
 
   <section class="column_8">
-    {% for guide in profile.user.guide_set.all %}
+    {% for guide in profile.user.guides.all %}
     <div class="grid_4">
       <figure class="guide-slide">
         <a href="{{ guide.get_absolute_url }}"><img src="{{ guide.get_random_image }}" height="200px"/></a>
