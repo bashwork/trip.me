@@ -29,7 +29,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <!-- site header -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <header>
+    <header class="grid_12">
       <p id="sign-up-header">
         {% if user.is_authenticated %}
           Signed in as <a href="/users/{{ user.username }}/">{{ user.username }}</a>
@@ -66,7 +66,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <!-- site footer -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <footer>
+    <footer class="grid_12">
     {% block full_footer %}
       <ul id="social-network">
 	    <li class="email"><a href="mailto:contact@tripme.com"><span>Email</span></a></li>

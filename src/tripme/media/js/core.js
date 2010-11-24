@@ -1,6 +1,6 @@
 /**
- * debug
- * This loops through each jquery item and logs it
+ * This redirects a user to the supplied page
+ * @param url The page to send the user to
  */
 $.redirect = function(url) {
   window.location = url;
@@ -12,8 +12,8 @@ $.redirect = function(url) {
 window.DEBUG = true;
 
 /**
- * debug
  * This loops through each jquery item and logs it
+ * @param this Loops through each instance in this and logs it
  */
 $.fn.debug = function() {
   return this.each(function() {
@@ -22,8 +22,8 @@ $.fn.debug = function() {
 };
 
 /**
- * debug
  * Logs the passed in message to the browser log
+ * @param message The message to log to the browser log
  */
 $.debug = function(message) {
   if (window.DEBUG && window.console && window.console.log) {
@@ -262,7 +262,7 @@ $.debug = function(message) {
    G.map = new google.maps.Map(G.id, gapi.options(opts));
    $.gmaps.center(opts.center);
 
-   for (i = 0; i < opts.markers.length; ++i) {
+   for (var i = 0; i < opts.markers.length; ++i) {
      $.gmaps.mark(opts.markers[i]);
    }
    //$.gmaps.bind('click', function(ev) {
@@ -362,7 +362,7 @@ $.debug = function(message) {
  $.gmaps.markers = function() {
    var results = [], H = $(G.id);
    
-   for (i in G.markers) {
+   for (var i in G.markers) {
      results[i] = H.data(G.markers[i]);
    }
    return results;
@@ -391,7 +391,7 @@ $.debug = function(message) {
  /**
   */
  $.gmaps.unmarkAll = function(marker) {
-   for (i in G.markers) {
+   for (var i in G.markers) {
      delete_marker(G.markers[i]);
    }
    G.markers = [];
@@ -511,12 +511,12 @@ $.debug = function(message) {
      * the resulting images
      */
     request : function(query, method, callback) {
-      var options = $.extend(flickr.options, query, { method : method });
-      $.getJSON(flickr.base + '?jsoncallback=?', options, function(data) {
+      var opts = $.extend(flickr.options, query, { method : method });
+      $.getJSON(flickr.base + '?jsoncallback=?', opts, function(data) {
         if (data.stat == 'ok') {
           var photos = (data.photos === undefined)
             ? data.photoset : data.photos;
-          callback(flickr.process(photos, options));
+          callback(flickr.process(photos, opts));
         } else { $.debug(data); }
       });
     },
