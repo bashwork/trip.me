@@ -32,7 +32,11 @@
     $(document).ready(function() {
       var markers = [
         {% for entry in guide.entries.all %}
-          { position : [{{ entry.city.latitude }}, {{ entry.city.longitude }}] },
+          {
+            position : [{{ entry.city.latitude }}, {{ entry.city.longitude }}],
+            title    : "{{ entry.city }}",
+            content  : '<h1>{{ entry.city }}</h1>',
+          },
         {% endfor %}
       ];
 
