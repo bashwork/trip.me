@@ -1,30 +1,10 @@
-/* fonts
-----------------------------------------------------------------------
-@font-face {
-  font-family: 'Cardo';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Cardo'), url('http://themes.googleusercontent.com/font?kit=jbkF2_R0FKUEZTq5dwSknQ') format('truetype');
-}
-@font-face {
-  font-family: 'Neuton';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Neuton Regular'), local('Neuton'), url('http://themes.googleusercontent.com/font?kit=9R-MGIOQUdjAVeB6nE6PcQ') format('truetype');
-}
-@font-face {
-  font-family: 'Yanone Kaffeesatz';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url('http://themes.googleusercontent.com/font?kit=YDAoLskQQ5MOAgvHUQCcLdXn3cHbFGWU4T2HrSN6JF4') format('truetype');
-}*/
-
 /* base styles
 ----------------------------------------------------------------------*/
 body {
     background: #fff;
 	/*background: url(../img/grid.png) #efefef -10em 0 repeat-y;*/
-    font-family: Helvetica, Helvetica Neue, Verdana, sans-serif;
+    /*font-family: Helvetica, Helvetica Neue, Verdana, sans-serif;*/
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     font-size: 13px;
     line-height: 1.5em;
     color: #555;
@@ -47,47 +27,8 @@ blockquote:before {
     height: 0;
     margin-left: -0.55em;
 }
+.ui-icon { display: inline-block !important; }
 
-/* input button elements:
- * http://www.zurb.com/blog_uploads/0000/0617/buttons-03.html
-----------------------------------------------------------------------
-.button, .button:visited {
-	background-color: #222;
-	display: inline-block;
-	padding: 5px 10px 6px;
-	color: #fff;
-	font-weight: bold;
-	line-height: 1;
-    letter-spacing:1px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-	border-bottom: 1px solid rgba(0,0,0,0.25);
-	text-decoration: none;
-	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
-	position-relative;
-	cursor: pointer;
-}
-.small.button, .small.button:visited      { font-size: 11px; padding: ; }
-.large.button, .large.button:visited      { font-size: 14px; padding: 8px 14px 9px; }
-.button, .button:visited,
-.medium.button, .medium.button:visited    { font-size: 13px; }
-.button:active                            { top:1px; }
-.button:hover                             { background-color: #010101; }
-.green.button, .green.button:visited      { background-color: #91bd09; }
-.green.button:hover                       { background-color: #749a02; }
-.blue.button, .blue.button:visited        { background-color: #2daebf; }
-.blue.button:hover                        { background-color: #007d9a; }
-.red.button, .red.button:visited          { background-color: #e33100; }
-.red.button:hover                         { background-color: #872300; }
-.magenta.button, .magenta.button:visited  { background-color: #a9014b; }
-.magenta.button:hover                     { background-color: #630030; }
-.orange.button, .orange.button:visited    { background-color: #ff5c00; }
-.orange.button:hover                      { background-color: #d45500; }
-.yellow.button, .yellow.button:visited    { background-color: #ffb515; }
-.yellow.button:hover                      { background-color: #fc9200; }
-*/
 /* tooltip element styles
 ----------------------------------------------------------------------*/
 p#vtip {
@@ -120,31 +61,38 @@ header h1 a {
 
 header h1 a span { display:none; }
 header h2 { 
-	margin-top: 2em;
-	font-size: 110%;
+    font-family: 'Trebuchet MS', sans-serif;
+	margin-top: 30px;
+	font-size: 20px;
 	text-shadow: 0px 1px 2px #ddd;
+}
+
+#sign-up-header {
+    float: right;
+    color: #96999C;
 }
 
 /* site header navigation element
 ----------------------------------------------------------------------*/
 header nav { 
-	padding: .7em;
+	padding: 7px 0;
 	font-weight: bold;
 	border-bottom: 1px solid #aaa;
 	border-top: 1px solid #666;
-	text-align: right;
+	text-align: left;
+    color: #28a;
 }
 header nav li { 
-    font-size: 120%;
+    font-size: 100%;
 	font-weight: bold;
 	display: inline;
-	padding-left: 1em;
+	padding-right: 20px;
 }
-header nav li a { 
-	text-shadow: 1px 1px 1px #ddd;
+header nav li a {
+    padding-top: 10px;
 }
 header nav li a:hover { 
-	border-top: 2px solid #444;
+    background: url(../img/arrow.png) center top no-repeat;
 	color: #444;
 }
 

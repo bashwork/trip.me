@@ -30,20 +30,24 @@
     <!-- site header -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <header>
+      <p id="sign-up-header">
+        {% if user.is_authenticated %}
+          Signed in as <a href="/users/{{ user.username }}/">{{ user.username }}</a>
+          | <a href="/accounts/logout/">Logout</a>
+        {% else %}Already have an account?
+          <a href="/accounts/login/">Sign In</a> or
+          <a href="/acounts/register/">Join Now</a>
+        {% endif %}
+      </p>
       <h1><a href="/"><span>{{ site.name }}</span></a></h1>
+      <div class="clearfix"></div>
+
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/guides/">Browse Guides</a></li>
           <li><a href="/users/">Browse Users</a></li>
           <li><a href="/about/help/">Help</a></li>
-          {% if user.is_authenticated %}
-            <li><a href="/accounts/logout/">Logout</a></li>
-            <li><a href="/users/{{ user.username }}/">Profile</a></li>
-          {% else %}
-            <li><a href="/accounts/login/">Login</a></li>
-            <li><a href="/accounts/register/">Sign Up</a></li>
-          {% endif %}
           {% block extra_navigation %}{% endblock %}
         </ul>
       </nav>
