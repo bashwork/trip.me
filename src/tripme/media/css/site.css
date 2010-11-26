@@ -148,3 +148,22 @@ div#splash-signup {
 #user-profile .profile-social ul li {
     display:inline-block;
 }
+
+/* flatpage styling
+----------------------------------------------------------------------*/
+#flat-pages ul {
+    list-style:square inside url("../img/bullet.png");
+}
+#flat-pages ul li {
+}
+#flat-pages h3 {
+    font-size: 15px;
+    border-bottom: 1px solid #666;
+    border-top: 2px solid #444;
+    margin-bottom: 10px;
+    width: 50%;
+    padding: 3px 0;
+}
+#flat-pages p {
+    margin-bottom: 20px;
+}

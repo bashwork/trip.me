@@ -4,13 +4,7 @@
 
 {% block content %}
 
-      <div class="grid_4">
-        <form id="spot-search">
-          <input class="auto-search" type="search" placeholder="Where do you want to go?" />
-        </form>
-      </div>
-
-      <div class="grid_8">
+      <div class="prefix_4 grid_8">
         <h2 id="spot-result-header">The Top Ten</h2>
       </div>
       <div class="clearfix"></div>
@@ -20,10 +14,10 @@
           <div class="map-block medium"></div>
           <h2>Current Itenerary</h2>
           <ul id="city-list">
-            {% for entry in location.guidespotentry_set %}
-		      <li>
-                <a href="{{ entry.spot.get_absolute_url }}">{{ entry.spot }}</a>
-             </li>
+            {% for entry in location.spots.all %}
+            <li>
+               <a href="{{ entry.spot.get_absolute_url }}">{{ entry.spot }}</a>
+            </li>
             {% endfor %}
           </ul>
 	      <div class="clearfix"></div>
@@ -31,7 +25,7 @@
       </div>
 
       <div id="spot-result-list" class="grid_8">
-        {% for entry in location.guidespotentry_set %}
+        {% for entry in location.spots.all %}
           <article class="spot-summary clearfix">
             <h1>{{ entry.spot.name }}</h1>
             <img src="{{ entry.spot.image.url }}" height="150px" />
@@ -48,31 +42,10 @@
 
     <script>
     $(document).ready(function() {
-      var options = {
-        zoom : 2,
-        center : new google.maps.LatLng(-34.397, 150.644),
-		mapTypeControl : false,
-        mapTypeId : google.maps.MapTypeId.ROADMAP,
-		navigationControlOptions : {
-		  style : google.maps.NavigationControlStyle.SMALL
-		}
-      };
-      var map = new google.maps.Map($(".map-block").get(0), options);
-
-      var data = $(".spot-summary h1").map(function() {
-	  	return $(this).text();
-	  }).get();
-      $(".auto-search").autocomplete({source:jQuery.unique(data)});
-      $("#spot-search").submit(function() {
-      	var term = $("input:first").val().toLowerCase();
-      	$(".spot-summary").each(function() {
-      		if ($(this).text().toLowerCase().indexOf(term) <= 0) {
-      			$(this).fadeOut();
-      		}
-      		else { $(this).fadeIn(); }
-      	});
-      	return false;
+      $(".map-block").gmaps({
+        center : [{{ location.city.latitude }}, {{ location.city.longitude }}],
+        zoom   : 11,
       });
-    });
+    })
     </script>
 {% endblock %}

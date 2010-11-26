@@ -20,7 +20,7 @@
           <div class="map-block medium"></div>
           <h2>Current Itenerary</h2>
           <ul id="city-list">
-            {% for entry in location.guidespotentry_set %}
+            {% for entry in location.spots.all %}
 		      <li class="edit-delete">
                 <a href="{{ entry.spot.get_absolute_url }}">{{ entry.spot }}</a>
               </li>
@@ -31,7 +31,7 @@
       </div>
 
       <div id="spot-result-list" class="grid_8">
-        {% for entry in location.guidespotentry_set %}
+        {% for entry in location.spots.all %}
           <article class="spot-summary clearfix">
             <h1>{{ entry.spot.name }}</h1>
             <a href="#" class="button yellow small">+ add to guide</a>
@@ -49,16 +49,10 @@
 
     <script>
     $(document).ready(function() {
-      var options = {
-        zoom : 2,
-        center : new google.maps.LatLng(-34.397, 150.644),
-		mapTypeControl : false,
-        mapTypeId : google.maps.MapTypeId.ROADMAP,
-		navigationControlOptions : {
-		  style : google.maps.NavigationControlStyle.SMALL
-		}
-      };
-      var map = new google.maps.Map($(".map-block").get(0), options);
+      $(".map-block").gmaps({
+        center : [{{ location.city.latitude }}, {{ location.city.longitude }}],
+        zoom   : 11,
+      });
 
       var data = $(".spot-summary h1").map(function() {
 	  	return $(this).text();

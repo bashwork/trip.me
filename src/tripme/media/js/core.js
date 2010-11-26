@@ -152,12 +152,12 @@ $.debug = function(message) {
  * @version 1.0
  */
 (function($) {
-
  /**
-  * default configuration options and globals
+  * If we don't have google maps api loaded, no
+  * sense in continuing
   */
- var geocoder = new google.maps.Geocoder();
- var infowindow = new google.maps.InfoWindow();
+ if (!window.google) { return; }
+
  //var Gmaps = function(opts) {
  //  this.options = $.extend({}, $.fn.gmaps.defaults, options);
  //  this.geocoder = new google.maps.Geocoder();
@@ -245,6 +245,8 @@ $.debug = function(message) {
      };
    }
 
+   var geocoder = new google.maps.Geocoder();
+
    return {
      mapType      : get('ROADMAP', google.maps.MapTypeId),
      typeStyle    : get('DEFAULT', google.maps.MapTypeControlStyle),
@@ -253,6 +255,8 @@ $.debug = function(message) {
      navPosition  : get('TOP_LEFT', google.maps.ControlPosition),
      latlng       : get_ll,
      options      : get_options,
+     geocode      : geocoder.geocode,
+     infowindow   : new google.maps.InfoWindow(),
    };
  })();
 
@@ -277,7 +281,7 @@ $.debug = function(message) {
  /**
   */
  $.gmaps.update = function(opts) {
-   var current = $.extend({}, G.opts, opts);
+   var current = $.extend(G.options, opts);
    G.map.setOptions(gapi.options(current));
    return this;
  }
@@ -315,8 +319,8 @@ $.debug = function(message) {
  function add_info_window(marker)
  {
    $.gmaps.bind('click', function() {
-     infowindow.setContent(marker.content);
-     infowindow.open(G.map, marker);  
+     gapi.infowindow.setContent(marker.content);
+     gapi.infowindow.open(G.map, marker);  
    }, marker);
  }
 
@@ -407,7 +411,7 @@ $.debug = function(message) {
  /**
   */
  $.gmaps.geocode = function(address, callback, errback) {
-   geocoder.geocode({ 'address': address }, function(results, status) {
+   gapi.geocode({ 'address': address }, function(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
         callback(results[0].geometry.location);
       } else {
@@ -421,7 +425,7 @@ $.debug = function(message) {
  /**
   */
  $.gmaps.geodecode = function(area, callback, errback) {
-   geocoder.geocode({ 'latLng': area }, function(results, status) {
+   gapi.geocode({ 'latLng': area }, function(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
         callback(results[0].formatted_address);
       } else {

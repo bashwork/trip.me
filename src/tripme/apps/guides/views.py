@@ -47,8 +47,11 @@ def guide_detail_spots(request, id, city):
     :param id: the unique key for this guide
     '''
     guide = get_object_or_404(Guide, id=id)
+    location = guide.entries.get(id=city)
     view  = 'guides/guide_detail_entry.html'
     if request.user == guide.user:
         view  = 'guides/edit_guide_entry.html'
-    return render_to_response(view, { 'guide' : guide, 'city' : city },
+    return render_to_response(view,
+        { 'guide' : guide, 'location' : location },
         context_instance=RequestContext(request))
+

@@ -36,12 +36,12 @@
     $(document).ready(function() {
 
       function do_add_city(city) {
-          $("#city-list").append("<li>"+city+"</li>");
-          $.gmaps.mark({
-            position : city,
-            title    : city,
-            content  : '<h1>' + city + '</h1>',
-          }, true);
+        $("#city-list").append("<li>"+city+"</li>");
+        $.gmaps.mark({
+          position : city,
+          title    : city,
+          content  : '<h1>' + city + '</h1>',
+        }, true);
       }
 
       $("#add-city-dialog input").autocomplete({

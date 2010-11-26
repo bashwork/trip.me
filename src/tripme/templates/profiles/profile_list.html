@@ -14,7 +14,9 @@
       <figure class="guide-slide">
           <a href="{{ profile.user.get_absolute_url }}"><img src="{{ profile.image.url }}" height="300px"/></a>
 	  	<div>
-	      <h1>{{ profile.user.username}}</h1>
+	      <h1>{{ profile.user.username }}</h1>
+	      <h2>{{ profile.city }}, {{ profile.country }}</h2>
+	      <p>{{ profile.description }}</p>
 	  	</div>
       </figure>
     </div>

@@ -52,7 +52,7 @@ header {
 	margin-bottom: 2em;
 }
 header h1 a { 
-	background: url(../img/header.png) #fff 0 -1em no-repeat;
+	background: url(../img/header.png) 0 -1em no-repeat;
 	font-size: 120%;
 	height: 6em;
 	width: 600px;
@@ -70,6 +70,9 @@ header h2 {
 #sign-up-header {
     float: right;
     color: #96999C;
+    border-radius: 5px;
+    background: rgba(0,170,0,0.1);
+    padding: 8px;
 }
 
 /* site header navigation element
@@ -141,22 +144,30 @@ footer ul#social-network li.blog a  { background:url(../img/blogger-logo.png) no
 	background-color: #fff;
     margin: 1em 0; 
 	cursor: pointer;
+    overflow:hidden;
+    height:200px;
 }
-.guide-slide:hover { background-color: #fdf5ce; }
 .guide-slide img {
-	width:95%;
-	padding: 5px;
+    margin: -10px 0;
+	width:100%;
 	display:block;
 	margin: auto;
+    z-index:1;
+	/*position:absolute;
+    clip: rect(0px,300px,200px, 0px); */
 }
 .guide-slide div {
 	height: 40px;
 	position:absolute;
 	background: rgba(0,0,0,0.35);
 	color: #fff;
-	bottom: 0;
+    top: 160px;
 	width:100%;
+    z-index:2;
+    height:100%;
+	-webkit-transition: bottom,top 1s ease-in-out;
 }
+.guide-slide div:hover { top:0; }
 .guide-slide h1 {
 	padding: 0 7px;
 	font-size: 140%;
@@ -167,7 +178,12 @@ footer ul#social-network li.blog a  { background:url(../img/blogger-logo.png) no
     font-style:italic;
     font-weight:normal;
 }
-.guide-slide p { padding: 0 7px; }
+.guide-slide p {
+    padding: 0 7px;
+    overflow:hidden;
+    white-space:normal;
+    text-overflow: ellipsis;
+}
 
 /* spot summary elements
 ----------------------------------------------------------------------*/
