@@ -33,6 +33,10 @@ $.debug = function(message) {
 
 /*
  * wrapper for the tripme api
+ *
+ * @author: bashwork at gmail dot com
+ * @date: right about now
+ * @license: steal and be glad
  */
 (function($) {
 
@@ -83,7 +87,54 @@ $.debug = function(message) {
 })(jQuery);
 
 /*
+ * wrapper for the geonames api
+ * http://www.geonames.org/
+ *
+ * @author: bashwork at gmail dot com
+ * @date: right about now
+ * @license: steal and be glad
+ */
+(function($) {
+
+  var base = "http://ws.geonames.org/";
+
+  function _build(name)
+  {
+    return function(query, callback) {
+      $.getJSON(base + name + '?callback=?',
+        $.extend({}, $.geonames.options, { q : query }), callback);
+    };
+  }
+
+  $.geonames = {
+
+    /**
+     * member fields
+     */
+    options : {
+      style        : 'full',
+      maxRows      : 10,
+      featureClass : 'P',
+    },
+
+    /**
+     * public api
+     */
+    search : _build('searchJSON'),
+    wikipedia : _build('wikipediaSearchJSON'),
+    postal : _build('postalCodeSearchJSON'),
+    weather : _build('findNearByWeatherJSON'),
+  };
+
+})(jQuery);
+
+/*
  * wrapper for the foursquare api
+ * http://groups.google.com/group/foursquare-api/web/api-documentation
+ *
+ * @author: bashwork at gmail dot com
+ * @date: right about now
+ * @license: steal and be glad
  */
 (function($) {
 
@@ -116,7 +167,7 @@ $.debug = function(message) {
      */
     search : function(query, callback) {
       $.getJSON(base + 'venues.json?callback=?',
-        $.extend(options, convert_options(query)), callback);
+        $.extend({}, options, convert_options(query)), callback);
     },
   };
 
@@ -125,7 +176,7 @@ $.debug = function(message) {
      */
     near : function(query, callback) {
       $.getJSON(base + 'tips.json?callback=?',
-        $.extend(options, convert_options(query),
+        $.extend({}, options, convert_options(query),
           { filter : 'nearby' }), callback);
     },
   };
@@ -142,10 +193,40 @@ $.debug = function(message) {
     $.getJSON(base + 'test.json?callback=?', callback);
   };
 
+
+  function process_result(result)
+  {
+    var venues = (result.groups.length > 0)
+      ? result.groups[0].venues : {};
+    var list = $.map(venues, function(venue) {
+      return '<article class="spot-summary clearfix">'
+        + '<h1>' + venue.name + '</h1>'
+        + '<a href="/venue/' + venue.id + '"/ class="button">+ add to guide</a>'
+        //+ '<img src="' + (venue.primarycategory) ? venue.primarycategory.iconurl : '' + '" height="150px" />'
+        + '<p>getting there</p>'
+        + '</article>';
+    });
+
+    return list.join('');
+  }  
+
+  /**
+   * jquery api
+   */
+  $.fn.foursquare = function(options) {
+    return this.each(function() {
+      $this = $(this);
+      $.foursquare.venue.search(options, function(data) {
+        $this.append(process_result(data));
+      });
+    });
+  };
+
 })(jQuery);
 
 /**
  * jquery.gmaps v3
+ * http://code.google.com/apis/maps/documentation/javascript/basics.html
  *
  * @url     http://www.pittss.lv/jquery/gomap/
  * @author  Galen Collins
@@ -269,6 +350,7 @@ $.debug = function(message) {
    for (var i = 0; i < opts.markers.length; ++i) {
      $.gmaps.mark(opts.markers[i]);
    }
+
    //$.gmaps.bind('click', function(ev) {
    //  var mark = $.gmaps.mark({
    //    position  : ev.latLng,
@@ -438,8 +520,12 @@ $.debug = function(message) {
 })(jQuery);
 
 /**
- * jQuery flickr - bashwork aht gmail dawt com
+ * jQuery flickr
  * http://www.flickr.com/services/api/
+ *
+ * @author: bashwork at gmail dot com
+ * @date: right about now
+ * @license: steal and be glad
  */
 (function($) {
 
@@ -458,7 +544,11 @@ $.debug = function(message) {
       safe_search  : 1,  // no porn
       class        : 'flickr',
       size         : 's',
-      //content_type : 1,  // just photos
+      content_type : 1,  // just photos
+      // text      : '',
+      // tags      : '',
+      // per_page  : 1,
+      // page      : 1,
     },
 
     /**

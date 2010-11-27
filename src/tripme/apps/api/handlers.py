@@ -67,6 +67,18 @@ class GuideHandler(BaseHandler):
         result = api_query_helper(request, model=Guide, id=id, name=name)
         return result[:self.__max__]
 
+class GuideLocationHandler(BaseHandler):
+    allowed_methods = ('GET','DELETE', 'POST', 'PUT')
+    model = GuideLocationEntry
+    fields = ('id', 'description', 'name', 'modified',
+        ('entries', ('city_id', 'id', 'spots', )),
+        ('user', ('id','username')))
+    __max__ = 20
+
+    def read(self, request, id=None, name=None):
+        result = api_query_helper(request, model=Guide, id=id, name=name)
+        return result[:self.__max__]
+
 class UserHandler(BaseHandler):
     allowed_methods = ('GET', 'PUT')
     model = UserProfile

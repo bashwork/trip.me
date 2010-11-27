@@ -38,8 +38,6 @@
             <img src="{{ entry.spot.image.url }}" height="150px" />
             <p>{{ entry.spot.description }}</p>
           </article>
-        {% empty %}
-        <h2>Looks like you haven't decided where to go yet</h2>
         {% endfor %}
       </div>
 {% endblock %}
@@ -53,11 +51,25 @@
         center : [{{ location.city.latitude }}, {{ location.city.longitude }}],
         zoom   : 11,
       });
+      $('#spot-result-list').foursquare({
+        lat : {{ location.city.latitude }},
+        lng : {{ location.city.longitude }}
+      });
+      $('.button').button();
 
-      var data = $(".spot-summary h1").map(function() {
-	  	return $(this).text();
-	  }).get();
-      $(".auto-search").autocomplete({source:jQuery.unique(data)});
+      $(".auto-search").autocomplete({
+        source: function(request, response) {
+          $.tripme.search(request.term, function(data) {
+            response($.map(data.geonames, function(item) {
+              var result = item.name
+                + (item.adminName1 ? ", " + item.adminName1 : "")
+                + ", " + item.countryName;
+              return { label : result, value : result };
+            }));
+          });
+        }
+      });
+
       $("#spot-search").submit(function() {
       	var term = $("input:first").val().toLowerCase();
       	$(".spot-summary").each(function() {
@@ -68,6 +80,40 @@
       	});
       	return false;
       });
+
+      $("#delete-entry-dialog").dialog({
+          dialogClass : 'alert-dialog',
+          modal       : true,
+          position    : 'center',
+          title       : 'Are You Sure?', 
+	  	  autoOpen    : false,
+          resizable   : false,
+          buttons     : [
+            {
+              text  : "Delete",
+              click : function() {
+                // remove entry
+                //$.tripme.guide.remove('{{ guide.id }}', function(result) {
+                //  $.growl
+                //});
+              },
+            },
+            {
+              text  : "Cancel",
+              click : function() {
+                $(this).dialog("close");
+              }
+            },
+          ],
+      });
     });
     </script>
+{% endblock %}
+
+{% block extra_dom %}
+
+ <div id="delete-entry-dialog" title="Are You Sure?">
+  <p>Are you sure you want to delete your entry?</p>
+ </div>
+
 {% endblock %}

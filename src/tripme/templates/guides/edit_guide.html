@@ -37,22 +37,21 @@
 
       function do_add_city(city) {
         $("#city-list").append("<li>"+city+"</li>");
-        $.gmaps.mark({
-          position : city,
-          title    : city,
-          content  : '<h1>' + city + '</h1>',
-        }, true);
+        $.geonames.wikipedia(city, function(data) {
+          var result = data.geonames[0]; // if not, fall back to city
+          $.gmaps.mark({
+            //position : { city,
+            position : [ result.lat, result.lng ],
+            title    : city,
+            //content  : '<h1>' + city + '</h1>',
+            content  : result.summary, // template this
+          }, true);
+        });
       }
 
       $("#add-city-dialog input").autocomplete({
         source: function(request, response) {
-          $.getJSON('http://ws.geonames.org/searchJSON',
-          {
-            style        : 'full',
-            maxRows      : 10,
-            featureClass : 'P',
-            q            : request.term,
-          }, function(data) {
+          $.geonames.search(request.term, function(data) {
             response($.map(data.geonames, function(item) {
               var result = item.name
                 + (item.adminName1 ? ", " + item.adminName1 : "")
