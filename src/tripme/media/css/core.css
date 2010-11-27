@@ -27,6 +27,14 @@ blockquote:before {
     height: 0;
     margin-left: -0.55em;
 }
+blockquote:after {
+    font-size: 40px;
+    color: rgba(0,0,0,0.5);
+    width:50px;
+    content: close-quote;
+    height: 0;
+    margin-left: -0.55em;
+}
 .ui-icon { display: inline-block !important; }
 
 /* tooltip element styles
